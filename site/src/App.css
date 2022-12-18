@@ -1,10 +1,9 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  /*text-align: center;*/
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,21 +17,113 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#idcard{
+  margin:auto;
+  width:105vh;
+  height:70vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#idfront{
+  margin:auto;
+  min-width:105vh;
+  min-height:70vh;
+  border:white solid 10px;
+  vertical-align: middle;
+  background:grey;
+}
+
+#idheader{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  vertical-align: middle;
+  margin:10px;
+}
+
+#idheader > h1{
+  text-align:left;
+  display:inline;
+  margin-left:10px;
+}
+
+#idlogo{
+  height:8vh;
+}
+
+#iddata{
+  display:flex;
+  width:100%;
+  height:68vh;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom:2vh;
+}
+
+#idportrait{
+  margin-left:2%;
+  max-height:85%;
+  border: white solid 2px;
+  border-radius:5%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nothing nothing nothing nothing nothing nothing stats stats'
+    'title title title title title title phys phys'
+    'geo geo geo geo geo geo mental mental'
+    'bio1 bio1 bio1 bio2 bio2 bio2 murder murder'
+    'likes likes likes likes dislikes dislikes dislikes dislikes'
+    'likes likes likes likes dislikes dislikes dislikes dislikes'
+    'likes likes likes likes dislikes dislikes dislikes dislikes';
+  gap: 10px;
+  height:85%;
+  width:100%;
+}
+
+.statsheader{
+  grid-area: stats;
+}
+
+.idtitle{
+  grid-area: title;
+}
+
+.statsphys{
+  grid-area:phys;
+}
+
+.idgeo{
+  grid-area: geo;
+}
+
+.statsmental{
+  grid-area: mental;
+}
+
+.idbio1{
+  grid-area: bio1;
+}
+
+.idbio2{
+  grid-area: bio2;
+}
+
+.statsmurder{
+  grid-area: murder;
+}
+
+.idlikes{
+  grid-area: likes;
+}
+
+.iddislikes{
+  grid-area: dislikes;
 }
