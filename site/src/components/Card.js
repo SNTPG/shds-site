@@ -155,7 +155,7 @@ const bioData = {
         "focus": "+3",
         "forensics": "+1",
         "guts": "+3",
-        "height": "FIX THIS",
+        "height": "150",
         "level": "1",
         "likes": "Travel, home cooked meals, cartoons",
         "location": "Unknown",
@@ -182,7 +182,7 @@ const bioData = {
         "focus": "+3",
         "forensics": "0",
         "guts": "+2",
-        "height": "FIX THIS",
+        "height": "161",
         "level": "1",
         "likes": "Puzzles, history, games",
         "location": "NULL",
@@ -389,7 +389,7 @@ const bioData = {
         "coordination": "+1",
         "dislikes": "Church organs, the death knell, bad hair days",
         "extmental": true,
-        "extmentalstr": "CHA: +3",
+        "extmentalstr": "BLF: +3",
         "extmurder": false,
         "extmurderstr": "",
         "extphys": true,
@@ -397,12 +397,12 @@ const bioData = {
         "fitness": "-1",
         "focus": "+1",
         "forensics": "0",
-        "guts": "+1",
+        "guts": "-2",
         "height": "183",
         "level": "1",
         "likes": "Casual dress shirts, morning radio, whitening toothpaste",
         "location": "San Francisco, CA",
-        "poise": "-3",
+        "poise": "-1",
         "pronouns": "he/him",
         "username": "WishfulThinkingLLC",
         "vocation": "Former Entrepreneur "
@@ -559,7 +559,7 @@ function Card(props){
                         
                     </div>
                     <button id="flipButtonFront" onClick={flipCard}>
-                        <img src="/flipArrow.png"/>
+                        <img src="/flipArrow.png" alt="Flip card."/>
                     </button>
                     <button id="closeButtonFront" onClick={props.onClick}>
                         <img alt="Close." src="/close.png"/>
@@ -571,7 +571,7 @@ function Card(props){
                         <div id="bio">{info.bio}</div>
                     </div>
                     <button id="flipButtonBack" onClick={flipCard}>
-                        <img src="/flipArrow.png"/>
+                        <img src="/flipArrow.png" alt="Flip card."/>
                     </button>
                     <button id="closeButtonBack" alt="Close." onClick={props.onClick}>
                         <img alt="Close." src="/close.png"/>

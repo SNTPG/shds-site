@@ -4,6 +4,7 @@
 
 body{
   overflow-y:hidden;
+  overflow-x:hidden;
 }
 
 p {
@@ -32,13 +33,30 @@ p {
   color: white;
 }
 
+#idcard {
+  animation: fadeInAnimation ease 1s;
+  animation-delay:0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 #idcard{
   margin:auto;
   width:105vh;
   height:70vh;
   perspective:1000px;
   border:transparent solid 10px;
-  z-index:1;
+  z-index:2;
 }
 
 #idflip {
@@ -308,6 +326,12 @@ p {
   display:flex;
   align-items:center;
   justify-content:center;
+  
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 #castOverlay > div{
@@ -319,6 +343,177 @@ p {
   display:flex;
   align-items:center;
   z-index:0;
+}
+
+#castCover{
+  visibility:hidden;
+  position:fixed;
+  transform:translateY(0) translateX(0);
+  height:100vh;
+  width:100vw;
+  z-index:1;
+  background-color: #0000;
+  transition: background-color 0.5s;
+}
+
+#castCover.active{
+  visibility:visible;
+  background-color:#0003;
+}
+
+.square{
+  position:relative;
+  transition: height 1s, width 1s, top 1s, left 1s, filter 1s, visibility 1.5s, background-color 1s;
+  height:20vh;
+  width:20vh;
+  top:0;
+  left:0;
+  align-items:center;
+  text-align:center;
+  background-color:#0003;
+}
+
+.square.loadOut{
+  z-index:1;
+}
+
+.square.clicked{
+  z-index:2;
+  background-color:#b83967;
+  visibility: hidden;
+  transition: height 0.5s, width 0.5s, top 0.5s, left 0.5s, filter 0.5s, visibility 1.5s, background-color 0.5s;
+}
+
+/* Proper calculation for card relative to the grid
+
+top: calc(-35vh - 10px);
+left: calc(-52.5vh - 10px);*/
+
+.rei.clicked{
+  top: -5vh;
+  left: 9vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.andrew.clicked{
+  top: -5vh;
+  left: -12vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.avery.clicked{
+  top: -5vh;
+  left: -33vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.camille.clicked{
+  top: -5vh;
+  left: -54vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.ami.clicked{
+  top: -5vh;
+  left: -75vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.emma.clicked{
+  top: -5vh;
+  left: -96vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.empty.clicked{
+  top: -26vh;
+  left: 9vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.august.clicked{
+  top: -26vh;
+  left: -12vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.owen.clicked{
+  top: -26vh;
+  left: -33vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.yiseul.clicked{
+  top: -26vh;
+  left: -54vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.isaak.clicked{
+  top: -26vh;
+  left: -75vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.jones.clicked{
+  top: -26vh;
+  left: -96vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.hatman.clicked{
+  top: -47vh;
+  left: 9vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.v.clicked{
+  top: -47vh;
+  left: -12vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.mai.clicked{
+  top: -47vh;
+  left: -33vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.yumeji.clicked{
+  top: -47vh;
+  left: -54vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.gaz.clicked{
+  top: -47vh;
+  left: -75vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
+}
+.simon.clicked{
+  top: -47vh;
+  left: -96vh;
+  width:105vh;
+  height:70vh;
+  border:transparent solid 10px;
 }
 
 .cast-grid {
@@ -337,12 +532,6 @@ p {
   margin:0;
   align-items:stretch;
   background:slategrey;
-}
-
-.student, .chap{
-  align-items:center;
-  text-align:center;
-  background:#0003;
 }
 
 .studentMug, .chapMug{
