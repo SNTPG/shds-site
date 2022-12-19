@@ -543,6 +543,9 @@ function Card(props){
                     <button id="flipButtonFront" onClick={flipCard}>
                         <img src="/flipArrow.png"/>
                     </button>
+                    <button id="closeButtonFront" onClick={flipCard}>
+                        <img alt="Close." src="/close.png"/>
+                    </button>
                 </div>
                 <div id="idback" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
                     <div>
@@ -551,6 +554,9 @@ function Card(props){
                     </div>
                     <button id="flipButtonBack" onClick={flipCard}>
                         <img src="/flipArrow.png"/>
+                    </button>
+                    <button id="closeButtonBack" alt="Close." onClick={flipCard}>
+                        <img alt="Close." src="/close.png"/>
                     </button>
                 </div>
             </div>
