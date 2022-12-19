@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .App {
   /*text-align: center;*/
 }
@@ -76,8 +81,8 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'nothing nothing nothing nothing nothing nothing stats stats'
-    'title title title title title title phys phys'
+    'title title title title title title stats stats'
+    'level level level level level level phys phys'
     'geo geo geo geo geo geo mental mental'
     'bio1 bio1 bio1 bio2 bio2 bio2 murder murder'
     'likes likes likes likes dislikes dislikes dislikes dislikes'
@@ -86,25 +91,32 @@
   gap: 10px;
   height:85%;
   width:100%;
-}
-
-.statsheader{
-  grid-area: stats;
+  padding:0;
+  margin:0;
+  margin-left:10px;
 }
 
 .idtitle{
   grid-area: title;
 }
 
-.statsphys{
-  grid-area:phys;
+.statsheader{
+  grid-area: stats;
+}
+
+.idlevel{
+  grid-area: level;
+}
+
+.phys{
+  grid-area: phys;
 }
 
 .idgeo{
   grid-area: geo;
 }
 
-.statsmental{
+.mental{
   grid-area: mental;
 }
 
@@ -116,7 +128,7 @@
   grid-area: bio2;
 }
 
-.statsmurder{
+.murder{
   grid-area: murder;
 }
 
@@ -126,4 +138,8 @@
 
 .iddislikes{
   grid-area: dislikes;
+}
+
+.idlikes > p, .iddislikes > p{
+  font-size:0.6em;
 }

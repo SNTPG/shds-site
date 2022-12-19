@@ -17,6 +17,6 @@ import Empty from "./portraits/shds16.png";
 import V from "./portraits/shds17.png";
 import Emma from "./portraits/shds18.png";
 const images = [
-    Hatman, Gaz, Andrew, Isaak, Simon, YiSeul, Owen, Rei, August, Avery, Ami, Mai, Camille, Yumeji, Jones, Empty, V, Emma
+    Rei, Andrew, Avery, Camille, Ami, Emma, Empty, August, Gaz, Owen, YiSeul, Isaak, Jones, Hatman, V, Simon, Mai, Yumeji
 ]
 export default images;
