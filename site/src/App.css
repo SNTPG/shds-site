@@ -7,6 +7,11 @@ body{
   overflow-x:hidden;
 }
 
+@font-face{
+  font-family: russoOne;
+  src: url('./assets/fonts/RussoOne-Regular.ttf');
+}
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -33,6 +38,7 @@ p {
   color: white;
 }
 
+/* ID Card */
 #idcard {
   animation: fadeInAnimation ease 1s;
   animation-delay:0.5s;
@@ -118,6 +124,8 @@ p {
   display:inline;
   margin-left:10px;
   font-size:6vh;
+  font-family: russoOne;
+  color:#c2ff03;
 }
 
 #idlogo{
@@ -133,12 +141,13 @@ p {
   margin-bottom:2vh;
 }
 
+/* TODO: Nix this when on mobile */
 #idportrait{
   margin-left:2%;
   max-height:85%;
-  border: white solid 2px;
+  border: #c2ff03 solid 2px;
   border-radius:5%;
-  background:#000a;
+  background:#0004;
 }
 
 .grid-container {
@@ -254,6 +263,8 @@ p {
   display:flex;
 }
 
+/* TODO: Fucking fix the alignment here */
+
 .idlikes > h3, .iddislikes > h3{
   align-items:flex-start;
 }
@@ -305,7 +316,6 @@ p {
   justify-content: center;
 }
 
-
 #flipButtonFront:hover, #flipButtonBack:hover{
   filter:none;
 }
@@ -322,17 +332,20 @@ p {
   height:2vh;
 }
 
+
+/* Cast Page */
+
 #castOverlay {
   display:flex;
   align-items:center;
   justify-content:center;
   
-  -webkit-transform: rotate(0deg);
+  /*-webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
+  transform: rotate(0deg);*/
+} /* World's worst position:fixed hack */
 
 #castOverlay > div{
   position:absolute;

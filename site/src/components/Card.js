@@ -275,7 +275,7 @@ const bioData = {
     "jones":
         {
         "age": "16",
-        "bio": "Jones lives on the moon, as it is the only safe way for him to pursue his talent, according to his supervisor and instructor, Doctor Lovell, former Ultimate Aerospace Engineer and current crackhead genius who is unfortunately too smart and useful for Hope's Peak to fire despite her unruly and defiant attitude. His talent, personal history, and mission, exactly, is extremely ambiguous, but it likely has to do with the mad doctor's theories of life outside of Earth. He is currently on parole.",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "birthday": "05-01",
         "branch": "Europe",
         "coordination": "+1",
@@ -297,7 +297,7 @@ const bioData = {
         "poise": "-2",
         "pronouns": "yours",
         "username": "testaccount",
-        "vocation": "Ultimate \"Conduit\""
+        "vocation": "Ultimate ???"
         },
     "mai":
         {
@@ -501,7 +501,7 @@ function Card(props){
     const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");
     const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");
     return(
-        <div id="idcard">
+        <div id="idcard" className={props.char}>
             <div id="idflip">
                 <div id="idfront" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
                     <div id="idheader">
