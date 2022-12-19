@@ -27,7 +27,7 @@ class Cast extends React.Component {
         );
         const chapSquares = chaps.map((chap) =>
             <div className={"chap "+ chap}>
-                <button id={chap}>
+                <button id={chap} onClick={() => this.loadCard(chap)}>
                     <ChapMug character={chap}/>
                 </button>
             </div>

@@ -322,6 +322,7 @@ p {
 }
 
 .cast-grid {
+  border: slategray solid 10px;
   display: grid;
   grid-template-areas:
     'rei andrew avery camille ami emma'
