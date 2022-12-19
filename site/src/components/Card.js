@@ -131,7 +131,7 @@ const bioData = {
         "height": "163",
         "level": "1",
         "likes": "Canoes, bird calls, and PEANUT HOLE",
-        "location": "Boundary Water, Ont.",
+        "location": "Boundary Water, MN",
         "poise": "-2",
         "pronouns": "they/she",
         "username": "caonmille",
@@ -561,7 +561,7 @@ function Card(props){
                     <button id="flipButtonFront" onClick={flipCard}>
                         <img src="/flipArrow.png"/>
                     </button>
-                    <button id="closeButtonFront" onClick={flipCard}>
+                    <button id="closeButtonFront" onClick={props.onClick}>
                         <img alt="Close." src="/close.png"/>
                     </button>
                 </div>
@@ -573,7 +573,7 @@ function Card(props){
                     <button id="flipButtonBack" onClick={flipCard}>
                         <img src="/flipArrow.png"/>
                     </button>
-                    <button id="closeButtonBack" alt="Close." onClick={flipCard}>
+                    <button id="closeButtonBack" alt="Close." onClick={props.onClick}>
                         <img alt="Close." src="/close.png"/>
                     </button>
                 </div>
