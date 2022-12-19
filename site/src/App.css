@@ -26,8 +26,8 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*align-items: center;
-  justify-content: center;*/
+  align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -287,4 +287,106 @@ p {
 
 #idfront > button > img, #idback > button > img  {
   height:2vh;
+}
+
+#castContainer{
+  height:80%;
+  display:flex;
+  align-items:center;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-areas:
+    'rei andrew avery camille ami emma'
+    'empty august owen yiseul isaak jones'
+    'hatman v mai yumeji gaz simon';
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-columns: 20vh 20vh 20vh 20vh 20vh 20vh;
+  gap: 1vh;
+  height:fit-content;
+  width:fit-content;
+  padding:0;
+  margin:0;
+  align-items:stretch;
+  background:slategrey;
+}
+
+.student, .chap{
+  align-items:center;
+  text-align:center;
+  background:#0003;
+}
+
+.studentMug, .chapMug{
+  max-width:95%;
+  max-height:95%;
+}
+
+.student > button, .chap > button{
+  width:100%;
+  height:100%;
+  background:none;
+  border:none;
+  padding:0;
+}
+
+.student:hover, .chap:hover{
+  filter:brightness(0.7);
+  background:#0005;
+}
+
+.rei{
+  grid-area: rei;
+}
+.andrew {
+  grid-area: andrew;
+}
+.avery {
+  grid-area: avery;
+}
+.camille {
+  grid-area: camille;
+}
+.ami {
+  grid-area: ami;
+}
+.emma {
+  grid-area: emma;
+}
+.empty {
+  grid-area: empty;
+}
+.august {
+  grid-area: august;
+}
+.owen {
+  grid-area: owen;
+}
+.yiseul {
+  grid-area: yiseul;
+}
+.isaak {
+  grid-area: isaak;
+}
+.jones {
+  grid-area: jones;
+}
+.hatman {
+  grid-area: hatman;
+}
+.v {
+  grid-area: v;
+}
+.mai {
+  grid-area: mai;
+}
+.yumeji {
+  grid-area: yumeji;
+}
+.gaz {
+  grid-area: gaz;
+}
+.simon {
+  grid-area: simon;
 }

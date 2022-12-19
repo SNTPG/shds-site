@@ -16,7 +16,64 @@ import Jones from "./portraits/shds15.png";
 import Empty from "./portraits/shds16.png";
 import V from "./portraits/shds17.png";
 import Emma from "./portraits/shds18.png";
-const images = [
-    Rei, Andrew, Avery, Camille, Ami, Emma, Empty, August, Gaz, Owen, YiSeul, Isaak, Jones, Hatman, V, Simon, Mai, Yumeji
-]
+import ReiEm from "./emotes/3210.png";
+import AndrewEm from "./emotes/AMSmith.png";
+import AveryEm from "./emotes/AveryTheGreat.png";
+import CamilleEm from "./emotes/caonmille.png";
+import AmiEm from "./emotes/Demaka Ami Official.png";
+import EmmaEm from "./emotes/Emma_Thorne.png";
+import EmptyEm from "./emotes/EMPTY SET.png";
+import AugustEm from "./emotes/filbleufilms.png";
+import OwenEm from "./emotes/iseedeadppl.png";
+import YiSeulEm from "./emotes/Kaiju_Klasher.png";
+import IsaakEm from "./emotes/novel_theorist.png";
+import JonesEm from "./emotes/testaccount.png";
+import HatmanEm from "./emotes/thehatman.png";
+import VEm from "./emotes/v.png";
+import MaiEm from "./emotes/XxCherry_Slide_Gamer64xX[MNC].png";
+import YumejiEm from "./emotes/YY.png";
+import GazEm from "./emotes/gberry1.png";
+import SimonEm from "./emotes/WishfulThinkingLLC.png";
+
+const images = {
+    "rei" : Rei,
+    "andrew" : Andrew,
+    "avery" : Avery,
+    "camille" : Camille,
+    "ami" : Ami,
+    "emma" : Emma,
+    "empty" : Empty,
+    "august" : August,
+    "owen" : Owen, 
+    "yiseul" : YiSeul,
+    "isaak" : Isaak,
+    "jones" : Jones,
+    "hatman" : Hatman,
+    "v" : V,
+    "mai" : Mai,
+    "yumeji" : Yumeji,
+    "gaz" : Gaz,
+    "simon" : Simon
+};
+
+export const emotes = {
+    "rei" : ReiEm,
+    "andrew" : AndrewEm,
+    "avery" : AveryEm,
+    "camille" : CamilleEm,
+    "ami" : AmiEm,
+    "emma" : EmmaEm,
+    "empty" : EmptyEm,
+    "august" : AugustEm,
+    "owen" : OwenEm, 
+    "yiseul" : YiSeulEm,
+    "isaak" : IsaakEm,
+    "jones" : JonesEm,
+    "hatman" : HatmanEm,
+    "v" : VEm,
+    "mai" : MaiEm,
+    "yumeji" : YumejiEm,
+    "gaz" : GazEm,
+    "simon" : SimonEm
+};
 export default images;

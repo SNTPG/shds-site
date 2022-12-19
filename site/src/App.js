@@ -12,8 +12,8 @@ function App() {
         <BrowserRouter>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Card char = "2"/>}/>
-            <Route path="cast" element={<Cast/>}/>
+            <Route path="/" element={<Cast/>}/>
+            <Route path="cast" element={<Card char="1"/>}/>
           </Routes>
         </BrowserRouter>
       </header>
