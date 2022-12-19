@@ -405,7 +405,7 @@ const bioData = {
         "poise": "-3",
         "pronouns": "he/him",
         "username": "WishfulThinkingLLC",
-        "vocation": "Former Entrepeneur "
+        "vocation": "Former Entrepreneur "
         },
     "v":
         {
