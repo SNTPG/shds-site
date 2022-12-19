@@ -473,14 +473,19 @@ const bioData = [
     ]
 
 function Card(props){
+    function flipCard(e) {
+        e.preventDefault();
+        var element = document.getElementById("idcard")
+        element.classList.toggle("flipped");
+    }
     const info = bioData[props.char];
     const extraphys = (info.extphys ? <p>{info.extphysstr}</p> : "");
-    const extramental = (info.extphys ? <p>{info.extmentalstr}</p> : "");
-    const extramurder = (info.extphys ? <p>{info.extmurderstr}</p> : "");
+    const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");
+    const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");
     return(
         <div id="idcard">
             <div id="idflip">
-                <div id="idfront">
+                <div id="idfront" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
                     <div id="idheader">
                         <img id="idlogo" src={Heart} alt=""></img>
                         <h1>{info.username}</h1>
@@ -532,15 +537,21 @@ function Card(props){
                             </div>
                         </div>
                     </div>
-                    <div id="idfooter">
+                    <div class="idfooter">
                         
                     </div>
+                    <button id="flipButtonFront" onClick={flipCard}>
+                        <img src="/flipArrow.png"/>
+                    </button>
                 </div>
-                <div id="idback">
+                <div id="idback" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
                     <div>
                         <div id="bioheader"><h1>PUBLIC BIO</h1></div>
                         <div id="bio">{info.bio}</div>
                     </div>
+                    <button id="flipButtonBack" onClick={flipCard}>
+                        <img src="/flipArrow.png"/>
+                    </button>
                 </div>
             </div>
         </div>

@@ -41,32 +41,39 @@ p {
 }
 
 #idflip {
-  position: relative;
+  border:transparent solid 10px;
+  position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin:auto;
+  min-width:105vh;
+  min-height:70vh;
+  top:-10px;
+  left:-10px;
 }
 
-#idcard:hover #idflip {
+#idcard.flipped #idflip {
   transform: rotateY(-180deg);
 }
 
 #idfront, #idback{
   position:absolute;
+  min-width:105vh;
+  min-height:70vh;
   width:100%;
   height:100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  top:-10px;
+  left:-10px;
 }
 
 #idfront{
-  margin:auto;
-  min-width:105vh;
-  min-height:70vh;
   border:#ff2272 solid 10px;
-  background:darkslategray;
+  background-size:cover;
 }
 
 #idheader{
@@ -230,16 +237,30 @@ p {
 #idback{
   transform: rotateY(-180deg);
   border:#ff2272 solid 10px;
-  background:darkslategray;
-  display:flex;
-  align-items:stretch;
+  background-size:cover;
 }
 
 #idback > div{
+  display:flex;
+  align-items:stretch;
+  flex-direction:column;
   margin:2%;
+  margin-top:0;
   text-align:left;
 }
 
 #idback > * > * > h1{
   text-align:center;
+}
+
+#flipButtonFront, #flipButtonBack{
+  background:transparent;
+  border:none;
+  position:absolute;
+  top:97.5%;
+  left:101%;
+}
+
+button > img {
+  height:2vh;
 }

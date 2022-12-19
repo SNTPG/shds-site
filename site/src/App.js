@@ -12,7 +12,7 @@ function App() {
         <BrowserRouter>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Card char = "0"/>}/>
+            <Route path="/" element={<Card char = "3"/>}/>
             <Route path="cast" element={<Cast/>}/>
           </Routes>
         </BrowserRouter>
