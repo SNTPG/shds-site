@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body{
+  overflow-y:hidden;
+}
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -32,16 +36,37 @@ p {
   margin:auto;
   width:105vh;
   height:70vh;
+  perspective:1000px;
+  border:transparent solid 10px;
 }
 
+#idflip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#idcard:hover #idflip {
+  transform: rotateY(-180deg);
+}
+
+#idfront, #idback{
+  position:absolute;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 #idfront{
   margin:auto;
   min-width:105vh;
   min-height:70vh;
-  border:white solid 10px;
-  vertical-align: middle;
-  background:grey;
+  border:#ff2272 solid 10px;
+  background:darkslategray;
 }
 
 #idheader{
@@ -49,13 +74,14 @@ p {
   display:flex;
   align-items:center;
   vertical-align: middle;
-  margin:10px;
+  margin:0.5%;
 }
 
 #idheader > h1{
   text-align:left;
   display:inline;
   margin-left:10px;
+  font-size:6vh;
 }
 
 #idlogo{
@@ -85,61 +111,135 @@ p {
     'level level level level level level phys phys'
     'geo geo geo geo geo geo mental mental'
     'bio1 bio1 bio1 bio2 bio2 bio2 murder murder'
-    'likes likes likes likes dislikes dislikes dislikes dislikes'
-    'likes likes likes likes dislikes dislikes dislikes dislikes'
     'likes likes likes likes dislikes dislikes dislikes dislikes';
+  grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 2fr;
   gap: 10px;
   height:85%;
   width:100%;
   padding:0;
   margin:0;
   margin-left:10px;
+  margin-right:10px;
+  align-items:stretch;
+}
+
+.grid-container > div {
+  background: #0003;
+  background-size: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.grid-container > .idlikes, .grid-container > .iddislikes {
+  background-size: 100%;
+  display: inherit;
+}
+
+.flexbreak{
+  flex-basis:100%;
+}
+
+.grid-container > div > p{
+  background-size: 100%;
+  vertical-align:center;
+  align-items:center;
 }
 
 .idtitle{
   grid-area: title;
+  text-align: center;
+  font-size:3vh;
 }
 
 .statsheader{
   grid-area: stats;
+  text-align:center;
+  font-weight:bold;
+  font-size:2.5vh;
+}
+
+.stats{
+  font-size:2vh;
 }
 
 .idlevel{
   grid-area: level;
+  font-size:6vh;
+  text-align:center;
 }
 
 .phys{
   grid-area: phys;
+  text-align:center;
 }
 
 .idgeo{
   grid-area: geo;
+  text-align:center;
+  font-size:3vh;
 }
 
 .mental{
   grid-area: mental;
+  text-align:center;
 }
 
 .idbio1{
   grid-area: bio1;
+  text-align:center;
+  font-size:2.5vh;
 }
 
 .idbio2{
   grid-area: bio2;
+  text-align:center;
+  font-size:2.5vh;
 }
 
 .murder{
   grid-area: murder;
+  text-align:center;
 }
 
 .idlikes{
   grid-area: likes;
+  font-size:3vh;
+  text-align:center;
+  display:flex;
 }
 
 .iddislikes{
+  text-align:center;
   grid-area: dislikes;
+  font-size:3vh;
+  display:flex;
+}
+
+.idlikes > h3, .iddislikes > h3{
+  align-items:flex-start;
 }
 
 .idlikes > p, .iddislikes > p{
-  font-size:0.6em;
+  font-size:3vh;
+  text-align:center;
+  padding-bottom:10px;
+}
+
+#idback{
+  transform: rotateY(-180deg);
+  border:#ff2272 solid 10px;
+  background:darkslategray;
+  display:flex;
+  align-items:stretch;
+}
+
+#idback > div{
+  margin:2%;
+  text-align:left;
+}
+
+#idback > * > * > h1{
+  text-align:center;
 }
