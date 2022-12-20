@@ -410,7 +410,7 @@ const bioData = {
     "v":
         {
         "age": "19",
-        "bio": "While it's difficult to remember her real name, V is most well-known for being the prodigy of legendary biotechnology scientist: Alpheus Rerinison. He's the founder of Velocity: a company that supplies the US with all sorts of helpful technologies for citizen's day-to-day lives, along with coordinating and producing highly dangerous bioweapons for the US government. Most of her past before becoming acquainted with Rerinison is unknown, though it's been noted that V is completely mute. Taken in by the charming young man at age eight, V has continuously impressed and become something of a wonder child in the eyes of the American public. Velocity is to thank for such helpful technologies such as: Velocity Karen: a triangle-shaped AI assistant that you can place in your home, which most definitely won't be listening into every conversation you have. Velocity Go!: an online worldwide catalog that allows you to buy and shop just about anything from trusted companies and sellers. They treat their warehouse workers very well, I hear! Velocity Air Tag: a handy-dandy chip that you can implant into your devices, car keys, and just about anything else so that you can track it on the Velocity Air Tag App! Just don't implant it into people, you crazy kids! That would be called stalking, and despite it being both incredibly easy and possible, it's also very wrong! Nuclear Weapons: this one's only for the US government. Sorry!",
+        "bio": "While it's difficult to remember her real name, V is most well-known for being the prodigy of legendary biotechnology scientist: Alpheus Rerinison. He's the founder of Velocity: a company that supplies the US with all sorts of helpful technologies for citizen's day-to-day lives, along with coordinating and producing highly dangerous bioweapons for the US government. Most of her past before becoming acquainted with Rerinison is unknown, though it's been noted that V is completely mute. Taken in by the charming young man at age eight, V has continuously impressed and become something of a wonder child in the eyes of the American public.",
         "birthday": "11-02",
         "branch": "North America",
         "coordination": "-1",
@@ -514,18 +514,16 @@ function Card(props){
                             <div class="idtitle">
                                 <h3>{info.vocation}</h3>
                             </div>  
-                            <div class="statsheader">STATS</div>
-                            <div class="idlevel">{"Level "+info.level}</div>  
+                            <div class="statsheader">Stats</div>
+                            <div class="idlevel"><p>{"LEVEL "+info.level}</p></div>  
                             <div class="stats phys">
                                 <p>{"FIT: "+info.fitness}</p>
                                 <p>{"CDN: "+info.coordination}</p>
                                 {extraphys}
                             </div>
                             <div class="idgeo">
-                                <center>
-                                    <p>{"BRANCH: HPA "+info.branch}</p>
-                                    <p>{"LOCATION: "+info.location}</p>
-                                </center>
+                                <p><span>Branch: </span>{"HPA "+info.branch}</p>
+                                <p><span>Location: </span>{info.location}</p>
                             </div>
                             <div class="stats mental">
                                 <p>{"FCS: "+info.focus}</p>
@@ -533,12 +531,12 @@ function Card(props){
                                 {extramental}
                             </div>
                             <div class="idbio1">
-                                <p>{"AGE: "+info.age}</p>
-                                <p>{"PRNS: "+info.pronouns}</p>
+                                <p><span>Age: </span>{info.age}</p>
+                                <p><span>Bday: </span>{info.birthday}</p>
                             </div>
                             <div class="idbio2">
-                                <p>{"BDAY: "+info.birthday}</p>
-                                <p>{"HEIGHT: "+info.height+" cm"}</p>
+                                <p><span>Prns: </span>{info.pronouns}</p>
+                                <p><span>Hght: </span>{info.height+" cm"}</p>
                             </div>
                             <div class="stats murder">
                                 <p>{"FRN: "+info.forensics}</p>
@@ -546,11 +544,11 @@ function Card(props){
                                 {extramurder}
                             </div>
                             <div class="idlikes">
-                                <h3>LIKES</h3>
+                                <h3>Likes</h3>
                                 <p>{info.likes}</p>
                             </div>
                             <div class="iddislikes">
-                                <h3>DISLIKES</h3>
+                                <h3>Dislikes</h3>
                                 <p>{info.dislikes}</p>
                             </div>
                         </div>
@@ -558,7 +556,7 @@ function Card(props){
                     <div class="idfooter">
                         
                     </div>
-                    <button id="flipButtonFront" onClick={flipCard}>
+                    <button class="flipButton" id="flipButtonFront" onClick={flipCard}>
                         <img src="/flipArrow.png" alt="Flip card."/>
                     </button>
                     <button id="closeButtonFront" onClick={props.onClick}>
@@ -567,10 +565,10 @@ function Card(props){
                 </div>
                 <div id="idback" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
                     <div>
-                        <div id="bioheader"><h1>PUBLIC BIO</h1></div>
+                        <div id="bioheader"><h1>Public Bio</h1></div>
                         <div id="bio">{info.bio}</div>
                     </div>
-                    <button id="flipButtonBack" onClick={flipCard}>
+                    <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
                         <img src="/flipArrow.png" alt="Flip card."/>
                     </button>
                     <button id="closeButtonBack" alt="Close." onClick={props.onClick}>

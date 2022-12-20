@@ -12,6 +12,21 @@ body{
   src: url('./assets/fonts/RussoOne-Regular.ttf');
 }
 
+@font-face{
+  font-family: telegramaPixel;
+  src: url('./assets/fonts/telegrama_raw.otf');
+}
+
+@font-face{
+  font-family: safety;
+  src: url('./assets/fonts/SafetyMedium.otf');
+}
+
+@font-face{
+  font-family: mechEffects;
+  src: url('./assets/fonts/mecheffects2-bb.regular.ttf');
+}
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -106,9 +121,27 @@ p {
   left:-10px;
 }
 
+
+.grid-container > div > p > span{
+  color:white;
+}
+
+.idgeo > p, .idbio1 > p, .idbio2 > p {
+  color:rgb(170, 170, 170);
+}
+
 #idfront{
   border:#ff2272 solid 10px;
   background-size:cover;
+}
+
+#idcard{
+  font-family: safety;
+}
+
+#idheader, .idlevel{
+  font-family: russoOne;
+  color:#c2ff03;
 }
 
 #idheader{
@@ -124,8 +157,6 @@ p {
   display:inline;
   margin-left:10px;
   font-size:6vh;
-  font-family: russoOne;
-  color:#c2ff03;
 }
 
 #idlogo{
@@ -180,7 +211,7 @@ p {
 
 .grid-container > .idlikes, .grid-container > .iddislikes {
   background-size: 100%;
-  display: inherit;
+  display:block;
 }
 
 .flexbreak{
@@ -197,13 +228,15 @@ p {
   grid-area: title;
   text-align: center;
   font-size:3vh;
+  font-variant: small-caps;
 }
 
 .statsheader{
+  font-variant: small-caps;
   grid-area: stats;
   text-align:center;
   font-weight:bold;
-  font-size:2.5vh;
+  font-size:4vh;
 }
 
 .stats{
@@ -219,17 +252,19 @@ p {
 .phys{
   grid-area: phys;
   text-align:center;
+  color:#ff4885
 }
 
 .idgeo{
   grid-area: geo;
   text-align:center;
-  font-size:3vh;
+  font-size:2.5vh;
 }
 
 .mental{
   grid-area: mental;
   text-align:center;
+  color: #ffc9d2;
 }
 
 .idbio1{
@@ -247,6 +282,12 @@ p {
 .murder{
   grid-area: murder;
   text-align:center;
+  color: #d1ec6e;
+}
+
+.idlikes, .iddislikes{
+  padding-top:1vh;
+  padding-bottom:1vh;
 }
 
 .idlikes{
@@ -266,13 +307,29 @@ p {
 /* TODO: Fucking fix the alignment here */
 
 .idlikes > h3, .iddislikes > h3{
-  align-items:flex-start;
+  position:relative;
+  font-variant: small-caps;
+}
+
+.idlikes{
+  color:#c2ff03;
+}
+
+.iddislikes{
+  color:#ff2272;
 }
 
 .idlikes > p, .iddislikes > p{
-  font-size:3vh;
+  position:relative;
+  font-size:2.5vh;
   text-align:center;
-  padding-bottom:10px;
+  padding: 0 1vh;
+  padding-bottom:1vh;
+  filter:saturate(0.2);
+}
+
+.iddislikes > p{
+  filter:brightness(5);
 }
 
 #idback{
@@ -288,6 +345,27 @@ p {
   margin:2%;
   margin-top:0;
   text-align:left;
+}
+
+#bioheader{
+  margin: 3vh 0;
+  padding: 1vh 0;
+  padding-top: 2vh;
+  font-variant: small-caps;
+  color:#c2ff03;
+  background-image:url('/public/bio_header.png');
+  background-size:contain;
+  /*background:#0005;*/
+}
+
+#bio{
+  padding: 0 1vh;
+  font-size:3vh;
+}
+
+.grid-container > div > p > span{
+  font-variant: small-caps;
+  font-size:3vh;
 }
 
 #idback > * > * > h1{
@@ -316,6 +394,21 @@ p {
   justify-content: center;
 }
 
+.flipButton{
+  visibility:hidden;
+  animation-name:appearify;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+
+@keyframes appearify{
+  from{}
+  to{
+    visibility:visible;
+  }
+}
+
 #flipButtonFront:hover, #flipButtonBack:hover{
   filter:none;
 }
@@ -332,6 +425,16 @@ p {
   height:2vh;
 }
 
+
+/* Special cases */
+
+.mai #idheader > h1{
+  font-size:5vh;
+}
+
+.august #bio{
+  font-size:2.8vh;
+}
 
 /* Cast Page */
 
