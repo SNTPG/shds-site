@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Tablet from './pages/Tablet.js';
 import Landing from './pages/Landing.js';
 import Cast  from './pages/Cast.js';
 import Card from './components/Card.js';
@@ -12,8 +13,8 @@ function App() {
         <BrowserRouter>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Landing/>}/>
-            <Route path="cast" element={<Cast/>}/>
+            <Route path="/" element={<Tablet><Landing/></Tablet>}/>
+            <Route path="cast" element={<Landing/>}/>
           </Routes>
         </BrowserRouter>
       </header>

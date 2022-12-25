@@ -53,6 +53,101 @@ p {
   color: white;
 }
 
+/* Tablet stuff */
+
+#tablet{
+  height:80vh;
+  width:140vh;
+  border:1vh solid #000;
+  border-radius:5vh;
+}
+
+#tabletWrapper{
+  height:inherit;
+  width:inherit;
+}
+
+/* Landing */
+
+.landingOverlay{
+  height:inherit;
+  width: inherit;
+  background:slategrey;
+  border:1vh solid black;
+  border-radius:5vh;
+  position:relative;
+  top:-1vh;
+  left:-1vh;
+}
+.landingMenu{
+  height:inherit;
+  width:95%;
+  margin:auto;
+  align-items:center;
+  display:flex;
+}
+
+.landingGrid {
+  display: grid;
+  grid-template-areas:
+  'rules contacts map stats chatroom settings'
+  '. . . . . . '
+  '. . . . . . ';
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 15.8% 15.8% 15.8% 15.8% 15.8% 15.8%;
+  gap: 1%;
+  padding:0;
+  margin:auto;
+  height:90%;
+  width: 100%;
+  align-items:stretch;
+}
+
+.appButton{
+  max-width:100%;
+  max-height:100%;
+  background:none;
+  border:none;
+}
+.appButton > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
+  font-size:xx-large;
+}
+.appButton:hover > img{
+  filter:brightness(0.8);
+  background:#0003;
+  border-radius:5%;
+}
+.appButton:hover > p{
+  filter:brightness(0.8);
+  border-radius:5%;
+}
+.appIcon{
+  max-width:100%;
+  max-height:100%;
+}
+
+.Rules{
+  grid-area:rules;
+}
+.Contacts{
+  grid-area:contacts;
+}
+.Map{
+  grid-area:map;
+}
+.Stats{
+  grid-area:stats;
+}
+.Chatroom{
+  grid-area:chatroom;
+}
+.Settings{
+  grid-area:settings;
+}
+
+
 /* ID Card */
 #idcard {
   animation: fadeInAnimation ease 1s;
@@ -442,13 +537,21 @@ p {
   display:flex;
   align-items:center;
   justify-content:center;
-  
+  height:inherit;
+  width:inherit;
+  background:rgb(63, 65, 65);
+  border:1vh solid black;
+  border-radius:5vh;
+  position:relative;
+  top:-1vh;
+  left:-1vh;
   /*-webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);*/
 } /* World's worst position:fixed hack */
+/* This is also terrible. I need to fix the stupid fucking border hack I'm using later */
 
 #castOverlay > div{
   position:absolute;
@@ -633,7 +736,7 @@ left: calc(-52.5vh - 10px);*/
 }
 
 .cast-grid {
-  border: slategray solid 10px;
+  border: slategray solid 1vh;
   display: grid;
   grid-template-areas:
     'rei andrew avery camille ami emma'

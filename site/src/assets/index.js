@@ -34,6 +34,12 @@ import MaiEm from "./emotes/XxCherry_Slide_Gamer64xX[MNC].png";
 import YumejiEm from "./emotes/YY.png";
 import GazEm from "./emotes/gberry1.png";
 import SimonEm from "./emotes/WishfulThinkingLLC.png";
+import Contacts from "./apps/iconcontacts.png";
+import Map from "./apps/iconmaps.png";
+import Message from "./apps/iconmessage.png";
+import Rules from "./apps/iconrules.png";
+import Settings from "./apps/iconsetting.png";
+import Stats from "./apps/iconstats.png";
 
 const images = {
     "rei" : Rei,
@@ -75,5 +81,14 @@ export const emotes = {
     "yumeji" : YumejiEm,
     "gaz" : GazEm,
     "simon" : SimonEm
+};
+
+export const apps = {
+    "Contacts" : Contacts,
+    "Rules" : Rules,
+    "Map" : Map,
+    "Stats" : Stats,
+    "Chatroom" : Message,
+    "Settings" : Settings
 };
 export default images;
