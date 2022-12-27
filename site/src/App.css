@@ -908,3 +908,28 @@ left: calc(-52.5vh - 10px);*/
 .simon {
   grid-area: simon;
 }
+
+/* Map bullshit */
+
+#mapOverlay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  z-index:0;
+  height: 100%;
+  width: 100%;
+}
+
+#mapContainer, .mapMap{
+  position:relative;
+  display:flex;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  background: #150700;
+}
+
+#img-mapper{
+  margin:auto;
+}

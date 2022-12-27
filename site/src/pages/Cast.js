@@ -14,7 +14,7 @@ class Cast extends React.Component {
         square.classList.toggle("loadOut");
         setTimeout(function() {
             square.classList.toggle("loadOut");
-        }.bind(this), 1000)
+        }, 1000)
         var cover = document.getElementById("castCover");
         cover.classList.toggle("active");
         this.setState({card: ""});

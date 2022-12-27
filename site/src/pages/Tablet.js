@@ -1,6 +1,7 @@
 import React from 'react';
 import Landing from './Landing.js';
 import Cast from './Cast.js';
+import Map from './Map.js';
 
 class Tablet extends React.Component {
     constructor(props) {
@@ -34,8 +35,7 @@ class Tablet extends React.Component {
         element.classList.remove("return");
         element.classList.add("inUse");
         element.classList.add("loading");
-        this.setState({app: <Cast/>});
-        /* Fix this later you dickhead */
+        this.setState({app: <Map/>});
     }
 
     funcList = {"Contacts": this.openCast.bind(this), "Map": this.openMap.bind(this)};
