@@ -12,16 +12,17 @@ class Landing extends React.Component {
         ];
         const apps = buttonList.map((button) =>
             <div className={"app "+ button} id={button+"Button"}>
-                <button className={"appButton"} id={button+"Button"} >
+                <button className={"appButton"} id={button+"Button"} onClick={() => this.props.functions[button]()}>
                     <AppIcon app={button}/>
                     <p>{button}</p>
                 </button>
             </div>
         );
+        
         return(
             <div className="landingOverlay">
                 <div className="landingMenu">
-                    <div className="landingGrid">
+                    <div className="landingGrid"> 
                         {apps}
                     </div>
                 </div>

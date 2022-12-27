@@ -58,7 +58,8 @@ p {
 #tablet{
   height:80vh;
   width:140vh;
-  border:1vh solid #000;
+  border-top: 1.5vh solid #000;
+  border-bottom: 1.5vh solid #000;
   border-radius:5vh;
   position:absolute;
 }
@@ -67,31 +68,60 @@ p {
   height:inherit;
   width:inherit;
   margin:0;
+  display:flex;
 }
 
 #tabletCamera{
   width:5%;
-  height:100%;
+  height:calc(2vh + 100%);
+  transform: translateY(-1vh);
   margin:0;
   display:inline-block;
   background:black;
-  border-top: 1vh transparent;
-  border-bottom: 1vh transparent;
-  border-radius:5vh;
+  border-radius:5vh 0 0 5vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
+ 
+#tabletLens{
+  height:0;
+  width:20%;
+  padding-bottom: 20%;
+  background-color:#afeeee44;
+  border-radius:50%;
+}
+
 #tabletHome{
   width:5%;
-  height:100%;
+  height:calc(2vh + 100%);
+  transform: translateY(-1vh);
   margin:0;
   display:inline-block;
+  background:black;
+  border-radius: 0 5vh 5vh 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#homeButton{
+  height:0;
+  width: 60%;
+  padding:0;
+  padding-bottom:60%;
+  box-sizing:unset;
+  background-color:#afeeee44;
+  border: 0.4vh rgb(24, 24, 24) solid;
+  border-radius:50%;
 }
 
 #tabletScreen{
-  position:absolute;
   width:90%;
   height:100%;
   margin:0;
   display:inline-block;
+  overflow: hidden;
 }
 
 /* Landing */
@@ -109,7 +139,7 @@ p {
 .landingBackground{
   position:absolute;
   filter: brightness(0.8);
-  background-image: url('/public/tabletbg.jpg');
+  background-image: url('/public/landingbg.jpg');
   box-sizing: border-box;
   background-size: cover;
   height:100%;
@@ -153,10 +183,11 @@ p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color:white;
   font-size:xx-large;
+  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 5px #000, 0px 0px 2px #000;
 }
 .appButton:hover > img{
   filter:brightness(0.8);
-  background:#0003;
+  background:#0009;
   border-radius:5%;
 }
 .appButton:hover > p{
@@ -211,7 +242,7 @@ p {
   width:105vh;
   height:70vh;
   perspective:1000px;
-  border:transparent solid 10px;
+  border:transparent solid 1vh;
   z-index:2;
 }
 
@@ -250,10 +281,10 @@ p {
   min-height:70vh;
   width:100%;
   height:100%;
+  top:-1vh;
+  left:-1vh;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  top:-10px;
-  left:-10px;
 }
 
 
@@ -266,7 +297,7 @@ p {
 }
 
 #idfront{
-  border:#ff2272 solid 10px;
+  border:#ff2272 solid 1vh;
   background-size:cover;
 }
 
@@ -469,7 +500,7 @@ p {
 
 #idback{
   transform: rotateY(-180deg);
-  border:#ff2272 solid 10px;
+  border:#ff2272 solid 1vh;
   background-size:cover;
 }
 
@@ -578,8 +609,8 @@ p {
   align-items:center;
   justify-content:center;
   height:100%;
-  height:100%;
-  background:rgb(63, 65, 65);
+  background:url('/public/castbg.jpg');
+  background-size:cover;
   position:relative;
   /*-webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -624,7 +655,8 @@ p {
   left:0;
   align-items:center;
   text-align:center;
-  background-color:#0003;
+  background-color:rgba(calc(100 * 0.24), calc(100 * .08), calc(100 * .16), 0.6)
+
 }
 
 .square.loadOut{
@@ -643,135 +675,116 @@ p {
 top: calc(-35vh - 10px);
 left: calc(-52.5vh - 10px);*/
 
-.rei.clicked{
+.rei.clicked{ 
   top: -6.5vh;
   left: 6vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .andrew.clicked{
   top: -6.5vh;
   left: -14vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .avery.clicked{
   top: -6.5vh;
   left: -34vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .camille.clicked{
   top: -6.5vh;
   left: -54vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .ami.clicked{
   top: -6.5vh;
   left: -74vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .emma.clicked{
   top: -6.5vh;
   left: -94vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .empty.clicked{
   top: -26.5vh;
   left: 6vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .august.clicked{
   top: -26.5vh;
   left: -14vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .owen.clicked{
   top: -26.5vh;
   left: -34vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .yiseul.clicked{
   top: -26.5vh;
   left: -54vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .isaak.clicked{
   top: -26.5vh;
   left: -74vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .jones.clicked{
   top: -26.5vh;
   left: -94vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .hatman.clicked{
   top: -46.5vh;
   left: 6vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .v.clicked{
   top: -46.5vh;
   left: -14vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .mai.clicked{
   top: -46.5vh;
   left: -34vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .yumeji.clicked{
   top: -46.5vh;
   left: -54vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .gaz.clicked{
   top: -46.5vh;
   left: -74vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 .simon.clicked{
   top: -46.5vh;
   left: -94vh;
-  width:105vh;
-  height:70vh;
-  border:transparent solid 10px;
+  width:107vh;
+  height:72vh;
 }
 
 .cast-grid {
-  border: slategray solid 1vh;
   display: grid;
   grid-template-areas:
     'rei andrew avery camille ami emma'
@@ -784,8 +797,7 @@ left: calc(-52.5vh - 10px);*/
   width:fit-content;
   padding:0;
   margin:0;
-  align-items:stretch;
-  background:slategrey;
+  background: rgba(calc(100 * 0.72), calc(100 * .24), calc(100 * .49), 0.5);
 }
 
 .studentMug, .chapMug{
