@@ -74,6 +74,10 @@ p {
   height:100%;
   margin:0;
   display:inline-block;
+  background:black;
+  border-top: 1vh transparent;
+  border-bottom: 1vh transparent;
+  border-radius:5vh;
 }
 #tabletHome{
   width:5%;
@@ -93,10 +97,11 @@ p {
 /* Landing */
 
 .landingOverlay{
-  top:0;
-  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   height:100%;
-  width: 100%;
+  height:100%;
   position:relative;
   z-index:0;
 }
@@ -589,7 +594,6 @@ p {
 }
 
 #castContainer{
-  height:80%;
   display:flex;
   align-items:center;
   z-index:0;
@@ -614,8 +618,8 @@ p {
 .square{
   position:relative;
   transition: height 1s, width 1s, top 1s, left 1s, filter 1s, visibility 1.5s, background-color 1s;
-  height:20vh;
-  width:20vh;
+  height:19vh;
+  width:19vh;
   top:0;
   left:0;
   align-items:center;
@@ -640,127 +644,127 @@ top: calc(-35vh - 10px);
 left: calc(-52.5vh - 10px);*/
 
 .rei.clicked{
-  top: -5vh;
-  left: 9vh;
+  top: -6.5vh;
+  left: 6vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .andrew.clicked{
-  top: -5vh;
-  left: -12vh;
+  top: -6.5vh;
+  left: -14vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .avery.clicked{
-  top: -5vh;
-  left: -33vh;
+  top: -6.5vh;
+  left: -34vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .camille.clicked{
-  top: -5vh;
+  top: -6.5vh;
   left: -54vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .ami.clicked{
-  top: -5vh;
-  left: -75vh;
+  top: -6.5vh;
+  left: -74vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .emma.clicked{
-  top: -5vh;
-  left: -96vh;
+  top: -6.5vh;
+  left: -94vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .empty.clicked{
-  top: -26vh;
-  left: 9vh;
+  top: -26.5vh;
+  left: 6vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .august.clicked{
-  top: -26vh;
-  left: -12vh;
+  top: -26.5vh;
+  left: -14vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .owen.clicked{
-  top: -26vh;
-  left: -33vh;
+  top: -26.5vh;
+  left: -34vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .yiseul.clicked{
-  top: -26vh;
+  top: -26.5vh;
   left: -54vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .isaak.clicked{
-  top: -26vh;
-  left: -75vh;
+  top: -26.5vh;
+  left: -74vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .jones.clicked{
-  top: -26vh;
-  left: -96vh;
+  top: -26.5vh;
+  left: -94vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .hatman.clicked{
-  top: -47vh;
-  left: 9vh;
+  top: -46.5vh;
+  left: 6vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .v.clicked{
-  top: -47vh;
-  left: -12vh;
+  top: -46.5vh;
+  left: -14vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .mai.clicked{
-  top: -47vh;
-  left: -33vh;
+  top: -46.5vh;
+  left: -34vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .yumeji.clicked{
-  top: -47vh;
+  top: -46.5vh;
   left: -54vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .gaz.clicked{
-  top: -47vh;
-  left: -75vh;
+  top: -46.5vh;
+  left: -74vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
 }
 .simon.clicked{
-  top: -47vh;
-  left: -96vh;
+  top: -46.5vh;
+  left: -94vh;
   width:105vh;
   height:70vh;
   border:transparent solid 10px;
@@ -773,8 +777,8 @@ left: calc(-52.5vh - 10px);*/
     'rei andrew avery camille ami emma'
     'empty august owen yiseul isaak jones'
     'hatman v mai yumeji gaz simon';
-  grid-template-rows: 20vh 20vh 20vh;
-  grid-template-columns: 20vh 20vh 20vh 20vh 20vh 20vh;
+  grid-template-rows: 19vh 19vh 19vh;
+  grid-template-columns: 19vh 19vh 19vh 19vh 19vh 19vh;
   gap: 1vh;
   height:fit-content;
   width:fit-content;
