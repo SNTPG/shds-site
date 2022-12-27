@@ -493,7 +493,7 @@ const bioData = {
 function Card(props){
     function flipCard(e) {
         e.preventDefault();
-        var element = document.getElementById("idcard")
+        var element = document.getElementById("idcard");
         element.classList.toggle("flipped");
     }
     const info = bioData[props.char];
