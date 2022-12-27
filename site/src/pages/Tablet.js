@@ -9,7 +9,11 @@ class Tablet extends React.Component {
         return(
             <div id ="tablet">
                 <div id="tabletWrapper">
-                    {this.props.children}
+                    <div id="tabletCamera"/>
+                    <div id="tabletScreen">
+                        {this.props.children}
+                    </div>
+                    <div id="tabletHome"/>
                 </div>
             </div>
         )

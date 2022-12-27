@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
           <ScrollToTop/>
           <Routes>
-            <Route path="/" element={<Tablet><Landing/></Tablet>}/>
+            <Route path="/" element={<Tablet><Cast/></Tablet>}/>
             <Route path="cast" element={<Landing/>}/>
           </Routes>
         </BrowserRouter>

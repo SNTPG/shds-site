@@ -25,11 +25,12 @@ class Landing extends React.Component {
                         {apps}
                     </div>
                 </div>
+                <div className='landingBackground'></div>
                 <div className="loadingAnimation">
 
                 </div>
                 <div className='activeApp'>
-                    
+
                 </div>
             </div>
         );
