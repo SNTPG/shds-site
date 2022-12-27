@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './Landing.js';
 import Cast from './Cast.js';
 import Map from './Map.js';
+import TemplateApp from './TemplateApp.js';
 
 class Tablet extends React.Component {
     constructor(props) {
@@ -32,13 +33,33 @@ class Tablet extends React.Component {
     openMap(){
         console.log("Opening map!");
         var element = document.getElementById("activeApp");
+        element.classList.remove("loading");
         element.classList.remove("return");
         element.classList.add("inUse");
         element.classList.add("loading");
         this.setState({app: <Map/>});
     }
+    openGeneric(app){
+        console.log("Opening textbox!");
+        var element = document.getElementById("activeApp");
+        element.classList.remove("loading");
+        element.classList.remove("return");
+        element.classList.add("inUse");
+        element.classList.add("loading");
+        this.setState({app: <TemplateApp description={app}/>});
+    }
 
-    funcList = {"Contacts": this.openCast.bind(this), "Map": this.openMap.bind(this)};
+    funcList = {
+        "Contacts": this.openCast.bind(this), 
+        "Map": this.openMap.bind(this), 
+        "Stats": this.openGeneric.bind(this), 
+        "Settings": this.openGeneric.bind(this), 
+        "Rules": this.openGeneric.bind(this), 
+        "Chatroom": this.openGeneric.bind(this), 
+        "Notepad": this.openGeneric.bind(this), 
+        "Camera": this.openGeneric.bind(this), 
+        "Recorder": this.openGeneric.bind(this), 
+    };
 
     render() {
 
@@ -54,10 +75,9 @@ class Tablet extends React.Component {
                             {this.state.app}
                         </div>
                     </div>
-                    <div id="tabletHome">
-                        <button id="homeButton" onClick={() => this.goHome()}>
-                        </button>
-                    </div>
+                    <div id="buttonRadius"></div>
+                    <button id="homeButton" onClick={() => this.goHome()}></button>
+                    <div id="tabletHome"></div>
                 </div>
             </div>
         )

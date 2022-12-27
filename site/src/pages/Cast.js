@@ -8,6 +8,7 @@ class Cast extends React.Component {
         super(props);
         this.state = {card: null}
     }
+    /*TODO: Fix the key-value issue later.*/
     closeCard(character){
         var square = document.getElementById(character+"Square")
         square.classList.toggle("clicked");
@@ -30,7 +31,7 @@ class Cast extends React.Component {
         const students = ["rei", "andrew", "avery", "camille", "ami", "emma", "empty", "august", "owen", "yiseul", "isaak", "jones", "hatman", "v", "mai", "yumeji"];
         const chaps = ["gaz", "simon"];
         const studentSquares = students.map((student) =>
-            <div className={"student square "+ student} id={student+"Square"}>
+            <div key={student.toString()} className={"student square "+ student} id={student+"Square"}>
                 <button id={student+"Button"} onClick={() => this.loadCard(student)}>
                     <StudentMug character={student}/>
                 </button>
@@ -46,7 +47,7 @@ class Cast extends React.Component {
         return(
             <div id ="castOverlay">
                 <div id="castContainer">
-                    <div class="cast-grid">
+                    <div className="cast-grid">
                         {studentSquares}
                         {chapSquares}
                     </div>

@@ -10,9 +10,10 @@ function Map({props}) {
       
       useEffect(() => {
         function handleResize() {
-          setDimensions({
-            mapWidth: document.querySelector('.mapMap').clientWidth
-          })
+          if(!(document.querySelector('.mapMap') == null))
+            setDimensions({
+              mapWidth: document.querySelector('.mapMap').clientWidth
+            })
         }
         window.addEventListener('resize', handleResize)
       }, [])

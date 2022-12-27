@@ -40,6 +40,9 @@ import Message from "./apps/iconmessage.png";
 import Rules from "./apps/iconrules.png";
 import Settings from "./apps/iconsetting.png";
 import Stats from "./apps/iconstats.png";
+import Camera from "./apps/iconcamera.png";
+import Mic from "./apps/iconmic.png";
+import Notes from "./apps/iconnotes.png";
 
 const images = {
     "rei" : Rei,
@@ -89,6 +92,9 @@ export const apps = {
     "Map" : Map,
     "Stats" : Stats,
     "Chatroom" : Message,
-    "Settings" : Settings
+    "Settings" : Settings,
+    "Camera" : Camera,
+    "Recorder" : Mic,
+    "Notepad" : Notes
 };
 export default images;
