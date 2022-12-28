@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import ImageMapper from 'react-img-mapper';
+import MapImage from '../assets/decor/prologuemap.png';
 
 function Map({props}) {
 
@@ -48,7 +49,7 @@ function Map({props}) {
             <div id ="mapOverlay">
                 <div id="mapContainer">
                     <div className="mapMap" ref ={mapRef}>
-                        <ImageMapper src='/prologuemap.png' map={mapDesc} responsive={true} parentWidth={dimensions.mapWidth}/>
+                        <ImageMapper src={MapImage} map={mapDesc} responsive={true} parentWidth={dimensions.mapWidth}/>
                     </div> 
                 </div>
             </div>

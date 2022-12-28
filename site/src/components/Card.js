@@ -559,7 +559,7 @@ function Card(props){
                         
                     </div>
                     <button class="flipButton" id="flipButtonFront" onClick={flipCard}>
-                        <img src="/flipArrow.png" alt="Flip card."/>
+                        <img src={Flip} alt="Flip card."/>
                     </button>
                     <button id="closeButtonFront" onClick={props.onClick}>
                         <img alt="Close." src={Close}/>
