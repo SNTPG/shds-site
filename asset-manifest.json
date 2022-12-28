@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shds-site/static/css/main.843ea3a4.css",
-    "main.js": "/shds-site/static/js/main.fd37bbf4.js",
+    "main.js": "/shds-site/static/js/main.07cd83dd.js",
     "static/js/787.812793ae.chunk.js": "/shds-site/static/js/787.812793ae.chunk.js",
     "static/media/bgtest.jpg": "/shds-site/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/shds-site/static/media/landingbg.cc4a0c20360c37733538.jpg",
@@ -32,6 +32,7 @@
     "static/media/Kaiju_Klasher.png": "/shds-site/static/media/Kaiju_Klasher.91eb978838729bf74639.png",
     "static/media/YY.png": "/shds-site/static/media/YY.9495aa992e27f28ea080.png",
     "static/media/iseedeadppl.png": "/shds-site/static/media/iseedeadppl.6c36fe1ea3996e5f8334.png",
+    "static/media/prologuemap.png": "/shds-site/static/media/prologuemap.516da29fecaf689bc6f9.png",
     "static/media/AveryTheGreat.png": "/shds-site/static/media/AveryTheGreat.6b82bceaa575f33a7f6e.png",
     "static/media/thehatman.png": "/shds-site/static/media/thehatman.d3e4dac46bbb13c091e7.png",
     "static/media/WishfulThinkingLLC.png": "/shds-site/static/media/WishfulThinkingLLC.d431666ae2fb756bab75.png",
@@ -54,13 +55,14 @@
     "static/media/telegrama_raw.otf": "/shds-site/static/media/telegrama_raw.8ef393e086cae9909258.otf",
     "static/media/iconstats.png": "/shds-site/static/media/iconstats.f7cf862e28a6a0762256.png",
     "static/media/iconcontacts.png": "/shds-site/static/media/iconcontacts.050430d93900cb44afd9.png",
+    "static/media/home.png": "/shds-site/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/shds-site/index.html",
     "main.843ea3a4.css.map": "/shds-site/static/css/main.843ea3a4.css.map",
-    "main.fd37bbf4.js.map": "/shds-site/static/js/main.fd37bbf4.js.map",
+    "main.07cd83dd.js.map": "/shds-site/static/js/main.07cd83dd.js.map",
     "787.812793ae.chunk.js.map": "/shds-site/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.843ea3a4.css",
-    "static/js/main.fd37bbf4.js"
+    "static/js/main.07cd83dd.js"
   ]
 }
