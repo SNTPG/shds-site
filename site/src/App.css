@@ -696,6 +696,7 @@ p {
 #bio{
   padding: 0 1vh;
   font-size:3vh;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .grid-container > div > p > span{

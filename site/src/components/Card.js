@@ -568,7 +568,7 @@ function Card(props){
                 <div id="idback">
                     <div>
                         <div id="bioheader"><h1>Public Bio</h1></div>
-                        <div id="bio">{info.bio}</div>
+                        <div id="bio"><p>{info.bio}</p></div>
                     </div>
                     <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
                         <img src={Flip} alt="Flip card."/>
