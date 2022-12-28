@@ -1,5 +1,7 @@
 import React from 'react';
 import Heart from '../assets/decor/heart.png';
+import Close from '../assets/decor/close.png';
+import Flip from '../assets/decor/flipArrow.png';
 import Portrait from './Portrait.js';
 const bioData = {
     "ami":
@@ -503,7 +505,7 @@ function Card(props){
     return(
         <div id="idcard" className={props.char}>
             <div id="idflip">
-                <div id="idfront" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
+                <div id="idfront">
                     <div id="idheader">
                         <img id="idlogo" src={Heart} alt=""></img>
                         <h1>{info.username}</h1>
@@ -560,19 +562,19 @@ function Card(props){
                         <img src="/flipArrow.png" alt="Flip card."/>
                     </button>
                     <button id="closeButtonFront" onClick={props.onClick}>
-                        <img alt="Close." src="/close.png"/>
+                        <img alt="Close." src={Close}/>
                     </button>
                 </div>
-                <div id="idback" style={{backgroundImage: "url(\"/bgtest.jpg\")"}}>
+                <div id="idback">
                     <div>
                         <div id="bioheader"><h1>Public Bio</h1></div>
                         <div id="bio">{info.bio}</div>
                     </div>
                     <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
-                        <img src="/flipArrow.png" alt="Flip card."/>
+                        <img src={Flip} alt="Flip card."/>
                     </button>
                     <button id="closeButtonBack" alt="Close." onClick={props.onClick}>
-                        <img alt="Close." src="/close.png"/>
+                        <img alt="Close." src={Close}/>
                     </button>
                 </div>
             </div>

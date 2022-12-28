@@ -4,6 +4,7 @@ import Cast from './Cast.js';
 import Map from './Map.js';
 import TemplateApp from './TemplateApp.js';
 import Clock from '../components/Clock.js';
+import Home from '../assets/decor/home.png';
 import Battery from '../assets/decor/battery.png';
 import Speaker from '../assets/decor/speaker.png';
 import WiFi from '../assets/decor/wifi.png';
@@ -78,7 +79,7 @@ class Tablet extends React.Component {
                         <div id="activeApp">
                             {this.state.app}
                             <button id="goHome" onClick={() => this.goHome()}>
-                                <img alt="Close." src="/home.png"/>
+                                <img alt="Close." src={Home}/>
                             </button>
                         </div>
                     </div>
