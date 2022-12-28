@@ -3,6 +3,10 @@ import Landing from './Landing.js';
 import Cast from './Cast.js';
 import Map from './Map.js';
 import TemplateApp from './TemplateApp.js';
+import Clock from '../components/Clock.js';
+import Battery from '../assets/decor/battery.png';
+import Speaker from '../assets/decor/speaker.png';
+import WiFi from '../assets/decor/wifi.png';
 
 class Tablet extends React.Component {
     constructor(props) {
@@ -73,11 +77,22 @@ class Tablet extends React.Component {
                         <Landing functions={this.funcList}/>
                         <div id="activeApp">
                             {this.state.app}
+                            <button id="goHome" onClick={() => this.goHome()}>
+                                <img alt="Close." src="/home.png"/>
+                            </button>
                         </div>
                     </div>
-                    <div id="buttonRadius"></div>
-                    <button id="homeButton" onClick={() => this.goHome()}></button>
-                    <div id="tabletHome"></div>
+                    <div id="tabletHome">
+                        <button id="homeButton" onClick={() => this.goHome()}></button>
+                    </div>
+                    <div id="notificationTray">
+                        <Clock/>
+                        <div id="icons">
+                            <img src={Battery} alt="A battery icon."/>
+                            <img src={WiFi} alt="A WiFi icon."/>
+                            <img src={Speaker} alt="A speaker icon."/>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

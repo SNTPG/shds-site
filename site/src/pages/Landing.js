@@ -38,7 +38,7 @@ class Landing extends React.Component {
             {
               appName: "Camera",
               locked: false,
-              description: "The camera app has a strikingly high quality camera. It can store up to ten photos and a minute of video. it comes with a simple built-in editor and some basic filters, so you can touch up selfies or add text onto your images."
+              description: "The camera app has a strikingly high quality camera. It can store up to ten photos and a minute of video. It comes with a simple built-in editor and some basic filters, so you can touch up selfies or add text onto your images."
             },
             {
               appName: "Recorder",
@@ -54,13 +54,14 @@ class Landing extends React.Component {
         const apps = buttonList.map((button) =>
             <div key={button.appName} className={"app "+ button.appName} id={button.appName+"Button"}>
                 <button className={"appButton "+button.locked} id={button.appName+"Button"} onClick={() => this.props.functions[button.appName](button.description)}>
-                    <AppIcon app={button.appName}/>
-                    <img className="lock" src={Locked} alt="An icon of a lock."/>
+                    <div className="imageContainer">
+                        <AppIcon app={button.appName}/>
+                        <img className="lock" src={Locked} alt="An icon of a lock."/>
+                    </div>
                     <p>{button.appName}</p>
                 </button>
             </div>
         );
-        console.log(apps[0].props.children.props);
         return(
             <div className="landingOverlay">
                 <div className="landingMenu">
