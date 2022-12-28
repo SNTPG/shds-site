@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/shds-site/static/css/main.ec95df90.css",
-    "main.js": "/shds-site/static/js/main.c1481b26.js",
-    "static/js/787.dd4029b4.chunk.js": "/shds-site/static/js/787.dd4029b4.chunk.js",
+    "main.css": "/shds-site/static/css/main.843ea3a4.css",
+    "main.js": "/shds-site/static/js/main.fd37bbf4.js",
+    "static/js/787.812793ae.chunk.js": "/shds-site/static/js/787.812793ae.chunk.js",
+    "static/media/bgtest.jpg": "/shds-site/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/shds-site/static/media/landingbg.cc4a0c20360c37733538.jpg",
     "static/media/shds1.png": "/shds-site/static/media/shds1.7a316daefecbeb5c2371.png",
     "static/media/shds10.png": "/shds-site/static/media/shds10.eed350a2de7838bb1f10.png",
@@ -54,12 +55,12 @@
     "static/media/iconstats.png": "/shds-site/static/media/iconstats.f7cf862e28a6a0762256.png",
     "static/media/iconcontacts.png": "/shds-site/static/media/iconcontacts.050430d93900cb44afd9.png",
     "index.html": "/shds-site/index.html",
-    "main.ec95df90.css.map": "/shds-site/static/css/main.ec95df90.css.map",
-    "main.c1481b26.js.map": "/shds-site/static/js/main.c1481b26.js.map",
-    "787.dd4029b4.chunk.js.map": "/shds-site/static/js/787.dd4029b4.chunk.js.map"
+    "main.843ea3a4.css.map": "/shds-site/static/css/main.843ea3a4.css.map",
+    "main.fd37bbf4.js.map": "/shds-site/static/js/main.fd37bbf4.js.map",
+    "787.812793ae.chunk.js.map": "/shds-site/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec95df90.css",
-    "static/js/main.c1481b26.js"
+    "static/css/main.843ea3a4.css",
+    "static/js/main.fd37bbf4.js"
   ]
 }
