@@ -1,0 +1,1130 @@
+* {
+  margin: 0;
+}
+
+body{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+@font-face{
+  font-family: russoOne;
+  src: url('./assets/fonts/RussoOne-Regular.ttf');
+}
+
+@font-face{
+  font-family: telegramaPixel;
+  src: url('./assets/fonts/telegrama_raw.otf');
+}
+
+@font-face{
+  font-family: safety;
+  src: url('./assets/fonts/SafetyMedium.otf');
+}
+
+@font-face{
+  font-family: mechEffects;
+  src: url('./assets/fonts/mecheffects2-bb.regular.ttf');
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.App {
+  /*text-align: center;*/
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Tablet stuff */
+
+#tablet{
+  height:80vh;
+  width:140vh;
+  border-top: 1.5vh solid #000;
+  border-bottom: 1.5vh solid #000;
+  border-radius:5vh;
+  background:black;
+}
+
+#tabletWrapper{
+  height:inherit;
+  width:inherit;
+  margin:0;
+  display:flex;
+  position:absolute;
+}
+
+#tabletCamera{
+  width:5%;
+  height:calc(2vh + 100%);
+  transform: translateY(-1vh);
+  margin:0;
+  display:inline-block;
+  background:black;
+  border-radius:5vh 0 0 5vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#tabletLens{
+  height:0;
+  width:20%;
+  padding-bottom: 20%;
+  background-color:#afeeee44;
+  border-radius:50%;
+}
+
+#tabletHome{
+  width:5%;
+  height:calc(2vh + 100%);
+  transform: translateY(-1vh);
+  margin:0;
+  background:black;
+  border-radius: 0 5vh 5vh 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+#homeButton{
+  height:0;
+  width: 80%;
+  padding:0;
+  padding-bottom:calc(80% - 2 * 0.4vh);
+  box-sizing: border-box;
+  background-color:#afeeee66;
+  border: 0.4vh rgb(24, 24, 24) solid;
+  border-radius:50%;
+  transition: background-color 0.2s, box-shadow 0.5s;
+  z-index:201;
+}
+
+#goHome:hover{
+  background-color:#000;
+}
+
+#goHome{
+  width: 6%;
+  padding:0;
+  right: 1%;
+  top:1%;
+  box-sizing: border-box;
+  background-color:#111;
+  transition: background-color 0.2s, box-shadow 0.5s;
+  position:absolute;
+  z-index:201;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:none;
+}
+
+#goHome > img{
+  width:70%;
+  height:70%;
+  padding-top:15%;
+  padding-bottom:15%;
+}
+
+#buttonRadius{
+  width:20%;
+  height:0;
+  padding-bottom:20%;
+  top:35%;
+  left:90%;
+  position:absolute;
+  border-radius:50%;
+  z-index:10;
+}
+
+#homeButton:active{
+  background-color:#afeeee44;
+}
+
+#tabletScreen{
+  width:90%;
+  height:100%;
+  margin:0;
+  display:inline-block;
+  overflow: hidden;
+  position:relative;
+}
+
+#activeApp{
+  position:absolute;
+  z-index:100;
+  height:100%;
+  width:100%;
+  visibility:hidden;
+}
+
+#activeApp.loading{
+  animation: fadeInAnimation ease 0.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#activeApp.return{
+  animation: fadeOutAnimation ease 0.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+#activeApp.inUse{
+  visibility:visible;
+}
+
+#notificationTray{
+  width:90%;
+  height:5%;
+  left:5%;
+  background:#444B;
+  position:absolute;
+  display:flex;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+#clock{
+  font-size:2.5vh;
+  padding-left:1%;
+}
+#icons{
+  height:100%;
+  width:20%;
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+  padding-right:2%;
+}
+#icons > img {
+  padding-left:10%;
+  height:60%;
+}
+/* Landing */
+
+.landingOverlay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:0;
+}
+
+.landingBackground{
+  position:absolute;
+  filter: brightness(0.8);
+  background-image: url('/public/landingbg.jpg');
+  box-sizing: border-box;
+  background-size: cover;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:-2;
+}
+
+.landingMenu{
+  height:inherit;
+  width:90%;
+  margin:auto;
+  align-items:center;
+  display:flex;
+  z-index:1;
+}
+
+.landingGrid {
+  display: grid;
+  grid-template-areas:
+  'rules contacts map stats settings'
+  'chatroom notepad camera recorder .'
+  '. . . . .';
+  grid-auto-rows: minmax(0, 1fr);
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 5%;
+  padding:0;
+  margin-top:6%;
+  margin-bottom:4%;
+  height:90%;
+  width: 100%;
+  align-items:center;
+}
+
+
+.imageContainer{
+  position:relative;
+}
+
+.appButton{
+  max-width:100%;
+  background:none;
+  border:none;
+}
+
+
+.appButton > p {
+  position:relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
+  font-size: 3vh;
+  text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 5px #000, 0px 0px 2px #000;
+}
+.appButton:hover > div {
+  filter:brightness(0.8);
+}
+
+.appButton.true .appIcon{
+  filter:brightness(0.4);
+}
+
+.appButton:hover .appIcon{
+  background:#0009;
+  border-radius:5%;
+}
+.appButton:hover > p{
+  filter:brightness(0.8);
+  border-radius:5%;
+}
+.appIcon{
+  max-width:80%;
+}
+.appButton.false .lock{
+  display:none;
+}
+
+.lock{
+  width:70%;
+  position:absolute;
+  left:15%;
+  top:5%;
+}
+
+
+.Rules{
+  grid-area:rules;
+}
+.Contacts{
+  grid-area:contacts;
+}
+.Map{
+  grid-area:map;
+}
+.Stats{
+  grid-area:stats;
+}
+.Chatroom{
+  grid-area:chatroom;
+}
+.Settings{
+  grid-area:settings;
+}
+.Notepad{
+  grid-area:notepad;
+}
+.Camera{
+  grid-area:camera;
+}
+.Recorder{
+  grid-area:recorder;
+}
+
+/* ID Card */
+#idcard {
+  animation: fadeInAnimation ease 1s;
+  animation-delay:0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#idcard{
+  margin:auto;
+  width:105vh;
+  height:70vh;
+  perspective:1000px;
+  border:transparent solid 1vh;
+  z-index:2;
+}
+
+#idflip {
+  border:transparent solid 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin:auto;
+  min-width:105vh;
+  min-height:70vh;
+  top:-10px;
+  left:-10px;
+}
+
+.flipped #idflip {
+  transform: rotateY(-180deg);
+}
+
+.flipped #idfront {
+  animation: hide 0.8s;
+  animation-fill-mode:forwards;
+}
+
+.flipped #flipButtonFront{
+  visibility:hidden;
+  display:none;
+}
+@-webkit-keyframes hide {
+  from {}
+  to {visibility:hidden;}
+}
+
+@keyframes hide {
+  from {}
+  to {visibility:hidden;}
+}
+
+#idfront, #idback{
+  position:absolute;
+  min-width:105vh;
+  min-height:70vh;
+  width:100%;
+  height:100%;
+  top:-1vh;
+  left:-1vh;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-image: url('/public/bgtest.jpg');
+}
+
+
+.grid-container > div > p > span{
+  color:white;
+}
+
+.idgeo > p, .idbio1 > p, .idbio2 > p {
+  color:rgb(170, 170, 170);
+}
+
+#idfront{
+  border:#ff2272 solid 1vh;
+  background-size:cover;
+}
+
+#idcard{
+  font-family: safety;
+}
+
+#idheader, .idlevel{
+  font-family: russoOne;
+  color:#c2ff03;
+}
+
+#idheader{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  vertical-align: middle;
+  margin:0.5%;
+}
+
+#idheader > h1{
+  text-align:left;
+  display:inline;
+  margin-left:10px;
+  font-size:6vh;
+}
+
+#idlogo{
+  height:8vh;
+}
+
+#iddata{
+  display:flex;
+  width:100%;
+  height:68vh;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom:2vh;
+}
+
+/* TODO: Nix this when on mobile */
+#idportrait{
+  margin-left:2%;
+  max-height:85%;
+  border: #c2ff03 solid 2px;
+  border-radius:5%;
+  background:#0004;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'title title title title title title stats stats'
+    'level level level level level level phys phys'
+    'geo geo geo geo geo geo mental mental'
+    'bio1 bio1 bio1 bio2 bio2 bio2 murder murder'
+    'likes likes likes likes dislikes dislikes dislikes dislikes';
+  grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 2fr;
+  gap: 1vh;
+  height:85%;
+  width:100%;
+  padding:0;
+  margin:0;
+  margin-left:10px;
+  margin-right:10px;
+  align-items:stretch;
+}
+
+.grid-container > div {
+  background: #0003;
+  background-size: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.grid-container > .idlikes, .grid-container > .iddislikes {
+  background-size: 100%;
+  display:block;
+}
+
+.flexbreak{
+  flex-basis:100%;
+}
+
+.grid-container > div > p{
+  background-size: 100%;
+  vertical-align:center;
+  align-items:center;
+}
+
+.idtitle{
+  grid-area: title;
+  text-align: center;
+  font-size:2.5vh;
+  font-variant: small-caps;
+}
+
+.statsheader{
+  font-variant: small-caps;
+  grid-area: stats;
+  text-align:center;
+  font-weight:bold;
+  font-size:4vh;
+}
+
+.stats{
+  font-size:2vh;
+}
+
+.idlevel{
+  grid-area: level;
+  font-size:6vh;
+  text-align:center;
+}
+
+.phys{
+  grid-area: phys;
+  text-align:center;
+  color:#ff4885
+}
+
+.idgeo{
+  grid-area: geo;
+  text-align:center;
+  font-size:2.5vh;
+}
+
+.mental{
+  grid-area: mental;
+  text-align:center;
+  color: #ffc9d2;
+}
+
+.idbio1{
+  grid-area: bio1;
+  text-align:center;
+  font-size:2.5vh;
+}
+
+.idbio2{
+  grid-area: bio2;
+  text-align:center;
+  font-size:2.5vh;
+}
+
+.murder{
+  grid-area: murder;
+  text-align:center;
+  color: #d1ec6e;
+}
+
+.idlikes, .iddislikes{
+  padding-top:1vh;
+  padding-bottom:1vh;
+}
+
+.idlikes{
+  grid-area: likes;
+  font-size:3vh;
+  text-align:center;
+  display:flex;
+}
+
+.iddislikes{
+  text-align:center;
+  grid-area: dislikes;
+  font-size:3vh;
+  display:flex;
+}
+
+/* TODO: Fucking fix the alignment here */
+
+.idlikes > h3, .iddislikes > h3{
+  position:relative;
+  font-variant: small-caps;
+}
+
+.idlikes{
+  color:#c2ff03;
+}
+
+.iddislikes{
+  color:#ff2272;
+}
+
+.idlikes > p, .iddislikes > p{
+  position:relative;
+  font-size:2.5vh;
+  text-align:center;
+  padding: 0 1vh;
+  padding-bottom:1vh;
+  filter:saturate(0.2);
+}
+
+.iddislikes > p{
+  filter:brightness(5);
+}
+
+#idback{
+  transform: rotateY(-180deg);
+  border:#ff2272 solid 1vh;
+  background-size:cover;
+}
+
+#idback > div{
+  display:flex;
+  align-items:stretch;
+  flex-direction:column;
+  margin:2%;
+  margin-top:0;
+  text-align:left;
+}
+
+#bioheader{
+  position:relative;
+  margin: 3vh 0;
+  padding: 1vh 0;
+  padding-top: 2vh;
+  font-variant: small-caps;
+  font-size:3vh;
+  color:#c2ff03;
+  /*background:#0005;*/
+}
+
+#bioheader:before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.6);
+  background-image:url('/public/bio_header.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+#bioheader > h1{
+  position:relative;
+}
+
+#bio{
+  padding: 0 1vh;
+  font-size:3vh;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grid-container > div > p > span{
+  font-variant: small-caps;
+  font-size:3vh;
+}
+
+#idback > * > * > h1{
+  text-align:center;
+}
+
+#flipButtonFront, #flipButtonBack{
+  background:transparent;
+  border:none;
+  position:absolute;
+  top:95%;
+  left:101%;
+  filter:brightness(0.5);
+}
+
+#closeButtonFront, #closeButtonBack{
+  background:#0007;
+  border:none;
+  position:absolute;
+  top:1%;
+  right:1%;
+  height:4vh;
+  width:4vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipButton{
+  visibility:hidden;
+  animation-name:appearify;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+}
+
+@-webkit-keyframes appearify{
+  from{}
+  to{
+    visibility:visible;
+    display:block;
+  }
+}
+@keyframes appearify{
+  from{}
+  to{
+    visibility:visible;
+    display:block;
+  }
+}
+
+#flipButtonFront:hover, #flipButtonBack:hover{
+  filter:none;
+}
+
+#closeButtonFront:hover, #closeButtonBack:hover{
+  background:#000;
+}
+
+#flipButtonFront > img, #flipButtonBack > img  {
+  height:4vh;
+}
+
+#closeButtonFront > img, #closeButtonBack > img  {
+  height:2vh;
+}
+
+
+/* Special cases */
+
+.mai #idheader > h1{
+  font-size:5vh;
+}
+
+.august #bio{
+  font-size:2.8vh;
+}
+
+/* Cast Page */
+
+#castOverlay {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  background:url('/public/castbg.jpg');
+  background-size:cover;
+  position:relative;
+  /*-webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);*/
+} /* World's worst position:fixed hack */
+/* This is also terrible. I need to fix the stupid fucking border hack I'm using later */
+
+#castOverlay > div{
+  position:absolute;
+}
+
+#castContainer{
+  display:flex;
+  align-items:center;
+  z-index:0;
+}
+
+#castCover{
+  visibility:hidden;
+  position:fixed;
+  transform:translateY(0) translateX(0);
+  height:100vh;
+  width:100vw;
+  z-index:1;
+  background-color: #0000;
+  transition: background-color 0.5s;
+}
+
+#castCover.active{
+  visibility:visible;
+  background-color:#0003;
+}
+
+.square{
+  position:relative;
+  transition: height 1s, width 1s, top 1s, left 1s, filter 0.25s, visibility 1.5s, background-color 1s;
+  height:19vh;
+  width:19vh;
+  top:0;
+  left:0;
+  align-items:center;
+  text-align:center;
+  background-color:rgba(calc(100 * 0.24), calc(100 * .08), calc(100 * .16), 0.6)
+
+}
+
+.square.loadOut{
+  z-index:1;
+}
+
+.square.clicked{
+  z-index:2;
+  background-color:#b83967;
+  visibility: hidden;
+  transition: height 0.5s, width 0.5s, top 0.5s, left 0.5s, filter 0.5s, visibility 1.5s, background-color 0.5s;
+}
+
+/* Proper calculation for card relative to the grid
+
+top: calc(-35vh - 10px);
+left: calc(-52.5vh - 10px);*/
+
+.rei.clicked{ 
+  top: -6.5vh;
+  left: 6vh;
+  width:107vh;
+  height:72vh;
+}
+.andrew.clicked{
+  top: -6.5vh;
+  left: -14vh;
+  width:107vh;
+  height:72vh;
+}
+.avery.clicked{
+  top: -6.5vh;
+  left: -34vh;
+  width:107vh;
+  height:72vh;
+}
+.camille.clicked{
+  top: -6.5vh;
+  left: -54vh;
+  width:107vh;
+  height:72vh;
+}
+.ami.clicked{
+  top: -6.5vh;
+  left: -74vh;
+  width:107vh;
+  height:72vh;
+}
+.emma.clicked{
+  top: -6.5vh;
+  left: -94vh;
+  width:107vh;
+  height:72vh;
+}
+.empty.clicked{
+  top: -26.5vh;
+  left: 6vh;
+  width:107vh;
+  height:72vh;
+}
+.august.clicked{
+  top: -26.5vh;
+  left: -14vh;
+  width:107vh;
+  height:72vh;
+}
+.owen.clicked{
+  top: -26.5vh;
+  left: -34vh;
+  width:107vh;
+  height:72vh;
+}
+.yiseul.clicked{
+  top: -26.5vh;
+  left: -54vh;
+  width:107vh;
+  height:72vh;
+}
+.isaak.clicked{
+  top: -26.5vh;
+  left: -74vh;
+  width:107vh;
+  height:72vh;
+}
+.jones.clicked{
+  top: -26.5vh;
+  left: -94vh;
+  width:107vh;
+  height:72vh;
+}
+.hatman.clicked{
+  top: -46.5vh;
+  left: 6vh;
+  width:107vh;
+  height:72vh;
+}
+.v.clicked{
+  top: -46.5vh;
+  left: -14vh;
+  width:107vh;
+  height:72vh;
+}
+.mai.clicked{
+  top: -46.5vh;
+  left: -34vh;
+  width:107vh;
+  height:72vh;
+}
+.yumeji.clicked{
+  top: -46.5vh;
+  left: -54vh;
+  width:107vh;
+  height:72vh;
+}
+.gaz.clicked{
+  top: -46.5vh;
+  left: -74vh;
+  width:107vh;
+  height:72vh;
+}
+.simon.clicked{
+  top: -46.5vh;
+  left: -94vh;
+  width:107vh;
+  height:72vh;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-areas:
+    'rei andrew avery camille ami emma'
+    'empty august owen yiseul isaak jones'
+    'hatman v mai yumeji gaz simon';
+  grid-template-rows: 19vh 19vh 19vh;
+  grid-template-columns: 19vh 19vh 19vh 19vh 19vh 19vh;
+  gap: 1vh;
+  height:fit-content;
+  width:fit-content;
+  padding:0;
+  margin:0;
+  background: rgba(calc(100 * 0.72), calc(100 * .24), calc(100 * .49), 0.5);
+}
+
+.studentMug, .chapMug{
+  max-width:95%;
+  max-height:95%;
+}
+
+.student > button, .chap > button{
+  width:100%;
+  height:100%;
+  background:none;
+  border:none;
+  padding:0;
+}
+
+.student:hover, .chap:hover{
+  filter:brightness(0.6);
+  background:#000a;
+}
+
+.rei{
+  grid-area: rei;
+}
+.andrew {
+  grid-area: andrew;
+}
+.avery {
+  grid-area: avery;
+}
+.camille {
+  grid-area: camille;
+}
+.ami {
+  grid-area: ami;
+}
+.emma {
+  grid-area: emma;
+}
+.empty {
+  grid-area: empty;
+}
+.august {
+  grid-area: august;
+}
+.owen {
+  grid-area: owen;
+}
+.yiseul {
+  grid-area: yiseul;
+}
+.isaak {
+  grid-area: isaak;
+}
+.jones {
+  grid-area: jones;
+}
+.hatman {
+  grid-area: hatman;
+}
+.v {
+  grid-area: v;
+}
+.mai {
+  grid-area: mai;
+}
+.yumeji {
+  grid-area: yumeji;
+}
+.gaz {
+  grid-area: gaz;
+}
+.simon {
+  grid-area: simon;
+}
+
+/* Map bullshit */
+
+#mapOverlay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  z-index:0;
+  height: 100%;
+  width: 100%;
+}
+
+#mapContainer, .mapMap{
+  position:relative;
+  display:flex;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  background: #150700;
+}
+
+#img-mapper{
+  margin:auto;
+  display:flex;
+  align-items:center;
+}
+
+#img-mapper > img{
+  position:unset;
+}
+
+/* Template stuff */
+
+#templateOverlay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:0;
+  background:#0008
+}
+
+#templateContainer{
+  width:80%;
+  text-align:center;
+  background:#333;
+  padding:5%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:4vh;
+}
