@@ -23,7 +23,7 @@ const bioData = {
         "forensics": "+1",
         "guts": "-1",
         "height": "170",
-        "level": "0",
+        "level": "1",
         "likes": "The music people make with her!, licorice, cute outfits",
         "location": "The Internet",
         "poise": "+2",
@@ -50,7 +50,7 @@ const bioData = {
         "forensics": "-3",
         "guts": "0",
         "height": "193",
-        "level": "0",
+        "level": "1",
         "likes": "Oysters, short selling, Michelin 3-star restaurants",
         "location": "New York, NY",
         "poise": "+3",
@@ -77,7 +77,7 @@ const bioData = {
         "forensics": "0",
         "guts": "+1",
         "height": "170",
-        "level": "0",
+        "level": "1",
         "likes": "Flowers, sweaters, digital watches",
         "location": "Warsaw, Poland",
         "poise": "+3",
@@ -104,7 +104,7 @@ const bioData = {
         "forensics": "0",
         "guts": "-3",
         "height": "165",
-        "level": "0",
+        "level": "1",
         "likes": "Toffee, stargazing, musicals",
         "location": "N/A",
         "poise": "+3",
@@ -131,7 +131,7 @@ const bioData = {
         "forensics": "0",
         "guts": "0",
         "height": "163",
-        "level": "0",
+        "level": "1",
         "likes": "Canoes, bird calls, and PEANUT HOLE",
         "location": "Boundary Water, MN",
         "poise": "-2",
@@ -158,7 +158,7 @@ const bioData = {
         "forensics": "+1",
         "guts": "+2",
         "height": "150",
-        "level": "0",
+        "level": "1",
         "likes": "Travel, home cooked meals, cartoons",
         "location": "Unknown",
         "poise": "-1",
@@ -185,7 +185,7 @@ const bioData = {
         "forensics": "0",
         "guts": "+2",
         "height": "161",
-        "level": "0",
+        "level": "1",
         "likes": "Puzzles, history, games",
         "location": "NULL",
         "poise": "-2",
@@ -212,7 +212,7 @@ const bioData = {
         "forensics": "+1",
         "guts": "+3",
         "height": "196",
-        "level": "0",
+        "level": "1",
         "likes": "Safety, the right to repair, YouTube tutorials",
         "location": "Chicago, IL",
         "poise": "0",
@@ -239,7 +239,7 @@ const bioData = {
         "forensics": "-3",
         "guts": "+3",
         "height": "213",
-        "level": "0",
+        "level": "1",
         "likes": "Humming tunes, watching, solitude",
         "location": "Hawk's Coast, ME",
         "poise": "-3",
@@ -266,7 +266,7 @@ const bioData = {
         "forensics": "-1",
         "guts": "+2",
         "height": "185",
-        "level": "0",
+        "level": "1",
         "likes": "Violin, hillside walks, Morgan Freeman",
         "location": "Graz, Austria",
         "poise": "-1",
@@ -277,7 +277,7 @@ const bioData = {
     "jones":
         {
         "age": "16",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "bio": "Jones lives on the moon, as it is the only safe way for him to pursue his talent, according to his supervisor and instructor, Doctor Lovell, former Ultimate Aerospace Engineer and current crackhead genius who is unfortunately too smart and useful for Hope’s Peak to fire despite her unruly and defiant attitude. His talent, personal history, and mission, exactly, are extremely ambiguous, but it likely has to do with the mad doctor’s theories of life outside of Earth. He is currently on parole.",
         "birthday": "05-01",
         "branch": "Europe",
         "coordination": "+1",
@@ -293,13 +293,13 @@ const bioData = {
         "forensics": "+2",
         "guts": "+1",
         "height": "162",
-        "level": "0",
+        "level": "1",
         "likes": "Coca-cola, chess, long-winded monologues",
         "location": "The Moon",
         "poise": "-2",
         "pronouns": "yours",
         "username": "testaccount",
-        "vocation": "Ultimate ???"
+        "vocation": "Ultimate \"Conduit\""
         },
     "mai":
         {
@@ -320,7 +320,7 @@ const bioData = {
         "forensics": "-3",
         "guts": "+5",
         "height": "168",
-        "level": "0",
+        "level": "1",
         "likes": "Good vibes, sweet flavors, American cinema",
         "location": "Yokohama, Kanegawa",
         "poise": "0",
@@ -347,7 +347,7 @@ const bioData = {
         "forensics": "-2",
         "guts": "+2",
         "height": "178",
-        "level": "0",
+        "level": "1",
         "likes": "Classic movies, bonfires, awkward silences",
         "location": "No perm. address",
         "poise": "0",
@@ -374,7 +374,7 @@ const bioData = {
         "forensics": "-1",
         "guts": "+1",
         "height": "175",
-        "level": "0",
+        "level": "1",
         "likes": "Video games, jogging, udon",
         "location": "Chiba, Tokyo",
         "poise": "+1",
@@ -401,7 +401,7 @@ const bioData = {
         "forensics": "0",
         "guts": "-2",
         "height": "183",
-        "level": "0",
+        "level": "DECEASED",
         "likes": "Casual dress shirts, morning radio, whitening toothpaste",
         "location": "San Francisco, CA",
         "poise": "-1",
@@ -428,7 +428,7 @@ const bioData = {
         "forensics": "0",
         "guts": "+2",
         "height": "160",
-        "level": "0",
+        "level": "1",
         "likes": "Windchimes, joke books, and grassy fields",
         "location": "New Orleans, LA",
         "poise": "+3",
@@ -455,7 +455,7 @@ const bioData = {
         "forensics": "-1",
         "guts": "+1",
         "height": "180",
-        "level": "0",
+        "level": "1",
         "likes": "Gacha games, Godzilla (& Friends) flicks, bungeoppang",
         "location": "Seongnam-si, Korea",
         "poise": "0",
@@ -482,13 +482,40 @@ const bioData = {
         "forensics": "+1",
         "guts": "+2",
         "height": "163",
-        "level": "0",
+        "level": "1",
         "likes": "Reading, cicada sounds, Shibuya",
         "location": "Kurashiki, Okayama",
         "poise": "-2",
         "pronouns": "she/her",
         "username": "YY",
         "vocation": "Ultimate Lucky Student"
+        },
+    "matsuno":
+        {
+        "age": "1",
+        "bio": "Haiiii~! It's me, your best friend, Matsuno Patsuno! ^w^ I am so excited that I get to share paradise with all you lovely lovely people, teehee! :D",
+        "birthday": "01-01",
+        "branch": "Everywhere!",
+        "coordination": "+7",
+        "dislikes": "Murder (ಥ﹏ಥ)",
+        "extmental": false,
+        "extmentalstr": "",
+        "extmurder": false,
+        "extmurderstr": "",
+        "extphys": false,
+        "extphysstr": "",
+        "fitness": "+7",
+        "focus": "+7",
+        "forensics": "+7",
+        "guts": "+7",
+        "height": "157",
+        "level": "99",
+        "likes": "You!",
+        "location": "Your heart <3",
+        "poise": "+7",
+        "pronouns": "she/her",
+        "username": "ma_pa",
+        "vocation": "Ultimate Game Theorist"
         }
     }
 
@@ -499,6 +526,7 @@ function Card(props){
         element.classList.toggle("flipped");
     }
     const info = bioData[props.char];
+    const level = (info.level==="DECEASED" ? "DECEASED" : "LEVEL "+info.level);
     const extraphys = (info.extphys ? <p>{info.extphysstr}</p> : "");
     const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");
     const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");
@@ -517,7 +545,7 @@ function Card(props){
                                 <h3>{info.vocation}</h3>
                             </div>  
                             <div class="statsheader">Stats</div>
-                            <div class="idlevel"><p>{"LEVEL "+info.level}</p></div>  
+                            <div class="idlevel"><p>{level}</p></div>  
                             <div class="stats phys">
                                 <p>{"FIT: "+info.fitness}</p>
                                 <p>{"CDN: "+info.coordination}</p>

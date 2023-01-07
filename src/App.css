@@ -812,7 +812,8 @@ p {
   align-items:center;
   justify-content:center;
   height:100%;
-  background:url('/public/castbg.jpg');
+  background:rgb(139, 28, 46);
+  background-image:url('/public/castbg.jpg');
   background-size:cover;
   position:relative;
   /*-webkit-transform: rotate(0deg);
@@ -852,8 +853,8 @@ p {
 .square{
   position:relative;
   transition: height 1s, width 1s, top 1s, left 1s, filter 0.25s, visibility 1.5s, background-color 1s;
-  height:19vh;
-  width:19vh;
+  height:18vh;
+  width:18vh;
   top:0;
   left:0;
   align-items:center;
@@ -990,11 +991,12 @@ left: calc(-52.5vh - 10px);*/
 .cast-grid {
   display: grid;
   grid-template-areas:
-    'rei andrew avery camille ami emma'
-    'empty august owen yiseul isaak jones'
-    'hatman v mai yumeji gaz simon';
-  grid-template-rows: 19vh 19vh 19vh;
-  grid-template-columns: 19vh 19vh 19vh 19vh 19vh 19vh;
+    'rei andrew avery camille ami'
+    'emma empty august owen yiseul'
+    'isaak jones hatman v mai'
+    'yumeji . gaz simon matsuno';
+  grid-template-rows: 18vh 18vh 18vh 18vh;
+  grid-template-columns: 18vh 18vh 18vh 18vh 18vh;
   gap: 1vh;
   height:fit-content;
   width:fit-content;
@@ -1075,6 +1077,16 @@ left: calc(-52.5vh - 10px);*/
 .simon {
   grid-area: simon;
 }
+.matsuno {
+  grid-area: matsuno;
+}
+
+.simon{
+  filter: grayscale(0.9);
+}
+.chapMug.simon{
+  filter: grayscale(0.9) blur(0.3vh);
+}
 
 /* Map bullshit */
 
@@ -1127,4 +1139,170 @@ left: calc(-52.5vh - 10px);*/
   padding:5%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size:4vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* Rules Page & Card */
+
+#rulesOverlay {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  background: maroon;
+  background-size:cover;
+  position:relative;
+}
+
+#rulecard {
+  animation: fadeInAnimation ease 1s;
+  animation-delay:0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#rulecard{
+  margin:auto;
+  width:105vh;
+  height:70vh;
+  perspective:1000px;
+  border:transparent solid 1vh;
+  z-index:2;
+}
+
+#ruleflip {
+  border:transparent solid 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin:auto;
+  min-width:105vh;
+  min-height:70vh;
+  top:-10px;
+  left:-10px;
+}
+
+.flipped #ruleflip {
+  transform: rotateY(-180deg);
+}
+
+.flipped #rulefront {
+  animation: hide 0.8s;
+  animation-fill-mode:forwards;
+}
+
+.flipped #flipButtonFront{
+  visibility:hidden;
+  display:none;
+}
+
+#rulefront, #ruleback{
+  position:absolute;
+  min-width:105vh;
+  min-height:70vh;
+  width:100%;
+  height:100%;
+  top:-1vh;
+  left:-1vh;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: black;
+}
+
+
+#rulefront{
+  border:#ff2272 solid 1vh;
+  background-size:cover;
+}
+
+#rulecard{
+  font-family: safety;
+}
+
+#ruleheader{
+  font-family: russoOne;
+  color:#c2ff03;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  vertical-align: middle;
+  margin:0.5%;
+}
+
+#ruleheader > h1{
+  text-align:center;
+  display:inline;
+  font-size:6vh;
+}
+
+#ruleback{
+  transform: rotateY(-180deg);
+  border:#ff2272 solid 1vh;
+  background-size:cover;
+}
+
+
+#bioheader{
+  position:relative;
+  margin: 3vh 0;
+  padding: 1vh 0;
+  padding-top: 2vh;
+  font-variant: small-caps;
+  font-size:3vh;
+  color:#c2ff03;
+  /*background:#0005;*/
+}
+
+/*#ruleheader:before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.6);
+  background-image:url('/public/bio_header.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}*/
+
+#ruleheader > h1{
+  position:relative;
+}
+
+#ruleback > * > * > h1{
+  text-align:center;
+}
+
+.rules, .mechs{
+  text-align:left;
+  overflow-y:scroll;
+  height:61.5vh;
+  line-height: 2em;
+  font-size:2vh; 
+}
+
+#houseRules, #killingRules, #mechanics, #commitRules{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 5vh;
 }

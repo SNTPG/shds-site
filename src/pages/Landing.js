@@ -12,7 +12,7 @@ class Landing extends React.Component {
             },
             {
               appName: "Rules",
-              locked: true,
+              locked: false,
               description: ""
             },
             {
