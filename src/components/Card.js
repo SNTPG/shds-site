@@ -3,9 +3,15 @@ import Heart from '../assets/decor/heart.png';
 import Close from '../assets/decor/close.png';
 import Flip from '../assets/decor/flipArrow.png';
 import Portrait from './Portrait.js';
-const bioData = {
-    "ami":
-        {
+
+export const levelData = [
+    {
+
+    }
+]
+export const bioData = [
+    {
+        "name": "ami",
         "age": "17",
         "bio": "The synthetic singer program Demaka has taken the world by storm! Its features are beefy, it can rival anything Vocaloid does, and it's completely free! It's best known for its user-friendly interface that appeals to both beginners and experienced producers, and for its beloved voice bank, Ami! She's even appeared in hologram concerts and interviews as a brand new promotional AI.",
         "birthday": "08-30",
@@ -23,16 +29,20 @@ const bioData = {
         "forensics": "+1",
         "guts": "-1",
         "height": "170",
-        "level": "1",
+        "level": 1,
         "likes": "The music people make with her!, licorice, cute outfits",
         "location": "The Internet",
         "poise": "+2",
         "pronouns": "she/her",
         "username": "Demaka Ami Official",
-        "vocation": "Ultimate Singing Program"
-        },
-    "andrew":
-        {
+        "vocation": "Ultimate Singing Program",
+        "xp" : 2,
+        "achievements" : ["bunk", "friend"],
+        "gacha" : [],
+        "collectables" : []
+    },
+    {
+        "name": "andrew",
         "age": "18",
         "bio": "A prescient investor, Andrew Maynard Smith made history at the age of 13 as the youngest-ever person to appear on the Forbes 30 Under 30, to which he owes his inclusion to his multi-million investment empire made entirely from petty cash. Accusations of nepotism have ever plagued the young Smith, but his parents categorically deny having any hand in his success, stating that his genius is entirely his own. In the present day, given that he keeps an intensely private life and his tax records are not public, one can only speculate as to the total worth of his assets. If anything's for certain, however, his ability to predict market trends is uncanny, and his outrageous dividends speak for themselves.",
         "birthday": "07-04",
@@ -50,16 +60,20 @@ const bioData = {
         "forensics": "-3",
         "guts": "0",
         "height": "193",
-        "level": "1",
+        "level": 1,
         "likes": "Oysters, short selling, Michelin 3-star restaurants",
         "location": "New York, NY",
         "poise": "+3",
         "pronouns": "he/him",
         "username": "AMSmith",
-        "vocation": "Ult. Hedge Fund Investor"
-        },
-    "august":
-        {
+        "vocation": "Ult. Hedge Fund Investor",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
+    },
+    {
+        "name": "august",
         "age": "18",
         "bio": "\"He approaches his films like a scientist\" - Cineuropa. \"Urbanik renders time in his films in such a unique way, unlike anything the world has seen since Tarkovsky\" - BBC Culture. \"Despite only having one short film and one feature length under his belt, Polish filmmaker Augustyn Urbanik feels like he directs with a breadth of experience beyond his years\" - RogerEbert.com. \"Although his style can seem artistically alienating to the more common, day-by-day filmgoer, the evocative power of his work cannot be understated\" - Entertainment Weekly. \"Urbanik himself comes from a luxurious and privileged background, yet the topics and feelings he explores in his films seem worldly, important, and timeless\" - The Hollywood Reporter. \"His style, which has been described as hands on, liking to be able to control all aspects of the film (it's why he prefers the label \"filmmaker\" over \"director\") is on prominent display in his masterful, genre-bending, futuristic, sci-fi, feature-length film debut Replay\" - NPR.org.",
         "birthday": "07-13",
@@ -77,16 +91,20 @@ const bioData = {
         "forensics": "0",
         "guts": "+1",
         "height": "170",
-        "level": "1",
+        "level": 1,
         "likes": "Flowers, sweaters, digital watches",
         "location": "Warsaw, Poland",
         "poise": "+3",
         "pronouns": "he/him",
         "username": "filbleufilms",
-        "vocation": "Ultimate Filmmaker"
-        },
-    "avery":
-        {
+        "vocation": "Ultimate Filmmaker",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
+    },
+    {
+        "name": "avery",
         "age": "16",
         "bio": "Charismatic and spontaneous, Avery is a passionate explorer who shares his findings through the medium of storytelling. He's an expert on plants and wildlife, tirelessly roaming the continent in search of new discoveries.",
         "birthday": "03-20",
@@ -104,16 +122,20 @@ const bioData = {
         "forensics": "0",
         "guts": "-3",
         "height": "165",
-        "level": "1",
+        "level": 1,
         "likes": "Toffee, stargazing, musicals",
         "location": "N/A",
         "poise": "+3",
         "pronouns": "he/him",
         "username": "AveryTheGreat",
-        "vocation": "Ultimate Explorer"
-        },
-    "camille":
-        {
+        "vocation": "Ultimate Explorer",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
+    },
+    {
+        "name": "camille",
         "age": "19",
         "bio": "Nobody has permission to live in the Boundary Waters Canoe Area Wilderness\u2014 because that's the law! With assistance from Hope's Peak and their own dedication to its oceans, they've certainly got the credibility to camp in their space forever. And space, they have, for they only the post findings when they of the 142 homes and canoes.",
         "birthday": "05-08",
@@ -131,17 +153,21 @@ const bioData = {
         "forensics": "0",
         "guts": "0",
         "height": "163",
-        "level": "1",
+        "level": 1,
         "likes": "Canoes, bird calls, and PEANUT HOLE",
         "location": "Boundary Water, MN",
         "poise": "-2",
         "pronouns": "they/she",
         "username": "caonmille",
-        "vocation": "Ultimate Oceanographer"
+        "vocation": "Ultimate Oceanographer",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "emma":
-        {
-        "age": "16",
+    {
+		"name": "emma",
+		"age": "16",
         "bio": "In the past years, some may have seen headlines about a wild mountain woman in Colorado, or photos of a highschool girl stealing people's trash in the U.K.. If you look far enough back, you can find reports of the \"Feral 8 Year Old Spotted in Venezuela\". When the police picked up the unidentified girl, she claimed she was living in the wild by choice, and had been since she was six years old. She vanished from the station the next morning. How she moves between such distant places seemingly without money, and how she learned to survive alone in the wilderness so young is unknown. Her desire to not stay in one place even led to her refusing to attend Hope's Peak in person. At least she doesn't seem feral anymore\u2026 mostly.",
         "birthday": "06-12",
         "branch": "North America",
@@ -158,17 +184,21 @@ const bioData = {
         "forensics": "+1",
         "guts": "+2",
         "height": "150",
-        "level": "1",
+        "level": 1,
         "likes": "Travel, home cooked meals, cartoons",
         "location": "Unknown",
         "poise": "-1",
         "pronouns": "she/her",
         "username": "Emma_Thorne",
-        "vocation": "Ultimate Vagrant"
+        "vocation": "Ultimate Vagrant",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
         },
-    "empty":
-        {
-        "age": "19",
+    {
+		"name": "empty",
+		"age": "19",
         "bio": "EMPTY SET is an extremely renowned and innovative logician. In the span of only two years plus the first semester at Hope's Peak, they have made monumental progress in the general logic/set theory sphere of mathematics. They're also quite the recluse, publishing all work online and giving interviews via text channels or extremely poorly lit video, so nobody has actually seen their face. Convincing them to go to Hope's Peak, even remotely, was quite the undertaking.",
         "birthday": "07-12",
         "branch": "North America",
@@ -185,17 +215,21 @@ const bioData = {
         "forensics": "0",
         "guts": "+2",
         "height": "161",
-        "level": "1",
+        "level": 1,
         "likes": "Puzzles, history, games",
         "location": "NULL",
         "poise": "-2",
         "pronouns": "they/them",
         "username": "EMPTY SET",
-        "vocation": "Ultimate Logician"
+        "vocation": "Ultimate Logician",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "gaz":
-        {
-        "age": "44",
+    {
+		"name": "gaz",
+		"age": "44",
         "bio": "Being a security guard pays the bills, but Gaz Berry's real love and joy is her biyearly safety presentations. Who else gets to gather all of the top minds of a generation into an auditorium for a cheaply-produced safety-themed puppet show? Her love for the craft is only outweighed by her general crotchety disposition. Even if you haven't seen her scowling in the halls, you've probably received an accidental email from her at some point.",
         "birthday": "08-09",
         "branch": "North America",
@@ -212,17 +246,21 @@ const bioData = {
         "forensics": "+1",
         "guts": "+3",
         "height": "196",
-        "level": "1",
+        "level": 1,
         "likes": "Safety, the right to repair, YouTube tutorials",
         "location": "Chicago, IL",
         "poise": "0",
         "pronouns": "she/they",
         "username": "gberry1",
-        "vocation": "Security Guard"
+        "vocation": "Security Guard",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "hatman":
-        {
-        "age": "19",
+    {
+		"name": "hatman",
+		"age": "19",
         "bio": "Everybody in Hawk's Coast knows The Hatman, a ghostly apparition floating across the horizon, hauling a net full of fish to market without ever leaving that thick black abyss of a rain slicker. The locals tell stories about him and the stench of death and misfortune that follows him as he sells his fish in the market, his face shrouded in mystery. Sure, he's an unparalleled fisherman, but everybody wants to know what's underneath the darkness.",
         "birthday": "09-10",
         "branch": "North America",
@@ -239,17 +277,21 @@ const bioData = {
         "forensics": "-3",
         "guts": "+3",
         "height": "213",
-        "level": "1",
+        "level": 1,
         "likes": "Humming tunes, watching, solitude",
         "location": "Hawk's Coast, ME",
         "poise": "-3",
         "pronouns": "he/him",
         "username": "thehatman",
-        "vocation": "Ultimate Fisherman"
+        "vocation": "Ultimate Fisherman",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
         },
-    "isaak":
-        {
-        "age": "18",
+    {
+		"name": "isaak",
+		"age": "18",
         "bio": "Isaak Wolfe was born in Graz, Austria as the second of three children under Amelie and Fabian Wolfe. Isaak is most prominently known for the one piece of music released under his name, Symphonie der leisen Streicher (Symphony of Silent Strings), a musical score presented in the form of a novel. The work received mixed reviews upon its release, with critics most frequently disputing its status as a literary piece due to the absence of any narration or dialogue. The work began to gain notoriety for the consistency with which readers could interpret its \"plot,\" and as such the novel has since received international acclaim for thoroughly embodying its underlying message of \"Music is a language.\"",
         "birthday": "08-10",
         "branch": "Europe",
@@ -266,17 +308,21 @@ const bioData = {
         "forensics": "-1",
         "guts": "+2",
         "height": "185",
-        "level": "1",
+        "level": 1,
         "likes": "Violin, hillside walks, Morgan Freeman",
         "location": "Graz, Austria",
         "poise": "-1",
         "pronouns": "he/him",
         "username": "novel_theorist",
-        "vocation": "Ultimate Music Theorist"
+        "vocation": "Ultimate Music Theorist",
+        "xp" : 2,
+        "achievements" : ["bunk", "owenEasy"],
+        "gacha" : [],
+        "collectables" : []
         },
-    "jones":
-        {
-        "age": "16",
+    {
+		"name": "jones",
+		"age": "16",
         "bio": "Jones lives on the moon, as it is the only safe way for him to pursue his talent, according to his supervisor and instructor, Doctor Lovell, former Ultimate Aerospace Engineer and current crackhead genius who is unfortunately too smart and useful for Hope’s Peak to fire despite her unruly and defiant attitude. His talent, personal history, and mission, exactly, are extremely ambiguous, but it likely has to do with the mad doctor’s theories of life outside of Earth. He is currently on parole.",
         "birthday": "05-01",
         "branch": "Europe",
@@ -293,17 +339,21 @@ const bioData = {
         "forensics": "+2",
         "guts": "+1",
         "height": "162",
-        "level": "1",
+        "level": 1,
         "likes": "Coca-cola, chess, long-winded monologues",
         "location": "The Moon",
         "poise": "-2",
         "pronouns": "yours",
         "username": "testaccount",
-        "vocation": "Ultimate \"Conduit\""
+        "vocation": "Ultimate \"Conduit\"",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "mai":
-        {
-        "age": "18",
+    {
+		"name": "mai",
+		"age": "18",
         "bio": "A seemingly underground pick for the role, a student named Mai Kurosawa has recently been scouted out for the role of Ultimate Detective. She's refused any and all opportunities for interviews, questions, or even emails, but the school body assures the public that she's fully qualified for the title. Despite this, she's not once been spotted on campus nor has she been known to socialize with other students at the school, it's even rumored that she may have the poorest academic discipline the school has ever seen. Anyone in any relevant fields would've never heard her name, if anything she seems like a bit of a delinquent, but it looks that the tensions between her and Hope's Peak Academy are high, at least so far as her not seeming to enjoy her time there in the slightest.",
         "birthday": "06-24",
         "branch": "East Asia",
@@ -320,17 +370,21 @@ const bioData = {
         "forensics": "-3",
         "guts": "+5",
         "height": "168",
-        "level": "1",
+        "level": 1,
         "likes": "Good vibes, sweet flavors, American cinema",
         "location": "Yokohama, Kanegawa",
         "poise": "0",
         "pronouns": "she/her",
         "username": "XxCherry_Slide_Gamer64xX[MNC]",
-        "vocation": "Ultimate Detective"
+        "vocation": "Ultimate Detective",
+        "xp" : 2,
+        "achievements" : ["collectable", "bunk"],
+        "gacha" : [],
+        "collectables" : [1]
         },
-    "owen":
-        {
-        "age": "18",
+    {
+		"name": "owen",
+		"age": "18",
         "bio": "'Do you believe in ghosts? You should' - the website tagline of one self-proclaimed \u2018ghost logger', Owen Blakeley. Through the site and its related social media are hundreds of ghostly photographs taken from locations across the United States, with appearances having such variety as an apparent floating orb, a translucent woman in historical dress, or a strange blur that could easily just be lens flare. More notable than the images themselves are the intricate notes left underneath detailing the exact conditions they were taken under - time, date, weather condition, their relative position in the film reel, ambient light  the list goes on, sometimes including the claimed ghost's age and history. Blakeley's work has been mistaken for an obscure promotional campaign in the past, but the ghost logger says the project is solely him laying out the facts for those who don't believe the dead still walk among us.",
         "birthday": "06-06",
         "branch": "North America",
@@ -347,17 +401,21 @@ const bioData = {
         "forensics": "-2",
         "guts": "+2",
         "height": "178",
-        "level": "1",
+        "level": 1,
         "likes": "Classic movies, bonfires, awkward silences",
         "location": "No perm. address",
         "poise": "0",
         "pronouns": "he/him",
         "username": "iseedeadppl",
-        "vocation": "Ultimate Ghost Logger"
+        "vocation": "Ultimate Ghost Logger",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
         },
-    "rei":
-        {
-        "age": "19",
+    {
+		"name": "rei",
+		"age": "19",
         "bio": "Rei Mitsui debuted into the public consciousness when she miraculously defused a bomb at her high school, making national news. Soon, she garnered the title of \"the one-person bomb squad\", as her exceptional talent in bomb disposal was \"like one person doing the work of an entire squad\" according to the local paper. She's periodically called in to help with local bomb scares despite being a mere high schooler. Law enforcement is often criticized for relying on some kid to do their job for them, but nobody can deny that she gets results and saves lives, and that we can all feel safer with her around.",
         "birthday": "03-21",
         "branch": "East Asia",
@@ -374,17 +432,21 @@ const bioData = {
         "forensics": "-1",
         "guts": "+1",
         "height": "175",
-        "level": "1",
-        "likes": "Video games, jogging, udon",
+        "level": 1,
+        "likes": "Jogging, udon, Netflix originals",
         "location": "Chiba, Tokyo",
         "poise": "+1",
         "pronouns": "she/her",
         "username": "3210",
-        "vocation": "Ultimate Bomb Squad"
+        "vocation": "Ultimate Bomb Squad",
+        "xp" : 1,
+        "achievements" : ["bunk"],
+        "gacha" : [],
+        "collectables" : []
         },
-    "simon":
-        {
-        "age": "29",
+    {
+		"name": "simon",
+		"age": "29",
         "bio": "Simon Wishful was a promising face who made his big debut on the market with his fairly unambitious tech startup Wishful Thinking. An app that would allow for easy money transfer to charities, organizing secret santas and other such events eventually became a Silicon Valley superpower, becoming part of the now has-been Midas corporation and earning Simon a spot in Hope's Peak Academy as a young Entrepreneur. Through increasingly poor management, horrible PR, human rights violations and several breakdowns, the company fell into ruin, and its CEO, the eponymous Midas himself - Simon - returned to Hope's Peak Academy to fall into obscurity, his impact on the digital industry remaining the only proof that he was ever alive.",
         "birthday": "02-24",
         "branch": "North America",
@@ -407,11 +469,15 @@ const bioData = {
         "poise": "-1",
         "pronouns": "he/him",
         "username": "WishfulThinkingLLC",
-        "vocation": "Former Entrepreneur "
+        "vocation": "Former Entrepreneur",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "v":
-        {
-        "age": "19",
+    {
+		"name": "v",
+		"age": "19",
         "bio": "While it's difficult to remember her real name, V is most well-known for being the prodigy of legendary biotechnology scientist: Alpheus Rerinison. He's the founder of Velocity: a company that supplies the US with all sorts of helpful technologies for citizen's day-to-day lives, along with coordinating and producing highly dangerous bioweapons for the US government. Most of her past before becoming acquainted with Rerinison is unknown, though it's been noted that V is completely mute. Taken in by the charming young man at age eight, V has continuously impressed and become something of a wonder child in the eyes of the American public.",
         "birthday": "11-02",
         "branch": "North America",
@@ -428,17 +494,21 @@ const bioData = {
         "forensics": "0",
         "guts": "+2",
         "height": "160",
-        "level": "1",
+        "level": 1,
         "likes": "Windchimes, joke books, and grassy fields",
         "location": "New Orleans, LA",
         "poise": "+3",
         "pronouns": "she/her",
         "username": "v",
-        "vocation": "Ultimate Therapist"
+        "vocation": "Ultimate Therapist",
+        "xp" : 3,
+        "achievements" : ["collectable", "bunk","friend"],
+        "gacha" : [],
+        "collectables" : [12]
         },
-    "yiseul":
-        {
-        "age": "18",
+    {
+		"name": "yiseul",
+		"age": "18",
         "bio": "Yi-seul Jeong is the newest member of Neochron, a cutting edge team of Hope's Peak students and undergrads working on \"redefining the boundaries between human and mechanical interaction\". Whether professionally or socially, Yi-Seul is known to those he interacts with as a ball of curiosity and friendliness ready to burst at any second. Yi-seul's contributions and personal projects can be found on various platforms where he tends to feature video demonstrations of limb enhancers and other hybrid human-controlled mechanisms right next to random memes and pictures of social events. It seems to most that he doesn't mind blending his personal and professional lives, and folks are intrigued on what new technological marvels will arrive out of such a bright mind.",
         "birthday": "12-16",
         "branch": "East Asia",
@@ -455,17 +525,21 @@ const bioData = {
         "forensics": "-1",
         "guts": "+1",
         "height": "180",
-        "level": "1",
+        "level": 1,
         "likes": "Gacha games, Godzilla (& Friends) flicks, bungeoppang",
         "location": "Seongnam-si, Korea",
         "poise": "0",
         "pronouns": "he/him",
         "username": "Kaiju_Klasher",
-        "vocation": "Ultimate Roboticist"
+        "vocation": "Ultimate Roboticist",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "yumeji":
-        {
-        "age": "17",
+    {
+		"name": "yumeji",
+		"age": "17",
         "bio": "Yadama Yumeji is a perfectly normal girl that was selected for Japan's lucky student draft. Hailing from Kurashiki in the Okayama prefecture, this pretty shy girl doesn't have a lot to celebrate behind her name, aside from her accomplishments in school. She's among the top of her class in regards to grades, is the captain of her school's debate team, and puts in lots of volunteer hours. The only strange thing about her is that she ends up having to take a lot of medical days off, the specifics of why something she refrains from disclosing. If you asked people at her school what they think of her, they'd say she's pretty sweet, but you have to make an effort to reach out to her if you want to be her friend.",
         "birthday": "05-15",
         "branch": "East Asia",
@@ -482,18 +556,22 @@ const bioData = {
         "forensics": "+1",
         "guts": "+2",
         "height": "163",
-        "level": "1",
+        "level": 1,
         "likes": "Reading, cicada sounds, Shibuya",
         "location": "Kurashiki, Okayama",
         "poise": "-2",
         "pronouns": "she/her",
         "username": "YY",
-        "vocation": "Ultimate Lucky Student"
+        "vocation": "Ultimate Lucky Student",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
         },
-    "matsuno":
-        {
-        "age": "1",
-        "bio": "Haiiii~! It's me, your best friend, Matsuno Patsuno! ^w^ I am so excited that I get to share paradise with all you lovely lovely people, teehee! :D",
+    {
+		"name": "matsuno",
+		"age": "1",
+        "bio": "Haiiii~! It's me, your best friend, Matsuno Patsuno! ^w^ I am so excited that I get to share paradise with all you lovely lovely people, teehee! :D I am so, so excited to live with you all forever and ever and ever! If you ever need watashi's help for anything, feel free to shout and I'll come running to your assistance! You can also ask for me in the chat and I'll be there faster than your heart can go \"doki-doki\"! Please make sure to play nice with each other... remember that I'm your friend, not just some enforcer, teehee!~ UwU",
         "birthday": "01-01",
         "branch": "Everywhere!",
         "coordination": "+7",
@@ -515,9 +593,13 @@ const bioData = {
         "poise": "+7",
         "pronouns": "she/her",
         "username": "ma_pa",
-        "vocation": "Ultimate Game Theorist"
-        }
+        "vocation": "Ultimate Game Theorist",
+        "xp" : 0,
+        "achievements" : [],
+        "gacha" : [],
+        "collectables" : []
     }
+]
 
 function Card(props){
     function flipCard(e) {
@@ -525,7 +607,7 @@ function Card(props){
         var element = document.getElementById("idcard");
         element.classList.toggle("flipped");
     }
-    const info = bioData[props.char];
+    const info = bioData.find(x => x.name === props.char);
     const level = (info.level==="DECEASED" ? "DECEASED" : "LEVEL "+info.level);
     const extraphys = (info.extphys ? <p>{info.extphysstr}</p> : "");
     const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");

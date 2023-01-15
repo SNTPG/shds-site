@@ -3,6 +3,7 @@ import Landing from './Landing.js';
 import Cast from './Cast.js';
 import Map from './Map.js';
 import Rules from './Rules.js';
+import Stats from './Stats.js';
 import TemplateApp from './TemplateApp.js';
 import Clock from '../components/Clock.js';
 import Home from '../assets/decor/home.png';
@@ -54,6 +55,16 @@ class Tablet extends React.Component {
         element.classList.add("loading");
         this.setState({app: <Rules/>});
     }
+    openStats(){
+        console.log("Opening stats!");
+        var element = document.getElementById("activeApp");
+        element.classList.remove("loading");
+        element.classList.remove("return");
+        element.classList.add("inUse");
+        element.classList.add("loading");
+        this.setState({app: <Stats/>});
+        //Inventory char="rei"
+    }
     openGeneric(app){
         console.log("Opening textbox!");
         var element = document.getElementById("activeApp");
@@ -67,7 +78,7 @@ class Tablet extends React.Component {
     funcList = {
         "Contacts": this.openCast.bind(this), 
         "Map": this.openMap.bind(this), 
-        "Stats": this.openGeneric.bind(this), 
+        "Stats": this.openStats.bind(this), 
         "Settings": this.openGeneric.bind(this), 
         "Rules": this.openRules.bind(this), 
         "Chatroom": this.openGeneric.bind(this), 
