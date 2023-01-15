@@ -12,7 +12,7 @@ class Landing extends React.Component {
             },
             {
               appName: "Rules",
-              locked: true,
+              locked: false,
               description: ""
             },
             {
@@ -22,13 +22,13 @@ class Landing extends React.Component {
             },
             {
               appName: "Stats",
-              locked: true,
+              locked: false,
               description: ""
             },
             {
               appName: "Chatroom",
-              locked: true,
-              description: ""
+              locked: false,
+              description: "A chatroom where you can communicate with everyone. There are options to privately message your partner if you are currently committed to someone."
             },
             {
               appName: "Notepad",

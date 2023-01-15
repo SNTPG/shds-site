@@ -2,7 +2,7 @@ import Hatman from "./portraits/shds1.png";
 import Gaz from "./portraits/shds2.png";
 import Andrew from "./portraits/shds3.png";
 import Isaak from "./portraits/shds4.png";
-import Simon from "./portraits/shds5.png";
+import Simon from "./portraits/loserfaceidiotman.png";
 import YiSeul from "./portraits/shds6.png";
 import Owen from "./portraits/shds7.png";
 import Rei from "./portraits/shds8.png";
@@ -16,6 +16,7 @@ import Jones from "./portraits/shds15.png";
 import Empty from "./portraits/shds16.png";
 import V from "./portraits/shds17.png";
 import Emma from "./portraits/shds18.png";
+import Matsuno from "./portraits/matsuno_portrait.png";
 import ReiEm from "./emotes/3210.png";
 import AndrewEm from "./emotes/AMSmith.png";
 import AveryEm from "./emotes/AveryTheGreat.png";
@@ -34,6 +35,7 @@ import MaiEm from "./emotes/XxCherry_Slide_Gamer64xX[MNC].png";
 import YumejiEm from "./emotes/YY.png";
 import GazEm from "./emotes/gberry1.png";
 import SimonEm from "./emotes/WishfulThinkingLLC.png";
+import MatsunoEm from "./emotes/ma_pa.png";
 import Contacts from "./apps/iconcontacts.png";
 import Map from "./apps/iconmaps.png";
 import Message from "./apps/iconmessage.png";
@@ -62,7 +64,8 @@ const images = {
     "mai" : Mai,
     "yumeji" : Yumeji,
     "gaz" : Gaz,
-    "simon" : Simon
+    "simon" : Simon,
+    "matsuno" : Matsuno
 };
 
 export const emotes = {
@@ -83,7 +86,8 @@ export const emotes = {
     "mai" : MaiEm,
     "yumeji" : YumejiEm,
     "gaz" : GazEm,
-    "simon" : SimonEm
+    "simon" : SimonEm,
+    "matsuno": MatsunoEm
 };
 
 export const apps = {
