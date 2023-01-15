@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9d9cbb3.css",
-    "main.js": "/static/js/main.874fe9e4.js",
+    "main.css": "/static/css/main.62119d4e.css",
+    "main.js": "/static/js/main.8f5240a8.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
     "static/media/shds1.png": "/static/media/shds1.7a316daefecbeb5c2371.png",
+    "static/media/testmap.png": "/static/media/testmap.c549f2b3f22f814d450b.png",
     "static/media/shds10.png": "/static/media/shds10.eed350a2de7838bb1f10.png",
     "static/media/shds11.png": "/static/media/shds11.dcda57be0d22a4240e47.png",
+    "static/media/loserfaceidiotman.png": "/static/media/loserfaceidiotman.95d80605d544e32e7d9d.png",
     "static/media/shds18.png": "/static/media/shds18.4647bf8521f3da1f1835.png",
     "static/media/shds15.png": "/static/media/shds15.e317204f3b36fbd014a2.png",
     "static/media/shds12.png": "/static/media/shds12.d5487230e3acd8a50e8d.png",
@@ -17,7 +19,6 @@
     "static/media/shds4.png": "/static/media/shds4.c26b4881271d54db8271.png",
     "static/media/shds13.png": "/static/media/shds13.8895ad4914336d50cf6d.png",
     "static/media/shds2.png": "/static/media/shds2.d842c6c91f6a1471f88f.png",
-    "static/media/shds5.png": "/static/media/shds5.aa2122842f489275575f.png",
     "static/media/shds9.png": "/static/media/shds9.39846c1ce67d77b94fd0.png",
     "static/media/shds14.png": "/static/media/shds14.a6c93b572da428e97088.png",
     "static/media/shds3.png": "/static/media/shds3.ceec91ee19ad2290a12f.png",
@@ -25,6 +26,7 @@
     "static/media/shds7.png": "/static/media/shds7.dcdbe74d419e833b2eb7.png",
     "static/media/castbg.jpg": "/static/media/castbg.53928f780889a53ef8be.jpg",
     "static/media/Emma_Thorne.png": "/static/media/Emma_Thorne.54c27707bd7fed1c32d3.png",
+    "static/media/ma_pa.png": "/static/media/ma_pa.21b349d3edfdbda86890.png",
     "static/media/Demaka Ami Official.png": "/static/media/Demaka Ami Official.54b273acc7dcc1a3f7cd.png",
     "static/media/gberry1.png": "/static/media/gberry1.8a80abf8b278e12ddc35.png",
     "static/media/v.png": "/static/media/v.a85a31dae3bb2b690420.png",
@@ -32,7 +34,6 @@
     "static/media/Kaiju_Klasher.png": "/static/media/Kaiju_Klasher.91eb978838729bf74639.png",
     "static/media/YY.png": "/static/media/YY.9495aa992e27f28ea080.png",
     "static/media/iseedeadppl.png": "/static/media/iseedeadppl.6c36fe1ea3996e5f8334.png",
-    "static/media/prologuemap.png": "/static/media/prologuemap.516da29fecaf689bc6f9.png",
     "static/media/AveryTheGreat.png": "/static/media/AveryTheGreat.6b82bceaa575f33a7f6e.png",
     "static/media/thehatman.png": "/static/media/thehatman.d3e4dac46bbb13c091e7.png",
     "static/media/WishfulThinkingLLC.png": "/static/media/WishfulThinkingLLC.d431666ae2fb756bab75.png",
@@ -43,6 +44,7 @@
     "static/media/EMPTY SET.png": "/static/media/EMPTY SET.e1332ab12b5c45bc8733.png",
     "static/media/novel_theorist.png": "/static/media/novel_theorist.929ce3fcdb5f3263da87.png",
     "static/media/3210.png": "/static/media/3210.da3e4744962d4988d3f3.png",
+    "static/media/matsuno_portrait.png": "/static/media/matsuno_portrait.be11d643e6f6e98f31b7.png",
     "static/media/RussoOne-Regular.ttf": "/static/media/RussoOne-Regular.639afb5e42e0ff21147d.ttf",
     "static/media/SafetyMedium.otf": "/static/media/SafetyMedium.79324df7b64d816737b9.otf",
     "static/media/iconsetting.png": "/static/media/iconsetting.4511eaba5fb2302ea528.png",
@@ -57,12 +59,12 @@
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.e9d9cbb3.css.map": "/static/css/main.e9d9cbb3.css.map",
-    "main.874fe9e4.js.map": "/static/js/main.874fe9e4.js.map",
+    "main.62119d4e.css.map": "/static/css/main.62119d4e.css.map",
+    "main.8f5240a8.js.map": "/static/js/main.8f5240a8.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9d9cbb3.css",
-    "static/js/main.874fe9e4.js"
+    "static/css/main.62119d4e.css",
+    "static/js/main.8f5240a8.js"
   ]
 }
