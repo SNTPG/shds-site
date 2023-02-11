@@ -65,7 +65,7 @@ function Inventory(props){
                     </button>
                 </div>
                 <div id="statback">
-                    <div id="invheader"><h1>Inventory</h1></div>
+                    <div id="invheader"><h1>{"Inventory - " + info.tokens + " Token" + (info.tokens===1 ? "" : "s")}</h1></div>
                     <div id="itemarrays">
                         <div id="gachaWrapper">
                             <h2>Gacha Items</h2>
@@ -74,7 +74,7 @@ function Inventory(props){
                         <div id="itemSpacer"/>
                         <div id="collectableWrapper">
                             <h2>Collectable Items</h2>
-                            <Collectable collectables={info.collectables}/>
+                            <Collectable collectables={info.collectables} actualCollectables={info.actualCollectables}/>
                         </div>
                     </div>
                     <button class="flipButton" id="flipButtonBack" onClick={flipCard}>

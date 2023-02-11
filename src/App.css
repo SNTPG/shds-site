@@ -242,6 +242,7 @@ p {
 .landingBackground{
   position:absolute;
   filter: brightness(0.8);
+  background: slategray;
   background-image: url('/public/landingbg.jpg');
   box-sizing: border-box;
   background-size: cover;
@@ -459,6 +460,7 @@ p {
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  background:pink;
   background-image: url('/public/bgtest.jpg');
 }
 
@@ -1489,7 +1491,7 @@ button.statContainer:hover {
   border-style: solid;
   border-color: #bee1de;
   margin-bottom:2vh;
-  font-size:4vh;
+  font-size:3.8vh;
 }
 
 #statheader > h1{
@@ -1589,6 +1591,7 @@ button.statContainer:hover {
   margin:1vh;
   margin-top:0;
   justify-content:space-between;
+  height: 83%;
 }
 
 #itemarrays > * > h2{
@@ -1686,6 +1689,19 @@ button.statContainer:hover {
 }
 
 .found{
+  border: 10px #bee1de solid;
+  color:black;
+}
+
+.gachaItem.found{
+  background: #bee1de;
+}
+
+.collectableItem.found{
+}
+
+.collectableItem.possessed{
   background:#bee1de;
   color:black;
 }
+
