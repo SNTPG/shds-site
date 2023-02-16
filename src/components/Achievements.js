@@ -52,7 +52,7 @@ function Achievements(props){
         {"name": "book",
         "description": "Read a book and tell someone about it"},
         {"name": "tandem",
-        "description": "Ride a tandem bicycle with someone else."},
+        "description": "Ride a tandem bicycle with someone else"},
         {"name": "marshmallow",
         "description": "Roast marshmallows over a campfire"},
         {"name": "gacha",
