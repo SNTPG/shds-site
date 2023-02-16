@@ -21,6 +21,7 @@ function Rules(props) {
                                     <li>Please stay in the readily <span id="ruleImportant">available unlocked areas.</span> If you try to access an inaccessible location, <span id="ruleImportant">your safety can’t be guaranteed.</span></li>
                                     <li><span id="ruleImportant">Don’t steal</span> or use anyone’s tablet <span id="ruleImportant">without their permission!</span> I will be very sad.</li>
                                     <li>If you break or destroy an object, it will take <span id="ruleImportant">24 hours to regenerate.</span> Please be careful!</li>
+                                    <li>The doors to the outside will lock at <span id="ruleImportant">midnight.</span> You can still come back inside if you're outside, but you can't exit the building after this hour! They will unlock again at <span id="ruleImportant">7:00.</span></li>
                                     <li><span id="ruleImportant">Killing is strictly disallowed.</span></li>
                                     <ol id="killingRules" type='a'>
                                         <li>In the event that someone is killed, all enrichment activities will be <span id="ruleImportant">immediately suspended.</span></li>

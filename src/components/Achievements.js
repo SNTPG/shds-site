@@ -5,6 +5,8 @@ function Achievements(props){
     const easyAchievements = [
         {"name": "friend",
         "description": "Ask if you can be someone's friend"},
+        {"name": "climb",
+        "description": "Climb to the top of the climbing wall"},
         {"name": "cookNew",
         "description": "Cook something you never made before"},
         {"name": "locker",
@@ -31,6 +33,8 @@ function Achievements(props){
         "description": "Go fishing with Hatman"},
         {"name": "isaakEasy",
         "description": "Go on a walk with Isaak"},
+        {"name": "sleepover",
+        "description": "Have a sleepover in the treehouse"},
         {"name": "andrewEasy",
         "description": "Have Andrew give you a token"},
         {"name": "yumejiEasy",
@@ -47,6 +51,10 @@ function Achievements(props){
         "description": "Play a sport with someone"},
         {"name": "book",
         "description": "Read a book and tell someone about it"},
+        {"name": "tandem",
+        "description": "Ride a tandem bicycle with someone else."},
+        {"name": "marshmallow",
+        "description": "Roast marshmallows over a campfire"},
         {"name": "gacha",
         "description": "Roll the gacha"},
         {"name": "bunk",
@@ -128,13 +136,27 @@ function Achievements(props){
         {"name": "yiseulHard",
         "description": "Win a fight against Yi-seul"}
     ]
+    const storyAchievements = [
+        {"name": "fiveEnemies",
+        "description": "Defeat 5 enemies"},
+        {"name": "levelThree",
+        "description": "Defeat a level 3 enemy"},
+        {"name": "pacifist",
+        "description": "Defeat an enemy without hurting it"},
+        {"name": "friendFight",
+        "description": "Fight an enemy with a friend"},
+        {"name": "transform",
+        "description": "Use your magical girl power"}
+    ]
     var list = <div></div>;
     if(props.tab === "story"){
         list =
-        <div key="tbd" className={"achievement tbd"}>
-            <Heart achievement="tbd" achievements={props.achievements}/>
-            <p>TBD</p>
-        </div>
+        list = storyAchievements.map((achieve) =>
+            <div key={achieve.name} className={"achievement "+ achieve.name}>
+                <Heart achievement={achieve.name} achievements={props.achievements}/>
+                <p>{achieve.description}</p>
+            </div>
+        );
     }
     if(props.tab === "easy"){
         list = easyAchievements.map((achieve) =>
