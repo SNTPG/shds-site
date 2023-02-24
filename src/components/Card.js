@@ -565,7 +565,7 @@ export const bioData = [
         "forensics": "-1",
         "guts": "+1",
         "height": "180",
-        "level": 2,
+        "level": 3,
         "likes": "Gacha games, Godzilla (& Friends) flicks, bungeoppang",
         "location": "Seongnam-si, Korea",
         "poise": "+1",
