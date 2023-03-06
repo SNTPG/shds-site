@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.76c14a20.css",
-    "main.js": "/static/js/main.fe7889c0.js",
+    "main.css": "/static/css/main.967b1cd5.css",
+    "main.js": "/static/js/main.c810380a.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
+    "static/media/hewillnotbemissed.png": "/static/media/hewillnotbemissed.dc7c5527127fab78f394.png",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
     "static/media/shds1.png": "/static/media/shds1.7a316daefecbeb5c2371.png",
@@ -21,7 +22,6 @@
     "static/media/shds2.png": "/static/media/shds2.d842c6c91f6a1471f88f.png",
     "static/media/shds9.png": "/static/media/shds9.39846c1ce67d77b94fd0.png",
     "static/media/shds14.png": "/static/media/shds14.a6c93b572da428e97088.png",
-    "static/media/shds3.png": "/static/media/shds3.ceec91ee19ad2290a12f.png",
     "static/media/shds8.png": "/static/media/shds8.fd10ca660860c5b167f4.png",
     "static/media/shds7.png": "/static/media/shds7.dcdbe74d419e833b2eb7.png",
     "static/media/castbg.jpg": "/static/media/castbg.53928f780889a53ef8be.jpg",
@@ -59,12 +59,12 @@
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.76c14a20.css.map": "/static/css/main.76c14a20.css.map",
-    "main.fe7889c0.js.map": "/static/js/main.fe7889c0.js.map",
+    "main.967b1cd5.css.map": "/static/css/main.967b1cd5.css.map",
+    "main.c810380a.js.map": "/static/js/main.c810380a.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76c14a20.css",
-    "static/js/main.fe7889c0.js"
+    "static/css/main.967b1cd5.css",
+    "static/js/main.c810380a.js"
   ]
 }
