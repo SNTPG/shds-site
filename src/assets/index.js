@@ -1,6 +1,6 @@
 import Hatman from "./portraits/shds1.png";
 import Gaz from "./portraits/shds2.png";
-import Andrew from "./portraits/shds3.png";
+import Andrew from "./portraits/hewillnotbemissed.png";
 import Isaak from "./portraits/shds4.png";
 import Simon from "./portraits/loserfaceidiotman.png";
 import YiSeul from "./portraits/shds6.png";

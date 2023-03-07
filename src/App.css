@@ -1091,10 +1091,10 @@ left: calc(-52.5vh - 10px);*/
   grid-area: matsuno;
 }
 
-.simon{
+.simon, .andrew{
   filter: grayscale(0.9);
 }
-.chapMug.simon{
+.chapMug.simon, .cast-grid .studentMug.andrew{
   filter: grayscale(0.9) blur(0.3vh);
 }
 

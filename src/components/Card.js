@@ -42,7 +42,8 @@ export const bioData = [
         "gachaHistory" : [38, 70, 66, 33, 11, 0, 45, 19],
         "collectables" : [1, 3, 7, 5],
         "actualCollectables" : [3],
-        "tokens" : 0
+        "tokens" : 0,
+        "alive": true
     },
     {
         "name": "andrew",
@@ -51,7 +52,7 @@ export const bioData = [
         "birthday": "07-04",
         "branch": "North America",
         "coordination": "-1",
-        "dislikes": "Hamburgers, charity, the masses",
+        "likes": "Hamburgers, charity, the masses",
         "extmental": true,
         "extmentalstr": "POL: +2",
         "extmurder": false,
@@ -64,18 +65,19 @@ export const bioData = [
         "guts": "0",
         "height": "193",
         "level": 2,
-        "likes": "Oysters, short selling, Michelin 3-star restaurants",
+        "dislikes": "Oysters, short selling, Michelin 3-star restaurants",
         "location": "New York, NY",
         "poise": "+4",
         "pronouns": "he/him",
         "username": "AMSmith",
         "vocation": "Ult. Hedge Fund Investor",
-        "xp" : 31,
-        "achievements" : ["bunk", "collectable", "talent", "chaperone", "owenEasy", "cookEveryone", "emmaEasy", "transform", "levelThree", "pacifist"],
+        "xp" : 41,
+        "achievements" : ["bunk", "collectable", "talent", "chaperone", "owenEasy", "cookEveryone", "emmaEasy", "transform", "levelThree", "pacifist", "saveLife"],
         "gacha" : [47, 28, 85, 48],
         "collectables" : [1, 3],
         "actualCollectables" : [],
-        "tokens" : 0
+        "tokens" : 0,
+        "alive": false
     },
     {
         "name": "august",
@@ -108,7 +110,8 @@ export const bioData = [
         "gacha" : [38, 13, 83, 81, 73, 14, 5],
         "collectables" : [0],
         "actualCollectables" : [0],
-        "tokens" : 6
+        "tokens" : 6,
+        "alive": true
     },
     {
         "name": "avery",
@@ -142,7 +145,8 @@ export const bioData = [
         "gachaHistory" : [10, 24, 51, 52, 54],
         "collectables" : [11, 2],
         "actualCollectables" : [11],
-        "tokens" : 6
+        "tokens" : 6,
+        "alive": true
     },
     {
         "name": "camille",
@@ -175,7 +179,8 @@ export const bioData = [
         "gacha" : [],
         "collectables" : [],
         "actualCollectables" : [],
-        "tokens" : 8
+        "tokens" : 8,
+        "alive": true
     },
     {
 		"name": "emma",
@@ -209,7 +214,8 @@ export const bioData = [
         "gachaHistory" : [66, 58, 28, 30],
         "collectables" : [0, 9, 12, 14],
         "actualCollectables" : [],
-        "tokens" : 0
+        "tokens" : 0,
+        "alive": true
     },
     {
 		"name": "empty",
@@ -242,7 +248,8 @@ export const bioData = [
         "gacha" : [42, 37, 1, 63],
         "collectables" : [12],
         "actualCollectables" : [],
-        "tokens" : 7
+        "tokens" : 7,
+        "alive": true
     },
     {
 		"name": "gaz",
@@ -275,7 +282,8 @@ export const bioData = [
         "gacha" : [3, 24, 58, 79, 90],
         "collectables" : [3, 24, 58, 79, 58, 90],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "hatman",
@@ -303,13 +311,14 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "thehatman",
         "vocation": "Ultimate Fisherman",
-        "xp" : 98,
-        "achievements" : ["bunk", "hatmanHard", "cookEveryone", "cookNew", "gacha", "talent", "chaperone", "hatmanEasy", "yiseulEasy", "owenEasy", "friendFight", "transform", "owenHard", "amiHard", "vHard", "levelThree", "pacifist", "giftLove", "fiveGift"],
+        "xp" : 103,
+        "achievements" : ["bunk", "hatmanHard", "cookEveryone", "cookNew", "gacha", "talent", "chaperone", "hatmanEasy", "yiseulEasy", "owenEasy", "friendFight", "transform", "owenHard", "amiHard", "vHard", "levelThree", "pacifist", "giftLove", "fiveGift", "fiveEnemies"],
         "gacha" : [75, 95, 64, 23, 80, 39, 91, 99, 45],
         "gachaHistory" : [75, 95, 5,40,96,47,64,79,23,80, 39, 91, 99, 45],
         "collectables" : [],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "isaak",
@@ -343,7 +352,8 @@ export const bioData = [
         "gachaHistory" : [38, 70, 66, 33, 11],
         "collectables" : [],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "jones",
@@ -376,7 +386,8 @@ export const bioData = [
         "gacha" : [6],
         "collectables" : [9],
         "actualCollectables" : [9],
-        "tokens" : 7
+        "tokens" : 7,
+        "alive": true
     },
     {
 		"name": "mai",
@@ -404,13 +415,14 @@ export const bioData = [
         "pronouns": "she/her",
         "username": "XxCherry_Slide_Gamer64xX[MNC]",
         "vocation": "Ultimate Detective",
-        "xp" : 140,
-        "achievements" : ["collectable", "bunk", "friend", "candle", "emmaEasy", "cookNew", "chaperone", "sport", "chair", "camilleEasy", "book", "flower", "amiEasy", "firework", "maiEasy", "gacha", "owenHard", "gift", "mixtape", "talent", "owenEasy", "emptyEasy", "umbrella", "cookEveryone", "show", "averyEasy", "group", "matsuno", "vEasy", "amiHard", "isaakEasy", "reiEasy", "andrewHard", "hatmanEasy", "locker", "transform", "fiveGift", "friendFight", "emmaHard", "climb", "yiseulHard", "fiveEnemies", "pacifist"],
+        "xp" : 146,
+        "achievements" : ["collectable", "bunk", "friend", "candle", "emmaEasy", "cookNew", "chaperone", "sport", "chair", "camilleEasy", "book", "flower", "amiEasy", "firework", "maiEasy", "gacha", "owenHard", "gift", "mixtape", "talent", "owenEasy", "emptyEasy", "umbrella", "cookEveryone", "show", "averyEasy", "group", "matsuno", "vEasy", "amiHard", "isaakEasy", "reiEasy", "andrewHard", "hatmanEasy", "locker", "transform", "fiveGift", "friendFight", "emmaHard", "climb", "yiseulHard", "fiveEnemies", "pacifist", "levelThree", "sleepover"],
         "gacha" : [0],
         "gachaHistory" : [3, 93, 38, 70, 66, 33, 11],
         "collectables" : [1, 2, 3, 13, 6, 5, 0],
         "actualCollectables" : [0],
-        "tokens" : 7
+        "tokens" : 7,
+        "alive": true
     },
     {
 		"name": "owen",
@@ -438,13 +450,14 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "iseedeadppl",
         "vocation": "Ultimate Ghost Logger",
-        "xp" : 76,
-        "achievements" : ["bunk", "owenEasy", "friend", "candle", "chaperone", "collectable", "gacha", "maiEasy", "emmaEasy", "vEasy", "talent", "owenHard", "firework", "gift", "hatmanEasy", "amiEasy", "amiHard", "book", "giftLove", "averyEasy", "transform", "locker", "flower", "friendFight", "yiseulEasy", "yiseulHard", "tandem", "levelThree"],
+        "xp" : 81,
+        "achievements" : ["bunk", "owenEasy", "friend", "candle", "chaperone", "collectable", "gacha", "maiEasy", "emmaEasy", "vEasy", "talent", "owenHard", "firework", "gift", "hatmanEasy", "amiEasy", "amiHard", "book", "giftLove", "averyEasy", "transform", "locker", "flower", "friendFight", "yiseulEasy", "yiseulHard", "tandem", "levelThree", "fiveEnemies"],
         "gacha" : [93, 52, 82],
         "gachaHistory" : [93, 24, 52, 63, 82],
         "collectables" : [2, 3, 13, 10, 2, 11],
         "actualCollectables" : [2],
-        "tokens" : 8
+        "tokens" : 8,
+        "alive": true
     },
     {
 		"name": "rei",
@@ -478,7 +491,8 @@ export const bioData = [
         "gachaHistory" : [93, 62, 66],
         "collectables" : [6, 13],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "simon",
@@ -511,7 +525,8 @@ export const bioData = [
         "gacha" : [],
         "collectables" : [],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": false
     },
     {
 		"name": "v",
@@ -539,13 +554,14 @@ export const bioData = [
         "pronouns": "she/her",
         "username": "v",
         "vocation": "Ultimate Therapist",
-        "xp" : 151,
-        "achievements" : ["collectable", "bunk", "friend", "owenEasy", "cookEveryone", "isaakEasy", "chaperone", "reiEasy", "owenHard", "emmaEasy", "gacha", "talent", "mixtape", "gift", "locker", "andrewHard", "amiHard", "jonesEasy", "maiEasy", "flower", "cookNew", "matsuno", "averyEasy", "group", "show", "vEasy", "vHard", "transform", "friendFight", "fiveGift", "reiHard", "climb", "levelThree", "pacifist", "cherry", "augustHard"],
+        "xp" : 156,
+        "achievements" : ["collectable", "bunk", "friend", "owenEasy", "cookEveryone", "isaakEasy", "chaperone", "reiEasy", "owenHard", "emmaEasy", "gacha", "talent", "mixtape", "gift", "locker", "andrewHard", "amiHard", "jonesEasy", "maiEasy", "flower", "cookNew", "matsuno", "averyEasy", "group", "show", "vEasy", "vHard", "transform", "friendFight", "fiveGift", "reiHard", "climb", "levelThree", "pacifist", "cherry", "augustHard", "fiveEnemies"],
         "gacha" : [46, 12, 16, 61, 0, 43, 92, 93],
         "gachaHistory" : [66, 46, 12, 16, 83, 81, 73, 14, 5, 7, 30, 61, 0, 43, 92, 93],
         "collectables" : [12, 4, 14, 13, 7],
         "actualCollectables" : [],
-        "tokens" : 0
+        "tokens" : 0,
+        "alive": true
     },
     {
 		"name": "yiseul",
@@ -579,7 +595,8 @@ export const bioData = [
         "gachaHistory" : [17, 5, 40, 96, 47, 79, 39, 91, 99, 36, 63, 45],
         "collectables" : [0, 5, 6, 13],
         "actualCollectables" : [],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "yumeji",
@@ -612,7 +629,8 @@ export const bioData = [
         "gacha" : [97],
         "collectables" : [],
         "actualCollectables" : [11],
-        "tokens" : 5
+        "tokens" : 5,
+        "alive": true
     },
     {
 		"name": "matsuno",
@@ -643,7 +661,8 @@ export const bioData = [
         "xp" : 0,
         "achievements" : [],
         "gacha" : [],
-        "collectables" : []
+        "collectables" : [],
+        "alive": true
     }
 ]
 
@@ -658,6 +677,8 @@ function Card(props){
     const extraphys = (info.extphys ? <p>{info.extphysstr}</p> : "");
     const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");
     const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");
+    const levelstring = (info.alive ? <p>{"LEVEL " + info.level}</p> : <p>DECEASED</p>);
+    
     return(
         <div id="idcard" className={props.char}>
             <div id="idflip">
@@ -673,7 +694,7 @@ function Card(props){
                                 <h3>{info.vocation}</h3>
                             </div>  
                             <div class="statsheader">Stats</div>
-                            <div class="idlevel"><p>{level}</p></div>  
+                            <div class="idlevel">{levelstring}</div>  
                             <div class="stats phys">
                                 <p>{"FIT: "+info.fitness}</p>
                                 <p>{"CDN: "+info.coordination}</p>
