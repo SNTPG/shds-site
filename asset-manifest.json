@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.967b1cd5.css",
-    "main.js": "/static/js/main.44d3ce91.js",
+    "main.css": "/static/css/main.cc50b4ad.css",
+    "main.js": "/static/js/main.8f667fb6.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
+    "static/media/shds19.png": "/static/media/shds19.c67515c10bdc8ce2d648.png",
+    "static/media/byebyebye.png": "/static/media/byebyebye.c6082e85ba357674cbad.png",
     "static/media/hewillnotbemissed.png": "/static/media/hewillnotbemissed.dc7c5527127fab78f394.png",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
@@ -16,11 +18,10 @@
     "static/media/shds12.png": "/static/media/shds12.d5487230e3acd8a50e8d.png",
     "static/media/shds17.png": "/static/media/shds17.828482b8ec61a27be6d7.png",
     "static/media/shds16.png": "/static/media/shds16.ec4f7d2a88383fde8246.png",
-    "static/media/shds6.png": "/static/media/shds6.5b361325ddab7fc0e637.png",
     "static/media/shds4.png": "/static/media/shds4.c26b4881271d54db8271.png",
-    "static/media/shds13.png": "/static/media/shds13.8895ad4914336d50cf6d.png",
     "static/media/shds2.png": "/static/media/shds2.d842c6c91f6a1471f88f.png",
     "static/media/shds9.png": "/static/media/shds9.39846c1ce67d77b94fd0.png",
+    "static/media/shds13.png": "/static/media/shds13.61e18303687ec5e65ee5.png",
     "static/media/shds14.png": "/static/media/shds14.a6c93b572da428e97088.png",
     "static/media/shds8.png": "/static/media/shds8.fd10ca660860c5b167f4.png",
     "static/media/shds7.png": "/static/media/shds7.dcdbe74d419e833b2eb7.png",
@@ -29,6 +30,7 @@
     "static/media/ma_pa.png": "/static/media/ma_pa.21b349d3edfdbda86890.png",
     "static/media/Demaka Ami Official.png": "/static/media/Demaka Ami Official.54b273acc7dcc1a3f7cd.png",
     "static/media/gberry1.png": "/static/media/gberry1.8a80abf8b278e12ddc35.png",
+    "static/media/CRUSTLOVER.png": "/static/media/CRUSTLOVER.391973ab2bd6e88a986b.png",
     "static/media/v.png": "/static/media/v.a85a31dae3bb2b690420.png",
     "static/media/XxCherry_Slide_Gamer64xX[MNC].png": "/static/media/XxCherry_Slide_Gamer64xX[MNC].91159071edf9e1eaaa0c.png",
     "static/media/Kaiju_Klasher.png": "/static/media/Kaiju_Klasher.91eb978838729bf74639.png",
@@ -39,9 +41,9 @@
     "static/media/WishfulThinkingLLC.png": "/static/media/WishfulThinkingLLC.d431666ae2fb756bab75.png",
     "static/media/AMSmith.png": "/static/media/AMSmith.0be14de44f4969aaf992.png",
     "static/media/filbleufilms.png": "/static/media/filbleufilms.31d868b2f6a7c6ce6f59.png",
-    "static/media/caonmille.png": "/static/media/caonmille.fae897bdca389bead5e3.png",
     "static/media/testaccount.png": "/static/media/testaccount.909b0629285e85fe1657.png",
     "static/media/EMPTY SET.png": "/static/media/EMPTY SET.e1332ab12b5c45bc8733.png",
+    "static/media/caonmille.png": "/static/media/caonmille.12db19ca63861bba034f.png",
     "static/media/novel_theorist.png": "/static/media/novel_theorist.929ce3fcdb5f3263da87.png",
     "static/media/3210.png": "/static/media/3210.da3e4744962d4988d3f3.png",
     "static/media/matsuno_portrait.png": "/static/media/matsuno_portrait.be11d643e6f6e98f31b7.png",
@@ -59,12 +61,12 @@
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.967b1cd5.css.map": "/static/css/main.967b1cd5.css.map",
-    "main.44d3ce91.js.map": "/static/js/main.44d3ce91.js.map",
+    "main.cc50b4ad.css.map": "/static/css/main.cc50b4ad.css.map",
+    "main.8f667fb6.js.map": "/static/js/main.8f667fb6.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.967b1cd5.css",
-    "static/js/main.44d3ce91.js"
+    "static/css/main.cc50b4ad.css",
+    "static/js/main.8f667fb6.js"
   ]
 }
