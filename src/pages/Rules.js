@@ -28,7 +28,7 @@ function Rules(props) {
                                         <li>After such, an <span id="ruleImportant">investigation</span> of the crime will be held. After this, an <span id="ruleImportant">open-forum trial</span> will be held in an attempt to identify the culprit.</li>
                                         <li>If the culprit <span id="ruleImportant">confesses</span> to their crime, or is correctly <span id="ruleImportant">identified</span> by the rest of the cast, they will be <span id="ruleImportant">rehabilitated</span> by punishment.</li>
                                         <li>If the culprit eludes detection throughout the course of the trial <span id="ruleImportant">without repentance</span>, they will be <span id="ruleImportant">ejected</span> for the good of the whole. The remaining cast will be <span id="ruleImportant">gently punished</span> for not keeping a closer eye on them.</li>
-                                        <li>In the event that a culprit has killed more than two people, they will be <span id="ruleImportant">forcibly ejected without any trial.</span></li>
+                                        <li>In the event that a culprit has killed more than two people, they will be <span id="ruleImportant">forcibly rehabilitated without any trial.</span></li>
                                     </ol>
                                     <li><span id="ruleImportant">New rules</span> can be patched in for balance reasons at any time.</li>
                                     <li><span id="ruleImportant">Matsuno</span> is in charge of enforcing these rules.</li>

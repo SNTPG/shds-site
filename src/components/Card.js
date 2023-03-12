@@ -151,11 +151,11 @@ export const bioData = [
     {
         "name": "camille",
         "age": "19",
-        "bio": "Nobody has permission to live in the Boundary Waters Canoe Area Wilderness\u2014 because that's the law! With assistance from Hope's Peak and their own dedication to its oceans, they've certainly got the credibility to camp in their space forever. And space, they have, for they only the post findings when they of the 142 homes and canoes.",
+        "bio": "Nobody has permission to live in the Boundary Waters Canoe Area Wilderness— except for Camille Freeman, that is! With assistance from Hope’s Peak and their own dedication to its lakes, they’ve certainly got the credibility to camp in their cabin forever. And camp forever, they have, for their groundbreaking report is the only one they’ve ever published.",
         "birthday": "05-08",
         "branch": "North America",
         "coordination": "+2",
-        "dislikes": "SPACETIME living, plastic bags, and GPS",
+        "dislikes": "Urban living, plastic bags, EDM",
         "extmental": true,
         "extmentalstr": "ATN: -2",
         "extmurder": false,
@@ -168,12 +168,12 @@ export const bioData = [
         "guts": "0",
         "height": "163",
         "level": 1,
-        "likes": "Canoes, bird calls, and PEANUT HOLE",
+        "likes": "Canoes, bird calls, bread and butter",
         "location": "Boundary Water, MN",
         "poise": "-2",
         "pronouns": "they/she",
         "username": "caonmille",
-        "vocation": "Ultimate Oceanographer",
+        "vocation": "Ultimate Limnologist",
         "xp" : 19,
         "achievements" : ["owenEasy", "chaperone", "transform", "maiEasy", "bunk", "friendFight", "levelThree"],
         "gacha" : [],
@@ -596,7 +596,7 @@ export const bioData = [
         "collectables" : [0, 5, 6, 13],
         "actualCollectables" : [],
         "tokens" : 5,
-        "alive": true
+        "alive": false
     },
     {
 		"name": "yumeji",
@@ -629,6 +629,40 @@ export const bioData = [
         "gacha" : [97],
         "collectables" : [],
         "actualCollectables" : [11],
+        "tokens" : 5,
+        "alive": true
+    },
+    {
+		"name": "rigel",
+		"age": "5 / 27 / 3834",
+        "bio": "Your new bestest friend! [MORE DATA IS NEEDED]",
+        "birthday": "142 ENTRIES",
+        "branch": "???",
+        "coordination": "-1",
+        "dislikes": "Point Nemo, GPS, Kansas",
+        "extmental": true,
+        "extmentalstr": "ISS: +3",
+        "extmurder": false,
+        "extmurderstr": "",
+        "extphys": true,
+        "extphysstr": "REP: +1",
+        "fitness": "-2",
+        "focus": "+2",
+        "forensics": "-3",
+        "guts": "-2",
+        "height": "160 / 4500",
+        "level": 1,
+        "likes": "Peanut Hole, Camille Freeman, bioluminescence",
+        "location": "???, Canada",
+        "poise": "-3",
+        "pronouns": "any",
+        "username": "CRUSTLOVER",
+        "vocation": "???",
+        "xp" : 8,
+        "achievements" : ["owenEasy", "chaperone", "maiEasy", "friendFight"],
+        "gacha" : [],
+        "collectables" : [],
+        "actualCollectables" : [],
         "tokens" : 5,
         "alive": true
     },
@@ -673,7 +707,7 @@ function Card(props){
         element.classList.toggle("flipped");
     }
     const info = bioData.find(x => x.name === props.char);
-    const level = (info.level==="DECEASED" ? "DECEASED" : "LEVEL "+info.level);
+    // const level = (info.level==="DECEASED" ? "DECEASED" : "LEVEL "+info.level);
     const extraphys = (info.extphys ? <p>{info.extphysstr}</p> : "");
     const extramental = (info.extmental ? <p>{info.extmentalstr}</p> : "");
     const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");

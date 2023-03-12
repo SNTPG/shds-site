@@ -979,6 +979,12 @@ left: calc(-52.5vh - 10px);*/
   width:107vh;
   height:72vh;
 }
+.rigel.clicked{
+  top: -55.5vh;
+  left: -25.5vh;
+  width:107vh;
+  height:72vh;
+}
 .gaz.clicked{
   top: -55.5vh;
   left: -44.5vh;
@@ -1091,10 +1097,10 @@ left: calc(-52.5vh - 10px);*/
   grid-area: matsuno;
 }
 
-.simon, .andrew{
+.simon, .andrew, .yiseul{
   filter: grayscale(0.9);
 }
-.chapMug.simon, .cast-grid .studentMug.andrew{
+.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul{
   filter: grayscale(0.9) blur(0.3vh);
 }
 

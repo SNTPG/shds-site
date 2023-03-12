@@ -28,7 +28,7 @@ class Cast extends React.Component {
         this.setState({card: <Card char={character} onClick={() => this.closeCard(character)}/>});
     }
     render() {
-        const students = ["rei", "andrew", "avery", "camille", "ami", "emma", "empty", "august", "owen", "yiseul", "isaak", "jones", "hatman", "v", "mai", "yumeji"];
+        const students = ["rei", "andrew", "avery", "camille", "ami", "emma", "empty", "august", "owen", "yiseul", "isaak", "jones", "hatman", "v", "mai", "yumeji", "rigel"];
         const chaps = ["gaz", "simon", "matsuno"];
         const studentSquares = students.map((student) =>
             <div key={student.toString()} className={"student square "+ student} id={student+"Square"}>

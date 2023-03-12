@@ -3,7 +3,7 @@ import Gaz from "./portraits/shds2.png";
 import Andrew from "./portraits/hewillnotbemissed.png";
 import Isaak from "./portraits/shds4.png";
 import Simon from "./portraits/loserfaceidiotman.png";
-import YiSeul from "./portraits/shds6.png";
+import YiSeul from "./portraits/byebyebye.png";
 import Owen from "./portraits/shds7.png";
 import Rei from "./portraits/shds8.png";
 import August from "./portraits/shds9.png";
@@ -16,6 +16,7 @@ import Jones from "./portraits/shds15.png";
 import Empty from "./portraits/shds16.png";
 import V from "./portraits/shds17.png";
 import Emma from "./portraits/shds18.png";
+import Rigel from "./portraits/shds19.png";
 import Matsuno from "./portraits/matsuno_portrait.png";
 import ReiEm from "./emotes/3210.png";
 import AndrewEm from "./emotes/AMSmith.png";
@@ -33,6 +34,7 @@ import HatmanEm from "./emotes/thehatman.png";
 import VEm from "./emotes/v.png";
 import MaiEm from "./emotes/XxCherry_Slide_Gamer64xX[MNC].png";
 import YumejiEm from "./emotes/YY.png";
+import RigelEm from "./emotes/CRUSTLOVER.png";
 import GazEm from "./emotes/gberry1.png";
 import SimonEm from "./emotes/WishfulThinkingLLC.png";
 import MatsunoEm from "./emotes/ma_pa.png";
@@ -63,6 +65,7 @@ const images = {
     "v" : V,
     "mai" : Mai,
     "yumeji" : Yumeji,
+    "rigel": Rigel,
     "gaz" : Gaz,
     "simon" : Simon,
     "matsuno" : Matsuno
@@ -85,6 +88,7 @@ export const emotes = {
     "v" : VEm,
     "mai" : MaiEm,
     "yumeji" : YumejiEm,
+    "rigel": RigelEm,
     "gaz" : GazEm,
     "simon" : SimonEm,
     "matsuno": MatsunoEm
