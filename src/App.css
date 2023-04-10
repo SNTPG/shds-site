@@ -1370,6 +1370,13 @@ left: calc(-52.5vh - 10px);*/
   box-sizing: border-box;
 }
 
+.statContainer.committed .studentMug{
+  background:#77000088;
+  min-height:100%;
+  border: 2px solid #e01c8e;
+  box-sizing: border-box;
+}
+
 button.statContainer {
   background:0;
   border:0;
@@ -1391,10 +1398,19 @@ button.statContainer:hover {
   box-sizing: border-box;
 }
 
+.committed .charLevel{
+  background:#77000088;
+  border: 2px solid #e01c8e;
+}
+
 .levelBar{
   height:100%;
   position:absolute;
   background:#6b1ce0;
+}
+
+.committed .levelBar{
+  background: #e01c8e;
 }
 
 .levelText {
@@ -1408,8 +1424,9 @@ button.statContainer:hover {
   left:50%;
 }
 
-
-
+.committed .levelText {
+  color:#ffe603;
+}
 
 #statcard {
   animation: fadeInAnimation ease 1s;

@@ -24,7 +24,7 @@ function Stats(props) {
 
     const students = bioData.filter(x => (x.name !== "matsuno" && x.name !== "simon" && x.name !== "gaz"));
     var bars = students.map((char) =>
-            <button key={char.name} className={"statContainer "+ char.name} id={char.name+"Container"} onClick={() => loadCard(char.name)}>
+            <button key={char.name} className={"statContainer "+ char.name + (char.committed ? " committed" : "")} id={char.name+"Container"} onClick={() => loadCard(char.name)}>
                 <StudentMug character={char.name}/>
                 <div className={"charLevel " + char.name} id={char.name+"Level"}>
                     <div className={"levelBar " + char.name} id={char.name+"LevelBar"} style={{width:(char.xp - ((((char.level)*(char.level + 1)/2)-1)*10))/((char.level+1)*10)*100+"%"}}/>

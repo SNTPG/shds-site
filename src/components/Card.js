@@ -22,28 +22,29 @@ export const bioData = [
         "extmentalstr": "CPU: +3",
         "extmurder": false,
         "extmurderstr": "",
-        "extphys": false,
-        "extphysstr": "",
+        "extphys": true,
+        "extphysstr": "2DW: +1",
         "fitness": "-1",
         "focus": "+3",
         "forensics": "+1",
         "guts": "0",
         "height": "170",
-        "level": 3,
+        "level": 4,
         "likes": "The music people make with her!, licorice, cute outfits",
         "location": "The Internet",
         "poise": "+2",
         "pronouns": "she/her",
         "username": "Demaka Ami Official",
         "vocation": "Ultimate Singing Program",
-        "xp" : 83,
-        "achievements" : ["bunk", "friend", "collectable", "matsuno", "maiEasy", "firework", "chaperone", "gacha", "talent", "owenEasy", "candle", "cookEveryone", "book", "gift", "owenHard", "amiHard", "transform", "friendFight", "vHard", "levelThree", "giftLove", "pacifist"],
+        "xp" : 94,
+        "achievements" : ["bunk", "friend", "collectable", "matsuno", "maiEasy", "firework", "chaperone", "gacha", "talent", "owenEasy", "candle", "cookEveryone", "book", "gift", "owenHard", "amiHard", "transform", "friendFight", "vHard", "levelThree", "giftLove", "pacifist", "reiHard", "sleepover"],
         "gacha" : [38, 70, 66, 33, 11, 45, 19],
         "gachaHistory" : [38, 70, 66, 33, 11, 0, 45, 19],
         "collectables" : [1, 3, 7, 5],
         "actualCollectables" : [3],
-        "tokens" : 0,
-        "alive": true
+        "tokens" : 5,
+        "alive": true,
+        "committed": false
     },
     {
         "name": "andrew",
@@ -77,7 +78,8 @@ export const bioData = [
         "collectables" : [1, 3],
         "actualCollectables" : [],
         "tokens" : 0,
-        "alive": false
+        "alive": false,
+        "committed": false
     },
     {
         "name": "august",
@@ -105,13 +107,14 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "filbleufilms",
         "vocation": "Ultimate Filmmaker",
-        "xp" : 72,
-        "achievements" : ["bunk", "saveLife", "isaakEasy", "cookEveryone", "emmaEasy", "group", "gacha", "isaakEasy", "chaperone", "talent", "book", "owenEasy", "jonesEasy", "collectable", "augustHard", "transform", "tandem", "friendFight", "levelThree", "pacifist"],
+        "xp" : 74,
+        "achievements" : ["bunk", "saveLife", "isaakEasy", "cookEveryone", "emmaEasy", "group", "gacha", "isaakEasy", "chaperone", "talent", "book", "owenEasy", "jonesEasy", "collectable", "augustHard", "transform", "tandem", "friendFight", "levelThree", "pacifist", "augustEasy", "sleepover"],
         "gacha" : [38, 13, 83, 81, 73, 14, 5],
         "collectables" : [0],
         "actualCollectables" : [0],
         "tokens" : 4,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
         "name": "avery",
@@ -146,7 +149,8 @@ export const bioData = [
         "collectables" : [11, 2],
         "actualCollectables" : [11],
         "tokens" : 6,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
         "name": "camille",
@@ -180,7 +184,8 @@ export const bioData = [
         "collectables" : [],
         "actualCollectables" : [],
         "tokens" : 8,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "emma",
@@ -215,7 +220,8 @@ export const bioData = [
         "collectables" : [0, 9, 12, 14],
         "actualCollectables" : [],
         "tokens" : 0,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "empty",
@@ -249,7 +255,8 @@ export const bioData = [
         "collectables" : [12],
         "actualCollectables" : [],
         "tokens" : 7,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "gaz",
@@ -266,9 +273,9 @@ export const bioData = [
         "extphys": true,
         "extphysstr": "NRG: -2",
         "fitness": "+2",
-        "focus": "+1",
+        "focus": "-1",
         "forensics": "+1",
-        "guts": "+3",
+        "guts": "+5",
         "height": "196",
         "level": 1,
         "likes": "Safety, the right to repair, YouTube tutorials",
@@ -283,7 +290,8 @@ export const bioData = [
         "collectables" : [3, 24, 58, 79, 58, 90],
         "actualCollectables" : [],
         "tokens" : 5,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "hatman",
@@ -311,14 +319,15 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "thehatman",
         "vocation": "Ultimate Fisherman",
-        "xp" : 113,
-        "achievements" : ["bunk", "hatmanHard", "cookEveryone", "cookNew", "gacha", "talent", "chaperone", "hatmanEasy", "yiseulEasy", "owenEasy", "friendFight", "transform", "owenHard", "amiHard", "vHard", "levelThree", "pacifist", "giftLove", "fiveGift", "fiveEnemies", "yiseulHard"],
+        "xp" : 114,
+        "achievements" : ["bunk", "hatmanHard", "cookEveryone", "cookNew", "gacha", "talent", "chaperone", "hatmanEasy", "yiseulEasy", "owenEasy", "friendFight", "transform", "owenHard", "amiHard", "vHard", "levelThree", "pacifist", "giftLove", "fiveGift", "fiveEnemies", "yiseulHard", "sleepover"],
         "gacha" : [75, 95, 64, 23, 80, 39, 91, 99, 45],
         "gachaHistory" : [75, 95, 5,40,96,47,64,79,23,80, 39, 91, 99, 45],
         "collectables" : [],
         "actualCollectables" : [],
         "tokens" : 6,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "isaak",
@@ -346,14 +355,15 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "novel_theorist",
         "vocation": "Ultimate Music Theorist",
-        "xp" : 56,
-        "achievements" : ["bunk", "owenEasy", "hatmanEasy", "chaperone", "amiEasy", "transform", "fiveGift", "giftLove", "talent", "transform", "levelThree", "pacifist", "vHard"],
+        "xp" : 57,
+        "achievements" : ["bunk", "owenEasy", "hatmanEasy", "chaperone", "amiEasy", "transform", "fiveGift", "giftLove", "talent", "transform", "levelThree", "pacifist", "vHard", "augustEasy"],
         "gacha" : [],
         "gachaHistory" : [38, 70, 66, 33, 11],
         "collectables" : [],
         "actualCollectables" : [],
         "tokens" : 10,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "jones",
@@ -381,13 +391,14 @@ export const bioData = [
         "pronouns": "yours",
         "username": "testaccount",
         "vocation": "Ultimate \"Conduit\"",
-        "xp" : 24,
-        "achievements" : ["bunk", "chaperone", "collectable", "owenEasy", "gacha", "locker", "matsuno", "vEasy", "transform", "levelThree", "friendFight", "book"],
+        "xp" : 25,
+        "achievements" : ["bunk", "chaperone", "collectable", "owenEasy", "gacha", "locker", "matsuno", "vEasy", "transform", "levelThree", "friendFight", "book", "augustEasy"],
         "gacha" : [6],
         "collectables" : [9],
         "actualCollectables" : [9],
         "tokens" : 7,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "mai",
@@ -404,25 +415,26 @@ export const bioData = [
         "extphys": true,
         "extphysstr": "HLY: +2",
         "fitness": "+2",
-        "focus": "-2",
+        "focus": "0",
         "forensics": "-3",
-        "guts": "+5",
+        "guts": "-2",
         "height": "168",
-        "level": 5,
+        "level": 7,
         "likes": "Good vibes, sweet flavors, American cinema",
         "location": "Yokohama, Kanegawa",
         "poise": "0",
         "pronouns": "she/her",
         "username": "XxCherry_Slide_Gamer64xX[MNC]",
         "vocation": "Ultimate Detective",
-        "xp" : 156,
-        "achievements" : ["collectable", "bunk", "friend", "candle", "emmaEasy", "cookNew", "chaperone", "sport", "chair", "camilleEasy", "book", "flower", "amiEasy", "firework", "maiEasy", "gacha", "owenHard", "gift", "mixtape", "talent", "owenEasy", "emptyEasy", "umbrella", "cookEveryone", "show", "averyEasy", "group", "matsuno", "vEasy", "amiHard", "isaakEasy", "reiEasy", "andrewHard", "hatmanEasy", "locker", "transform", "fiveGift", "friendFight", "emmaHard", "climb", "yiseulHard", "fiveEnemies", "pacifist", "levelThree", "sleepover", "vHard"],
-        "gacha" : [0],
-        "gachaHistory" : [3, 93, 38, 70, 66, 33, 11],
+        "xp" : 318,
+        "achievements" : ["collectable", "bunk", "friend", "candle", "emmaEasy", "cookNew", "chaperone", "sport", "chair", "camilleEasy", "book", "flower", "amiEasy", "firework", "maiEasy", "gacha", "owenHard", "gift", "mixtape", "talent", "owenEasy", "emptyEasy", "umbrella", "cookEveryone", "show", "averyEasy", "group", "matsuno", "vEasy", "amiHard", "isaakEasy", "reiEasy", "andrewHard", "hatmanEasy", "locker", "transform", "fiveGift", "friendFight", "emmaHard", "climb", "yiseulHard", "fiveEnemies", "pacifist", "levelThree", "sleepover", "vHard", "augustEasy", "fish"],
+        "gacha" : [66, 16, 73, 89],
+        "gachaHistory" : [3, 93, 38, 70, 66, 33, 11, 66, 16, 73, 89],
         "collectables" : [1, 2, 3, 13, 6, 5, 0],
         "actualCollectables" : [0],
-        "tokens" : 4,
-        "alive": true
+        "tokens" : 10,
+        "alive": true,
+        "committed": true
     },
     {
 		"name": "owen",
@@ -450,14 +462,15 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "iseedeadppl",
         "vocation": "Ultimate Ghost Logger",
-        "xp" : 91,
-        "achievements" : ["bunk", "owenEasy", "friend", "candle", "chaperone", "collectable", "gacha", "maiEasy", "emmaEasy", "vEasy", "talent", "owenHard", "firework", "gift", "hatmanEasy", "amiEasy", "amiHard", "book", "giftLove", "averyEasy", "transform", "locker", "flower", "friendFight", "yiseulEasy", "yiseulHard", "tandem", "levelThree", "fiveEnemies", "camilleHard"],
+        "xp" : 93,
+        "achievements" : ["bunk", "owenEasy", "friend", "candle", "chaperone", "collectable", "gacha", "maiEasy", "emmaEasy", "vEasy", "talent", "owenHard", "firework", "gift", "hatmanEasy", "amiEasy", "amiHard", "book", "giftLove", "averyEasy", "transform", "locker", "flower", "friendFight", "yiseulEasy", "yiseulHard", "tandem", "levelThree", "fiveEnemies", "camilleHard", "augustEasy", "sleepover"],
         "gacha" : [93, 52, 82],
         "gachaHistory" : [93, 24, 52, 63, 82],
         "collectables" : [2, 3, 13, 10, 2, 11],
         "actualCollectables" : [2],
         "tokens" : 11,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "rei",
@@ -491,8 +504,9 @@ export const bioData = [
         "gachaHistory" : [93, 62, 66],
         "collectables" : [6, 13],
         "actualCollectables" : [],
-        "tokens" : 10,
-        "alive": true
+        "tokens" : 5,
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "simon",
@@ -526,7 +540,8 @@ export const bioData = [
         "collectables" : [],
         "actualCollectables" : [],
         "tokens" : 5,
-        "alive": false
+        "alive": false,
+        "committed": false
     },
     {
 		"name": "v",
@@ -547,21 +562,22 @@ export const bioData = [
         "forensics": "0",
         "guts": "+2",
         "height": "160",
-        "level": 5,
+        "level": 7,
         "likes": "Windchimes, joke books, and grassy fields",
         "location": "New Orleans, LA",
         "poise": "+3",
         "pronouns": "she/her",
         "username": "v",
         "vocation": "Ultimate Therapist",
-        "xp" : 157,
-        "achievements" : ["collectable", "bunk", "friend", "owenEasy", "cookEveryone", "isaakEasy", "chaperone", "reiEasy", "owenHard", "emmaEasy", "gacha", "talent", "mixtape", "gift", "locker", "andrewHard", "amiHard", "jonesEasy", "maiEasy", "flower", "cookNew", "matsuno", "averyEasy", "group", "show", "vEasy", "vHard", "transform", "friendFight", "fiveGift", "reiHard", "climb", "levelThree", "pacifist", "cherry", "augustHard", "fiveEnemies", "emptyEasy"],
-        "gacha" : [46, 12, 16, 61, 0, 43, 92, 93],
-        "gachaHistory" : [66, 46, 12, 16, 83, 81, 73, 14, 5, 7, 30, 61, 0, 43, 92, 93],
+        "xp" : 318,
+        "achievements" : ["collectable", "bunk", "friend", "owenEasy", "cookEveryone", "isaakEasy", "chaperone", "reiEasy", "owenHard", "emmaEasy", "gacha", "talent", "mixtape", "gift", "locker", "andrewHard", "amiHard", "jonesEasy", "maiEasy", "flower", "cookNew", "matsuno", "averyEasy", "group", "show", "vEasy", "vHard", "transform", "friendFight", "fiveGift", "reiHard", "climb", "levelThree", "pacifist", "cherry", "augustHard", "fiveEnemies", "emptyEasy", "augustEasy", "firework", "fish"],
+        "gacha" : [46, 12, 16, 61, 0, 43, 92, 93, 22,66,90,37,4,26,99,73,70,50],
+        "gachaHistory" : [66, 46, 12, 16, 83, 81, 73, 14, 5, 7, 30, 61, 0, 43, 92, 93, 22,66,90,37,4,26,99,73,70,50],
         "collectables" : [12, 4, 14, 13, 7],
         "actualCollectables" : [],
-        "tokens" : 0,
-        "alive": true
+        "tokens" : 10,
+        "alive": true,
+        "committed": true
     },
     {
 		"name": "yiseul",
@@ -596,7 +612,8 @@ export const bioData = [
         "collectables" : [0, 5, 6, 13],
         "actualCollectables" : [],
         "tokens" : 5,
-        "alive": false
+        "alive": false,
+        "committed": false
     },
     {
 		"name": "yumeji",
@@ -624,13 +641,14 @@ export const bioData = [
         "pronouns": "she/her",
         "username": "YY",
         "vocation": "Ultimate Lucky Student",
-        "xp" : 21,
-        "achievements" : ["bunk", "chaperone", "jonesEasy", "owenEasy", "yumejiEasy", "friend", "talent", "collectable", "matsuno", "transform", "friendFight", "gacha", "jonesEasy"],
+        "xp" : 23,
+        "achievements" : ["bunk", "chaperone", "jonesEasy", "owenEasy", "yumejiEasy", "friend", "talent", "collectable", "matsuno", "transform", "friendFight", "gacha", "jonesEasy", "augustEasy", "sleepover"],
         "gacha" : [97],
         "collectables" : [],
         "actualCollectables" : [11],
         "tokens" : 5,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "rigel",
@@ -658,13 +676,14 @@ export const bioData = [
         "pronouns": "any",
         "username": "CRUSTLOVER",
         "vocation": "???",
-        "xp" : 9,
-        "achievements" : ["owenEasy", "chaperone", "maiEasy", "friendFight", "friend"],
+        "xp" : 10,
+        "achievements" : ["owenEasy", "chaperone", "maiEasy", "friendFight", "friend", "augustEasy"],
         "gacha" : [],
         "collectables" : [],
         "actualCollectables" : [],
         "tokens" : 5,
-        "alive": true
+        "alive": true,
+        "committed": false
     },
     {
 		"name": "matsuno",
@@ -696,7 +715,8 @@ export const bioData = [
         "achievements" : [],
         "gacha" : [],
         "collectables" : [],
-        "alive": true
+        "alive": true,
+        "committed": false
     }
 ]
 
