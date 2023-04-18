@@ -146,7 +146,17 @@ function Achievements(props){
         {"name": "friendFight",
         "description": "Fight an enemy with a friend"},
         {"name": "transform",
-        "description": "Use your magical girl power"}
+        "description": "Use your magical girl power"},
+        {"name": "hatch",
+        "description": "Hatch your Paramon"},
+        {"name": "evolve",
+        "description": "Fully evolve your Paramon"},
+        {"name": "trade",
+        "description": "Trade your Paramon to its original owner"},
+        {"name": "decorate",
+        "description": "Decorate your Paramon or its room"},
+        {"name": "therapy",
+        "description": "Talk about your feelings with a Paramon!"}
     ]
     var list = <div></div>;
     if(props.tab === "story"){
