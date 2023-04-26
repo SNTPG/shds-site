@@ -1646,7 +1646,7 @@ button.statContainer:hover {
   margin:auto;
   display:grid;
   width:100%;
-  height:85%;
+  height:87%;
   grid-template-areas:'	g00	g01	g02	g03	g04	g05	g06	g07	g08	g09	'
   '	g10	g11	g12	g13	g14	g15	g16	g17	g18	g19	'
   '	g20	g21	g22	g23	g24	g25	g26	g27	g28	g29	'
@@ -1695,12 +1695,13 @@ button.statContainer:hover {
   margin:auto;
   display:grid;
   width:100%;
-  height:85%;
+  height:87%;
   grid-template-areas:
-  '	c00 c01 c02 c03 	'
-  '	c04 c05 c06 c07	'
-  '	c08 c09 c10 c11	'
-  '	c12 c13 c14 c15	';
+  '	c00 c01 c02 c03 c04 '
+  '	c05 c06 c07	c08 c09 '
+  '	c10 c11	c12 c13 c14'
+  '	c15	c16 c17 c18 c19'
+  '	c20	c21 c22 c23 c24';
   grid-auto-rows: minmax(0, 1fr);
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
@@ -1712,7 +1713,7 @@ button.statContainer:hover {
 }
 
 .found{
-  border: 10px #bee1de solid;
+  border: 7px #bee1de solid;
   color:black;
 }
 
