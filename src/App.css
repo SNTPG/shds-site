@@ -1097,10 +1097,10 @@ left: calc(-52.5vh - 10px);*/
   grid-area: matsuno;
 }
 
-.simon, .andrew, .yiseul{
+.simon, .andrew, .yiseul, .mai, .avery{
   filter: grayscale(0.9);
 }
-.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul{
+.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery{
   filter: grayscale(0.9) blur(0.3vh);
 }
 
