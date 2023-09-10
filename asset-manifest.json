@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c740f873.css",
-    "main.js": "/static/js/main.b860e90b.js",
+    "main.js": "/static/js/main.6b434fec.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
     "static/media/shds19.png": "/static/media/shds19.c67515c10bdc8ce2d648.png",
     "static/media/averydead.png": "/static/media/averydead.1e0e47483ed4731ed02c.png",
     "static/media/byebyebyee.png": "/static/media/byebyebyee.61364d4583c1312ebace.png",
     "static/media/byebyebye.png": "/static/media/byebyebye.c6082e85ba357674cbad.png",
     "static/media/hewillnotbemissed.png": "/static/media/hewillnotbemissed.dc7c5527127fab78f394.png",
-    "static/media/reided.png": "/static/media/reided.c26efbf33ff933c4a479.png",
-    "static/media/camilleded.png": "/static/media/camilleded.5d391841bc98072f5d90.png",
+    "static/media/reided.png": "/static/media/reided.ef6171bcf5fae567dc29.png",
+    "static/media/camilleded.png": "/static/media/camilleded.9b694cc030b97eebad11.png",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
-    "static/media/vded.png": "/static/media/vded.b2eadd466c7c17cd0a0e.png",
+    "static/media/vded.png": "/static/media/vded.e6a58a6c9fb784100b9a.png",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
     "static/media/shds1.png": "/static/media/shds1.7a316daefecbeb5c2371.png",
     "static/media/testmap.png": "/static/media/testmap.c549f2b3f22f814d450b.png",
@@ -62,11 +62,11 @@
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
     "main.c740f873.css.map": "/static/css/main.c740f873.css.map",
-    "main.b860e90b.js.map": "/static/js/main.b860e90b.js.map",
+    "main.6b434fec.js.map": "/static/js/main.6b434fec.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c740f873.css",
-    "static/js/main.b860e90b.js"
+    "static/js/main.6b434fec.js"
   ]
 }
