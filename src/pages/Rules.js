@@ -1,7 +1,7 @@
-import React from 'react';
+import {useRef, React} from 'react';
 import Flip from '../assets/decor/flipArrow.png';
 
-function Rules(props) {
+/* function Rules(props) {
     function flipCard(e) {
         e.preventDefault();
         var element = document.getElementById("rulecard");
@@ -64,6 +64,169 @@ function Rules(props) {
                         </div>
                         <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
                             <img src={Flip} alt="Flip card."/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+} export default Rules; */
+
+// Above is the working ruleset before they broke
+
+function Rules(props) {
+    function flipCard(e) {
+        e.preventDefault();
+        var elements = document.querySelectorAll(".rulecard");
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            element.classList.toggle("flipped");
+        }
+    }
+    const firstDivRef = useRef();
+    const secondDivRef = useRef();
+    const thirdDivRef = useRef();
+    const fourthDivRef = useRef();
+    const handleScrollFirst = scroll => {
+        secondDivRef.current.scrollTop = scroll.target.scrollTop;
+    };
+    const handleScrollSecond = scroll => {
+        firstDivRef.current.scrollTop = scroll.target.scrollTop;
+    };
+    const handleScrollThird = scroll => {
+        fourthDivRef.current.scrollTop = scroll.target.scrollTop;
+    };
+    const handleScrollFourth = scroll => {
+        thirdDivRef.current.scrollTop = scroll.target.scrollTop;
+    };
+    return(
+        <div id ="rulesOverlay">
+            <div className="rulecard cardLeft">
+                <div id="ruleflip">
+                    <div id="rulefront">
+                        <div>
+                        <div id="ruleheader">
+                            <h1 className='glitch' data-text="House Rules">House Rules</h1>
+                        </div>
+                        <div className='rules' onScroll={handleScrollFirst} ref={firstDivRef}>
+                            <ol id="houseRules">
+                                <li>███ ███ ██ ████ ██ ███ █████ █████████ <span id="ruleImportant">█████ ███ ████</span></li>
+                                <li><span id="ruleImportant">██ ███ ████ ████████</span> █████ ████ ██████ ██ █████ ██ ███ ████ ████ ███ ███ ██████ ███ ███ ████ ██ <span id="ruleImportant">███████ ███ ████</span> ██ ███████ ███ <span id="ruleImportant">█████ █████</span></li>
+                                <li>██████ ████ ██ ███ ███████ <span id="ruleImportant">█████████ ████████ ██████</span> ██ ███ ███ ██ ██████ ██ ████████████ █████████ <span id="ruleImportant">████ ██████ █████ ██ ███████████</span></li>
+                                <li><span id="ruleImportant">█████ █████</span> ██ ███ ████████ ██████ <span id="ruleImportant">███████ █████ ███████████</span> █ ████ ██ ████ ████</li>
+                                <li>██ ███ █████ ██ ███████ ██ ███████ ██ ████ ████ <span id="ruleImportant">██ █████ ██ ███████████</span> ██████ ██ ████████</li>
+                                <li>███ █████ ██ ███ ███████ ████ ████ ██ <span id="ruleImportant">█████████</span> ███ ███ █████ ████ ████ ██████ ██ ██████ ████████ ███ ███ █████ ████ ███ ████████ █████ ████ █████ ████ ████ ██████ █████ ██ <span id="ruleImportant">██████</span></li>
+                                <li><span id="ruleImportant">███████ ██ ████████ ███████████</span></li>
+                                <ol id="killingRules" type='a'>
+                                    <li>██ ███ █████ ████ ███████ ██ ███████ ███ ██████████ ██████████ ████ ██ <span id="ruleImportant">███████████ ██████████</span></li>
+                                    <li>█████ █████ ██ <span id="ruleImportant">█████████████</span> ██ ███ █████ ████ ██ █████ █████ █████ ██ <span id="ruleImportant">███████████ █████</span> ████ ██ ████ ██ ██ ███████ ██ ████████ ███ ████████</li>
+                                    <li>██ ███ ███████ <span id="ruleImportant">█████████</span> ██ █████ ██████ ██ ██ █████████ <span id="ruleImportant">██████████</span> ██ ███ ████ ██ ███ █████ ████ ████ ██ <span id="ruleImportant">█████████████</span> ██ ███████████</li>
+                                    <li>██ ███ ███████ ██████ █████████ ██████████ ███ ██████ ██ ███ █████ <span id="ruleImportant">███████ ██████████</span>█ ████ ████ ██ <span id="ruleImportant">███████</span> ███ ███ ████ ██ ███ ██████ ███ █████████ ████ ████ ██ <span id="ruleImportant">██████ ████████</span> ███ ███ ███████ █ ██████ ███ ██ █████</li>
+                                    <li>██ ███ █████ ████ █ ███████ ███ ██████ ████ ████ ███ ███████ ████ ████ ██ <span id="ruleImportant">████████ █████████████ ███████ ███ ██████</span></li>
+                                </ol>
+                                <li><span id="ruleImportant">███ █████</span> ███ ██ ███████ ██ ███ ███████ ███████ ██ ███ █████</li>
+                                <li><span id="ruleImportant">███████</span> ██ ██ ██████ ██ █████████ █████ ██████</li>
+                                <li>████ ██████████████ <span id="ruleImportant">████ ████</span></li>
+                            </ol>
+                            <br/>
+                        </div>
+                        </div>
+                        <button class="flipButton" id="flipButtonFront" onClick={flipCard}>
+                        <img src={Flip} alt="Flip card."/>
+                        </button>
+                    </div>
+                    <div id="ruleback">
+                        <div>
+                        <div id="ruleheader">
+                            <h1 className='glitch' data-text="Mechanics">Mechanics</h1>
+                        </div>
+                        <div className='mechs' onScroll={handleScrollFourth} ref={fourthDivRef}>
+                            <ul id="mechanics">
+                                <li><b><span id="ruleImportant">████████████</span></b> ███ ███████ ██ ████ ███████ ████ ███ ████ █████ █████████ ██████ <span id="ruleImportant">████ ████████████</span> ███ █████ █ ███ <span id="ruleImportant">█████ ████████████</span> ███ █████ █ ███ ███ <span id="ruleImportant">█████████ ████████████</span> ███ █████ ██ ███ ███████ ████████████ ██ █████ ███ ███ ███ ███████ ████ ███████████ █████</li>
+                                <li><b><span id="ruleImportant">████████ ██</span></b> ██████ ███ ████ █████████ █████ ███ █████ ███ ███ ███████ █████ █████ ███ █████ ███ ███ ██ <span id="ruleImportant">██████████ ████ █████</span> ███ ███ █████████ ███ ████████ █████ █████ █████ ███ ███ █ <span id="ruleImportant">███████ ████████</span></li>
+                                <li><b><span id="ruleImportant">████████████</span></b> ███ ██ █████ ██ █████████████ ███ ████ ██████ ████ ████ ███ ██ █████████ █ ██ █ ███ <span id="ruleImportant">███████</span></li>
+                                <li><b><span id="ruleImportant">██████</span></b> ███ ██ █████ ██ █████ ████ ███ <span id="ruleImportant">██████ █████</span>█ ███ █████ ██ <span id="ruleImportant">███████</span>█ ██ █████ ██████ ██ ██████</li>
+                                <li><b><span id="ruleImportant">██████████</span></b> ██ █ ███████ ██████ ███ ███ ██████ ██ █████████ ████ ███████ ███ ██████ ████ ███████ ████ ██████████ ████████ ██ ███████████ ██████████ █████ ████ █ <span id="ruleImportant">████████</span></li>
+                                <ul id="commitRules">
+                                    <li>███ <span id="ruleImportant">█████ █ █████</span>█ ███ ██ ███ ██ ███████████ █████ ██ ██ ████ ███ ██████</li>
+                                    <li>███ ████ █████ █ <span id="ruleImportant">█████ █████</span></li>
+                                    <li>███ ███ ███ ████ ███████ <span id="ruleImportant">████ █████████</span></li>
+                                    <li>███ ███ ████ ███ ████ █████ ████ █ █████ ███ █ <span id="ruleImportant">████████</span> ███████</li>
+                                    <li>███ ███ █ <span id="ruleImportant">███████ ████</span> ████ ████ ███ ███ █████ ██████████</li>
+                                    <li>████████ █████ <span id="ruleImportant">██ ████████</span> ████ █████ ███ ███████ ████ ██ ██████ ████ ████ ██████ █████ ████ ███ █████ ██████████ ████████████</li>
+                                    <li>████████ █████ <span id="ruleImportant">█████████</span> ██ ███ ██ ███████ ████ █████████ ██ ██ ███ ██████ ██ ███ ██ ██████████████ ██ ██ ███ ██████</li>
+                                </ul>
+                            </ul>
+                            <br/>
+                        </div>
+                        </div>
+                        <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
+                        <img src={Flip} alt="Flip card."/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="rulecard cardRight">
+                <div id="ruleflip">
+                    <div id="rulefront">
+                        <div>
+                        <div id="ruleheader">
+                            <h1 className='glitch' data-text="House Rules">House Rules</h1>
+                        </div>
+                        <div className='rules' onScroll={handleScrollSecond} ref={secondDivRef}>
+                            <ol id="houseRules">
+                                <li>███ ███ ██ ████ ██ ███ █████ █████████ <span id="ruleImportant">█████ ███ ████</span></li>
+                                <li><span id="ruleImportant">██ ███ ████ ████████</span> █████ ████ ██████ ██ █████ ██ ███ ████ ████ ███ ███ ██████ ███ ███ ████ ██ <span id="ruleImportant">███████ ███ ████</span> ██ ███████ ███ <span id="ruleImportant">█████ █████</span></li>
+                                <li>██████ ████ ██ ███ ███████ <span id="ruleImportant">█████████ ████████ ██████</span> ██ ███ ███ ██ ██████ ██ ████████████ █████████ <span id="ruleImportant">████ ██████ █████ ██ ███████████</span></li>
+                                <li><span id="ruleImportant">█████ █████</span> ██ ███ ████████ ██████ <span id="ruleImportant">███████ █████ ███████████</span> █ ████ ██ ████ ████</li>
+                                <li>██ ███ █████ ██ ███████ ██ ███████ ██ ████ ████ <span id="ruleImportant">██ █████ ██ ███████████</span> ██████ ██ ████████</li>
+                                <li>███ █████ ██ ███ ███████ ████ ████ ██ <span id="ruleImportant">█████████</span> ███ ███ █████ ████ ████ ██████ ██ ██████ ████████ ███ ███ █████ ████ ███ ████████ █████ ████ █████ ████ ████ ██████ █████ ██ <span id="ruleImportant">██████</span></li>
+                                <li><span id="ruleImportant">███████ ██ ████████ ███████████</span></li>
+                                <ol id="killingRules" type='a'>
+                                    <li>██ ███ █████ ████ ███████ ██ ███████ ███ ██████████ ██████████ ████ ██ <span id="ruleImportant">███████████ ██████████</span></li>
+                                    <li>█████ █████ ██ <span id="ruleImportant">█████████████</span> ██ ███ █████ ████ ██ █████ █████ █████ ██ <span id="ruleImportant">███████████ █████</span> ████ ██ ████ ██ ██ ███████ ██ ████████ ███ ████████</li>
+                                    <li>██ ███ ███████ <span id="ruleImportant">█████████</span> ██ █████ ██████ ██ ██ █████████ <span id="ruleImportant">██████████</span> ██ ███ ████ ██ ███ █████ ████ ████ ██ <span id="ruleImportant">█████████████</span> ██ ███████████</li>
+                                    <li>██ ███ ███████ ██████ █████████ ██████████ ███ ██████ ██ ███ █████ <span id="ruleImportant">███████ ██████████</span>█ ████ ████ ██ <span id="ruleImportant">███████</span> ███ ███ ████ ██ ███ ██████ ███ █████████ ████ ████ ██ <span id="ruleImportant">██████ ████████</span> ███ ███ ███████ █ ██████ ███ ██ █████</li>
+                                    <li>██ ███ █████ ████ █ ███████ ███ ██████ ████ ████ ███ ███████ ████ ████ ██ <span id="ruleImportant">████████ █████████████ ███████ ███ ██████</span></li>
+                                </ol>
+                                <li><span id="ruleImportant">███ █████</span> ███ ██ ███████ ██ ███ ███████ ███████ ██ ███ █████</li>
+                                <li><span id="ruleImportant">███████</span> ██ ██ ██████ ██ █████████ █████ ██████</li>
+                                <li>████ ██████████████ <span id="ruleImportant">████ ████</span></li>
+                            </ol>
+                            <br/>
+                        </div>
+                        </div>
+                        <button class="flipButton" id="flipButtonFront" onClick={flipCard}>
+                        <img src={Flip} alt="Flip card."/>
+                        </button>
+                    </div>
+                    <div id="ruleback">
+                        <div>
+                        <div id="ruleheader">
+                            <h1 className='glitch' data-text="Mechanics">Mechanics</h1>
+                        </div>
+                        <div className='mechs' onScroll={handleScrollThird} ref={thirdDivRef}>
+                            <ul id="mechanics">
+                                <li><b><span id="ruleImportant">████████████</span></b> ███ ███████ ██ ████ ███████ ████ ███ ████ █████ █████████ ██████ <span id="ruleImportant">████ ████████████</span> ███ █████ █ ███ <span id="ruleImportant">█████ ████████████</span> ███ █████ █ ███ ███ <span id="ruleImportant">█████████ ████████████</span> ███ █████ ██ ███ ███████ ████████████ ██ █████ ███ ███ ███ ███████ ████ ███████████ █████</li>
+                                <li><b><span id="ruleImportant">████████ ██</span></b> ██████ ███ ████ █████████ █████ ███ █████ ███ ███ ███████ █████ █████ ███ █████ ███ ███ ██ <span id="ruleImportant">██████████ ████ █████</span> ███ ███ █████████ ███ ████████ █████ █████ █████ ███ ███ █ <span id="ruleImportant">███████ ████████</span></li>
+                                <li><b><span id="ruleImportant">████████████</span></b> ███ ██ █████ ██ █████████████ ███ ████ ██████ ████ ████ ███ ██ █████████ █ ██ █ ███ <span id="ruleImportant">███████</span></li>
+                                <li><b><span id="ruleImportant">██████</span></b> ███ ██ █████ ██ █████ ████ ███ <span id="ruleImportant">██████ █████</span>█ ███ █████ ██ <span id="ruleImportant">███████</span>█ ██ █████ ██████ ██ ██████</li>
+                                <li><b><span id="ruleImportant">██████████</span></b> ██ █ ███████ ██████ ███ ███ ██████ ██ █████████ ████ ███████ ███ ██████ ████ ███████ ████ ██████████ ████████ ██ ███████████ ██████████ █████ ████ █ <span id="ruleImportant">████████</span></li>
+                                <ul id="commitRules">
+                                    <li>███ <span id="ruleImportant">█████ █ █████</span>█ ███ ██ ███ ██ ███████████ █████ ██ ██ ████ ███ ██████</li>
+                                    <li>███ ████ █████ █ <span id="ruleImportant">█████ █████</span></li>
+                                    <li>███ ███ ███ ████ ███████ <span id="ruleImportant">████ █████████</span></li>
+                                    <li>███ ███ ████ ███ ████ █████ ████ █ █████ ███ █ <span id="ruleImportant">████████</span> ███████</li>
+                                    <li>███ ███ █ <span id="ruleImportant">███████ ████</span> ████ ████ ███ ███ █████ ██████████</li>
+                                    <li>████████ █████ <span id="ruleImportant">██ ████████</span> ████ █████ ███ ███████ ████ ██ ██████ ████ ████ ██████ █████ ████ ███ █████ ██████████ ████████████</li>
+                                    <li>████████ █████ <span id="ruleImportant">█████████</span> ██ ███ ██ ███████ ████ █████████ ██ ██ ███ ██████ ██ ███ ██ ██████████████ ██ ██ ███ ██████</li>
+                                </ul>
+                            </ul>
+                            <br/>
+                        </div>
+                        </div>
+                        <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
+                        <img src={Flip} alt="Flip card."/>
                         </button>
                     </div>
                 </div>

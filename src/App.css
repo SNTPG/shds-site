@@ -1097,10 +1097,10 @@ left: calc(-52.5vh - 10px);*/
   grid-area: matsuno;
 }
 
-.simon, .andrew, .yiseul, .mai, .avery{
+.simon, .andrew, .yiseul, .mai, .avery, .rei, .v, .camille {
   filter: grayscale(0.9);
 }
-.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery{
+.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery, .cast-grid .studentMug.rei, .cast-grid .studentMug.v, .cast-grid .studentMug.camille {
   filter: grayscale(0.9) blur(0.3vh);
 }
 
@@ -1180,21 +1180,62 @@ left: calc(-52.5vh - 10px);*/
   position:relative;
 }
 
-#rulecard {
+.rulecard {
+  position:absolute;
   animation: fadeInAnimation ease 1s;
   animation-delay:0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
+  transform-style: preserve-3d;
 }
 
-#rulecard{
+.cardLeft {
+  clip-path: polygon(
+                    -5% 14.63%, 105% 14.63%, 
+                    105% 15.36%, -5% 15.36%, 
+                    -5% 27.20%, 105% 27.20%,
+                    105% 41.78%, -5% 41.78%, 
+                    -5% 72.81%, 105% 72.81%,
+                    105% 81.70%, -5% 81.70%, 
+                    -5% 82.21%, 105% 82.21%,
+                    105% 88.55%, -5% 88.55%, 
+                    -5% 96.29%, 105% 96.29%,
+                    105% 105%, -5% 105%
+                    );
+                    transform-style: preserve-3d;
+}
+.cardRight {
+  clip-path: polygon(-5% -5%, 105% -5%, 
+                    105% 14.63%, -5% 14.63%, 
+                    -5% 15.36%, 105% 15.36%, 
+                    105% 27.20%, -5% 27.20%,
+                    -5% 41.78%, 105% 41.78%, 
+                    105% 72.81%, -5% 72.81%,
+                    -5% 81.70%, 105% 81.70%, 
+                    105% 82.21%, -5% 82.21%,
+                    -5% 88.55%, 105% 88.55%, 
+                    105% 96.29%, -5% 96.29%
+                    );
+                    transform-style: preserve-3d;
+}
+
+.cardLeft:not(.flipped), .cardRight.flipped {
+  transform: translateX(-10px);
+  transition: transform 0.8s ease-out;
+}
+.cardLeft.flipped, .cardRight:not(.flipped) {
+  transform: translateX(10px);
+  transition: transform 0.8s ease-out;
+}
+
+.rulecard{
   margin:auto;
   width:105vh;
   height:70vh;
-  perspective:1000px;
   border:transparent solid 1vh;
   z-index:2;
+  transform-style: preserve-3d;
 }
 
 #ruleflip {
@@ -1319,6 +1360,59 @@ left: calc(-52.5vh - 10px);*/
 #ruleImportant{
   color:lime;
 }
+
+
+/* New shit for Trial 3 */
+
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+.glitch::before {
+  left: -2px;
+  text-shadow: -2px 0 #388;
+  color: rgb(20, 156, 49);
+  background: black;
+  animation: glitch-anim-1 1.3s infinite linear alternate-reverse;
+  text-overflow: clip;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.glitch::after {
+  left: 1px;
+  text-shadow: 1px 0 #484;
+  color: rgb(19, 183, 189);
+  background: black;
+  animation: glitch-anim-1 1.4s infinite linear alternate-reverse;
+  text-overflow: clip;
+}
+@keyframes glitch-anim-1 {
+  0% {
+      clip-path: inset(40% 0 61% 0);
+  }
+  20% {
+      clip-path: inset(92% 0 1% 0);
+  }
+  40% {
+      clip-path: inset(43% 0 22% 0);
+  }
+  60% {
+      clip-path: inset(25% 0 72% 0);
+  }
+  80% {
+      clip-path: inset(54% 0 31% 0);
+  }
+  100% {
+      clip-path: inset(58% 0 43% 0);
+  }
+}
+
 /* Stats page? */
 
 
@@ -1440,7 +1534,6 @@ button.statContainer:hover {
   margin:auto;
   width:105vh;
   height:70vh;
-  perspective:1000px;
   border:transparent solid 1vh;
   z-index:2;
 }
