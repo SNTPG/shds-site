@@ -121,7 +121,7 @@ function Achievements(props){
         "description": "Host a group activity for 5 or more people"},
         {"name": "shed",
         "description": "KEEP THE SHED SAFE"},
-        {"name": "boat",
+        {"name": "shrine",
         "description": "Make an offering to Nezha's shrine"},
         {"name": "andrewHard",
         "description": "Make Andrew smile"},
@@ -170,7 +170,6 @@ function Achievements(props){
     ]
     var list = <div></div>;
     if(props.tab === "story"){
-        list =
         list = storyAchievements.map((achieve) =>
             <div key={achieve.name} className={"achievement "+ achieve.name}>
                 <Heart achievement={achieve.name} achievements={props.achievements}/>
@@ -193,7 +192,6 @@ function Achievements(props){
                 <p>{achieve.description}</p>
             </div>
         );
-
     }
     return(
         <div className="achievementList">

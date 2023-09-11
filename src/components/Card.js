@@ -494,7 +494,7 @@ export const bioData = [
         "coordination": "+3",
         "dislikes": "Basketball, taking tests, cleaning",
         "extmental": true,
-        "extmentalstr": "SRG: +1",
+        "extmentalstr": "SRG: +2",
         "extmurder": true,
         "extmurderstr": "ARM: +3",
         "extphys": true,
