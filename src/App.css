@@ -1003,6 +1003,12 @@ left: calc(-52.5vh - 10px);*/
   width:107vh;
   height:72vh;
 }
+.allison.clicked{
+  top: -55.5vh;
+  left: -82.5vh;
+  width:107vh;
+  height:72vh;
+}
 
 .cast-grid {
   display: grid;
@@ -1010,7 +1016,7 @@ left: calc(-52.5vh - 10px);*/
     'rei andrew avery camille ami'
     'emma empty august owen yiseul'
     'isaak jones hatman v mai'
-    'yumeji . gaz simon matsuno';
+    'yumeji rigel gaz simon allison';
   grid-template-rows: 18vh 18vh 18vh 18vh;
   grid-template-columns: 18vh 18vh 18vh 18vh 18vh;
   gap: 1vh;
@@ -1096,11 +1102,17 @@ left: calc(-52.5vh - 10px);*/
 .matsuno {
   grid-area: matsuno;
 }
+.rigel {
+  grid-area: rigel;
+}
+.allison {
+  grid-area: allison;
+}
 
-.simon, .andrew, .yiseul, .mai, .avery, .rei, .v, .camille {
+.simon, .andrew, .yiseul, .mai, .avery, .rei, .v, .camille, .empty {
   filter: grayscale(0.9);
 }
-.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery, .cast-grid .studentMug.rei, .cast-grid .studentMug.v, .cast-grid .studentMug.camille {
+.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery, .cast-grid .studentMug.rei, .cast-grid .studentMug.v, .cast-grid .studentMug.camille, .cast-grid .studentMug.empty {
   filter: grayscale(0.9) blur(0.3vh);
 }
 

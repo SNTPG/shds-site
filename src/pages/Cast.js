@@ -29,7 +29,7 @@ class Cast extends React.Component {
     }
     render() {
         const students = ["rei", "andrew", "avery", "camille", "ami", "emma", "empty", "august", "owen", "yiseul", "isaak", "jones", "hatman", "v", "mai", "yumeji", "rigel"];
-        const chaps = ["gaz", "simon", "matsuno"];
+        const chaps = ["gaz", "simon", "allison"];
         const studentSquares = students.map((student) =>
             <div key={student.toString()} className={"student square "+ student} id={student+"Square"}>
                 <button id={student+"Button"} onClick={() => this.loadCard(student)}>
