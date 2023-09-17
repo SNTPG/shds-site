@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d621683.css",
-    "main.js": "/static/js/main.f53c0320.js",
+    "main.css": "/static/css/main.d4751e38.css",
+    "main.js": "/static/js/main.a06be914.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
@@ -17,8 +17,10 @@
     "static/media/camilleded.png": "/static/media/camilleded.ef69ad84096477740a88.png",
     "static/media/vded.png": "/static/media/vded.82d75d2f2c690ec69ec7.png",
     "static/media/shds1.png": "/static/media/shds1.03ca9aa911e04d052386.png",
+    "static/media/Wolfe.png": "/static/media/Wolfe.12a2a68dda6e4d626159.png",
     "static/media/Allison.png": "/static/media/Allison.3a1d90059fc1cb5e4deb.png",
     "static/media/castbg.jpg": "/static/media/castbg.53928f780889a53ef8be.jpg",
+    "static/media/novel_theorist.png": "/static/media/novel_theorist.00cc60df64ca0a6d73dd.png",
     "static/media/DemakaDev.png": "/static/media/DemakaDev.95207004ab200f4c0aa5.png",
     "static/media/iseedeadppl.png": "/static/media/iseedeadppl.8c7cb93e37a59a9b8240.png",
     "static/media/Patrick.png": "/static/media/Patrick.9fc59ffe43675bfca478.png",
@@ -58,17 +60,16 @@
     "static/media/telegrama_raw.otf": "/static/media/telegrama_raw.8ef393e086cae9909258.otf",
     "static/media/matsuno_portrait.png": "/static/media/matsuno_portrait.1de23ebb56e900f6004a.png",
     "static/media/iconstats.png": "/static/media/iconstats.f7cf862e28a6a0762256.png",
-    "static/media/novel_theorist.png": "/static/media/novel_theorist.5274713a7f6b11665a57.png",
     "static/media/3210.png": "/static/media/3210.e7f3182e7dbcf63f8a3f.png",
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.3d621683.css.map": "/static/css/main.3d621683.css.map",
-    "main.f53c0320.js.map": "/static/js/main.f53c0320.js.map",
+    "main.d4751e38.css.map": "/static/css/main.d4751e38.css.map",
+    "main.a06be914.js.map": "/static/js/main.a06be914.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d621683.css",
-    "static/js/main.f53c0320.js"
+    "static/css/main.d4751e38.css",
+    "static/js/main.a06be914.js"
   ]
 }
