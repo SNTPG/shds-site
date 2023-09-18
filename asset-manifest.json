@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b42198e.css",
-    "main.js": "/static/js/main.25c02595.js",
+    "main.css": "/static/css/main.17a7b6b7.css",
+    "main.js": "/static/js/main.db70d6ec.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
@@ -19,7 +19,7 @@
     "static/media/wolfe.png": "/static/media/wolfe.40720bd39d02ccc9bdef.png",
     "static/media/shds1.png": "/static/media/shds1.03ca9aa911e04d052386.png",
     "static/media/Wolfe.png": "/static/media/Wolfe.12a2a68dda6e4d626159.png",
-    "static/media/Allison.png": "/static/media/Allison.3a1d90059fc1cb5e4deb.png",
+    "static/media/Allison.png": "/static/media/Allison.a7963aee73f1a04cfb1a.png",
     "static/media/castbg.jpg": "/static/media/castbg.53928f780889a53ef8be.jpg",
     "static/media/novel_theorist.png": "/static/media/novel_theorist.00cc60df64ca0a6d73dd.png",
     "static/media/DemakaDev.png": "/static/media/DemakaDev.95207004ab200f4c0aa5.png",
@@ -65,12 +65,12 @@
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.5b42198e.css.map": "/static/css/main.5b42198e.css.map",
-    "main.25c02595.js.map": "/static/js/main.25c02595.js.map",
+    "main.17a7b6b7.css.map": "/static/css/main.17a7b6b7.css.map",
+    "main.db70d6ec.js.map": "/static/js/main.db70d6ec.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b42198e.css",
-    "static/js/main.25c02595.js"
+    "static/css/main.17a7b6b7.css",
+    "static/js/main.db70d6ec.js"
   ]
 }
