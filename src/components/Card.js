@@ -13,7 +13,7 @@ export const bioData = [
     {
         "name": "ami",
         "age": "17",
-        "bio": "The synthetic singer program Demaka has taken the world by storm! Its features are beefy, it can rival anything Vocaloid does, and it's completely free! It's best known for its user-friendly interface that appeals to both beginners and experienced producers, and for its beloved voice bank, Ami! She's even appeared in hologram concerts and interviews as a brand new promotional AI.",
+        "bio": "The synthetic singer program Demaka has taken the world by storm! Despite its popularity, the developer DemakaDev has never shared much of herself online, only posting about the software. Few people even know that she provided the voice of Ami herself! Behind the screen she's Kanami Fujita, a programmer and aspirational musician. Strangely enough, she's withheld using her company's popularity to promote her own work. She's been writing music since before the release of Demaka under the online handle songbirdspider, but for the past 2 years uploads to the account have become sparse.",
         "birthday": "08-30",
         "branch": "East Asia",
         "coordination": "0",
@@ -364,6 +364,43 @@ export const bioData = [
         "pronouns": "he/him",
         "username": "novel_theorist",
         "vocation": "Ultimate Music Theorist",
+        "xp" : 215,
+        "achievements" : ["bunk", "owenEasy", "hatmanEasy", "chaperone", "amiEasy", "transform", "fiveGift", "giftLove", "talent", "transform", "levelThree", "pacifist", "vHard", "augustEasy",
+    "sleepover", "hatch", "trade", "augustHard"],
+        "gacha" : [34],
+        "gachaHistory" : [38, 70, 66, 33, 11, 34],
+        "collectables" : [],
+        "actualCollectables" : [],
+        "tokens" : 42,
+        "alive": true,
+        "committed": true
+    },
+    {
+		"name": "wolfe",
+		"age": "97",
+        "bio": "Dr. Wolfe murdered Gaz Berry and Jones Otvark and subsequently evaded detection on January 1st, 2023, as part of the first game hosted by the Master Program. He and Augustyn Urbanik alone were ejected from the simulation; the other 16 attendants were braindead. Over the course of the next 7 years, he solved his vision, leading to July 9th, 2030, the end of the universe. It was brought about by an array of subatomic resonance machines designed to bring the strings holding spacetime together to a standstill. Being stuck in a time loop ever since, he seeks to iron out the imperfections in his vision, employing quantum suicide to navigate the multiverse under the many-worlds interpration with the goal of closing causal holes in the timeline. Along the way, he founded I.R.I.S. in 1945, established the Chronos Project for psychic research, and discovered the only known supraleiter raumtemperatur.",
+        "birthday": "08-10",
+        "branch": "Europe",
+        "coordination": "NaN",
+        "dislikes": "Public opinion, sharing an office space, repetition",
+        "extmental": true,
+        "extmentalstr": "QNT: NaN",
+        "extmurder": true,
+        "extmurderstr": "SPP: NaN",
+        "extphys": true,
+        "extphysstr": "LEI: NaN",
+        "fitness": "NaN",
+        "focus": "NaN",
+        "forensics": "NaN",
+        "guts": "NaN",
+        "height": "186",
+        "level": "NaN",
+        "likes": "Theory of everything, penguins, lemon tarts",
+        "location": "The South Pole",
+        "poise": "NaN",
+        "pronouns": "he/him",
+        "username": "novel_theorist",
+        "vocation": "String Theorist",
         "xp" : 215,
         "achievements" : ["bunk", "owenEasy", "hatmanEasy", "chaperone", "amiEasy", "transform", "fiveGift", "giftLove", "talent", "transform", "levelThree", "pacifist", "vHard", "augustEasy",
     "sleepover", "hatch", "trade", "augustHard"],
@@ -750,7 +787,7 @@ export const bioData = [
         "extmurder": true,
         "extmurderstr": "DIE: +99",
         "extphys": true,
-        "extphysstr": "STB: +99",
+        "extphysstr": "KTN: +99",
         "fitness": "+99",
         "focus": "+99",
         "forensics": "+99",
@@ -766,7 +803,9 @@ export const bioData = [
         "xp" : 0,
         "achievements" : [],
         "gacha" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99],
-        "collectables" : [],
+        "collectables" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+        "actualCollectables" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+        "tokens" : 999,
         "alive": true,
         "committed": false
     }
@@ -785,6 +824,123 @@ function Card(props){
     const extramurder = (info.extmurder ? <p>{info.extmurderstr}</p> : "");
     const levelstring = (info.alive ? <p>{"LEVEL " + info.level}</p> : <p>DECEASED</p>);
     
+
+    if(props.char === "isaak"){
+        const infoWolfe = bioData.find(x => x.name === "wolfe");
+        // const level = (info.level==="DECEASED" ? "DECEASED" : "LEVEL "+info.level);
+        const extraphysWolfe = (infoWolfe.extphys ? <p>{infoWolfe.extphysstr}</p> : "");
+        const extramentalWolfe = (infoWolfe.extmental ? <p>{infoWolfe.extmentalstr}</p> : "");
+        const extramurderWolfe = (infoWolfe.extmurder ? <p>{infoWolfe.extmurderstr}</p> : "");
+        const levelstringWolfe = (infoWolfe.alive ? <p>{"LEVEL " + infoWolfe.level}</p> : <p>DECEASED</p>);
+
+        return(
+            <div id="idcard" className={props.char}>
+                <div id="idflip">
+                    <div id="idfront">
+                        <div id="idheader">
+                            <img id="idlogo" src={Heart} alt=""></img>
+                            <h1>{infoWolfe.username}</h1>
+                        </div>
+                        <div id="iddata">
+                            <Portrait character={props.char}/>
+                            <div class="grid-container">
+                                <div class="idtitle">
+                                    <div className="isaakWrapper">
+                                        <h3 className='quantumTwo'>{infoWolfe.vocation}</h3>
+                                        <h3 className='quantumOne'>{info.vocation}</h3>
+                                    </div>
+                                </div>  
+                                <div class="statsheader">Stats</div>
+                                <div class="idlevel">
+                                    <div className="isaakWrapper">
+                                        <span className='quantumTwo'>{levelstringWolfe}</span>
+                                        <span className='quantumOne'>{levelstring}</span>
+                                    </div>
+                                </div>  
+                                <div class="stats phys">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'>{"FIT: "+infoWolfe.fitness}<br/>{"CDN: "+infoWolfe.coordination}<br/>{extraphysWolfe}</p>
+                                        <p className='quantumOne'>{"FIT: "+info.fitness}<br/>{"CDN: "+info.coordination}<br/>{extraphys}</p>
+                                    </div>
+                                </div>
+                                <div class="idgeo">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'><span>Branch: </span>{"HPA "+infoWolfe.branch}<br/><span>Location: </span>{infoWolfe.location}</p>
+                                        <p className='quantumOne'><span>Branch: </span>{"HPA "+info.branch}<br/><span>Location: </span>{info.location}</p>
+                                    </div>
+                                </div>
+                                <div class="stats mental">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'>{"FCS: "+infoWolfe.focus}<br/>{"POI: "+infoWolfe.poise}<br/>{extramentalWolfe}</p>
+                                        <p className='quantumOne'>{"FCS: "+info.focus}<br/>{"POI: "+info.poise}<br/>{extramental}</p>
+                                    </div>
+                                </div>
+                                <div class="idbio1">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'><span>Age: </span>{infoWolfe.age}<br/><span>Bday: </span>{infoWolfe.birthday}</p>
+                                        <p className='quantumOne'><span>Age: </span>{info.age}<br/><span>Bday: </span>{info.birthday}</p>
+                                    </div>
+                                </div>
+                                <div class="idbio2">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'><span>Prns: </span>{infoWolfe.pronouns}<br/><span>Hght: </span>{infoWolfe.height+" cm"}</p>
+                                        <p className='quantumOne'><span>Prns: </span>{info.pronouns}<br/><span>Hght: </span>{info.height+" cm"}</p>
+                                    </div>
+                                </div>
+                                <div class="stats murder">
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'>{"FRN: "+infoWolfe.forensics}<br/>{"GUT: "+infoWolfe.guts}<br/>{extramurderWolfe}</p>
+                                        <p className='quantumOne'>{"FRN: "+info.forensics}<br/>{"GUT: "+info.guts}<br/>{extramurder}</p>
+                                    </div>
+                                </div>
+                                <div class="idlikes">
+                                    <h3>Likes</h3>
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'>{infoWolfe.likes}</p>
+                                        <p className='quantumOne'>{info.likes}</p>
+                                    </div>
+                                </div>
+                                <div class="iddislikes">
+                                    <h3>Dislikes</h3>
+                                    <div className="isaakWrapper">
+                                        <p className='quantumTwo'>{infoWolfe.dislikes}</p>
+                                        <p className='quantumOne'>{info.dislikes}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="idfooter">
+                            
+                        </div>
+                        <button class="flipButton" id="flipButtonFront" onClick={flipCard}>
+                            <img src={Flip} alt="Flip card."/>
+                        </button>
+                        <button id="closeButtonFront" onClick={props.onClick}>
+                            <img alt="Close." src={Close}/>
+                        </button>
+                    </div>
+                    <div id="idback">
+                        <div>
+                            <div id="bioheader"><h1>Public Bio</h1></div>
+                            <div id="bio">
+                                <div className="isaakWrapper">
+                                    <p className='quantumTwo'>{infoWolfe.bio}</p>
+                                    <p className='quantumOne'>{info.bio}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="flipButton" id="flipButtonBack" onClick={flipCard}>
+                            <img src={Flip} alt="Flip card."/>
+                        </button>
+                        <button id="closeButtonBack" alt="Close." onClick={props.onClick}>
+                            <img alt="Close." src={Close}/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        )  
+    }
+
     return(
         <div id="idcard" className={props.char}>
             <div id="idflip">

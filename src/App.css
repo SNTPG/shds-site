@@ -465,11 +465,11 @@ p {
 }
 
 
-.grid-container > div > p > span{
+.grid-container > div p span{
   color:white;
 }
 
-.idgeo > p, .idbio1 > p, .idbio2 > p {
+.idgeo p, .idbio1 p, .idbio2 p {
   color:rgb(170, 170, 170);
 }
 
@@ -524,6 +524,24 @@ p {
   background:#0004;
 }
 
+#idcard  #iddata > .isaakWrapper {
+  margin-left:2%;
+  max-height:85%;
+  max-width: 36%;
+  border: #c2ff03 solid 2px;
+  border-radius:5%;
+  background:#0004;
+}
+
+#idcard  #idportrait.wolfe, #idcard #idportrait.isaak{
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -542,6 +560,11 @@ p {
   margin-right:10px;
   align-items:stretch;
 }
+
+.isaak .grid-container{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 
 .grid-container > div {
   background: #0003;
@@ -649,7 +672,7 @@ p {
 
 /* TODO: Fucking fix the alignment here */
 
-.idlikes > h3, .iddislikes > h3{
+.idlikes  h3, .iddislikes  h3{
   position:relative;
   font-variant: small-caps;
 }
@@ -662,7 +685,7 @@ p {
   color:#ff2272;
 }
 
-.idlikes > p, .iddislikes > p{
+.idlikes p, .iddislikes p{
   position:relative;
   font-size:2.5vh;
   text-align:center;
@@ -671,7 +694,7 @@ p {
   filter:saturate(0.2);
 }
 
-.iddislikes > p{
+.iddislikes p{
   filter:brightness(5);
 }
 
@@ -726,7 +749,7 @@ p {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.grid-container > div > p > span{
+.grid-container  div  p  span{
   font-variant: small-caps;
   font-size:3vh;
 }
@@ -1030,6 +1053,142 @@ left: calc(-52.5vh - 10px);*/
 .studentMug, .chapMug{
   max-width:95%;
   max-height:95%;
+}
+
+.isaakWrapper{
+  height: 100%;
+  width: 100%;
+  position:relative;
+}
+
+.isaakWrapper > img {
+  position: relative;
+  opacity: 0;
+}
+
+.quantumOne{
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: xfade 5s 0s infinite;
+  -moz-animation: xfade 5s 0s infinite;/* Firefox */
+  -webkit-animation: xfade 5s 0s infinite; /* Safari and Chrome */
+  -o-animation: xfade 5s 0s infinite;
+}
+
+.quantumTwo{
+  visibility: hidden;
+  opacity: 0;
+  animation: xfade 5s 2.5s infinite;
+  -moz-animation: xfade 5s 2.5s infinite;/* Firefox */
+  -webkit-animation: xfade 5s 2.5s infinite; /* Safari and Chrome */
+  -o-animation: xfade 5s 2.5s infinite;
+}
+
+#idcard .isaakWrapper{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#idcard .idlikes > .isaakWrapper, #idcard .iddislikes > .isaakWrapper {
+  top: 5vh;
+  height: auto;
+  width: auto;
+}
+
+#bio .quantumOne, #bio .quantumTwo{
+  top: 0;
+}
+
+#idcard .quantumOne{
+  transform: none;
+  position: absolute;
+}
+
+#idcard .quantumTwo{
+  position: absolute;
+}
+
+@-webkit-keyframes xfade{ /* Safari and Chrome */
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  52% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+
+ @-moz-keyframes xfade { 
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  52% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+
+ @-o-keyframes xfade { 
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  52% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+
+ @-ms-keyframes xfade { 
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  52% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+
+@keyframes xfade{
+  0%{
+    visibility: visible;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  52% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .student > button, .chap > button{
@@ -1448,7 +1607,8 @@ left: calc(-52.5vh - 10px);*/
     'owen yiseul'
     'isaak jones'
     'hatman v'
-    'mai yumeji';
+    'mai yumeji'
+    'rigel allison';
   grid-auto-rows: minmax(0, 1fr);
   grid-auto-columns: minmax(0, 1fr);
   gap: 1vh;
@@ -1464,23 +1624,43 @@ left: calc(-52.5vh - 10px);*/
 }
 
 .statContainer{
+  height: 100%;
   display:flex;
+  flex-direction:row;
   align-items:center;
   z-index:0;
 }
 
-.statContainer .studentMug{
+.statContainer .statStudentMug{
   background:#00000088;
-  min-height:100%;
+  height: 100%;
+  max-width: 15%;
   border: 2px solid #6b1ce0;
   box-sizing: border-box;
 }
 
-.statContainer.committed .studentMug{
+.statContainer.committed .statStudentMug {
   background:#77000088;
-  min-height:100%;
+  height:100%;
   border: 2px solid #e01c8e;
   box-sizing: border-box;
+}
+
+.statContainer.committed .isaakWrapper{
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+}
+
+.statStudentMug .studentMug{
+  height: 100%;
+  max-height:100%;
+  max-width:100%;
+}
+
+.statStudentMug .studentMug.wolfe, .statStudentMug .studentMug.isaak{
+  height: 50%;
+  width: 100%;
 }
 
 button.statContainer {

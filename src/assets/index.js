@@ -23,6 +23,7 @@ import Emma from "./portraits/shds18.png";
 import Rigel from "./portraits/shds19.png";
 import Matsuno from "./portraits/matsuno_portrait.png";
 import Allison from "./portraits/allison.png";
+import Wolfe from "./portraits/wolfe.png";
 import ReiEm from "./emotes/3210.png";
 import AndrewEm from "./emotes/AMSmith.png";
 import AveryEm from "./emotes/AveryTheGreat.png";
@@ -49,6 +50,7 @@ import GazEm from "./emotes/gberry1.png";
 import SimonEm from "./emotes/WishfulThinkingLLC.png";
 import MatsunoEm from "./emotes/ma_pa.png";
 import AllisonEm from "./emotes/Allison.png";
+import WolfeEm from "./emotes/Wolfe.png";
 import Contacts from "./apps/iconcontacts.png";
 import Map from "./apps/iconmaps.png";
 import Message from "./apps/iconmessage.png";
@@ -80,7 +82,8 @@ const images = {
     "gaz" : Gaz,
     "simon" : Simon,
     "matsuno" : Matsuno,
-    "allison" : Allison
+    "allison" : Allison,
+    "wolfe" : Wolfe
 };
 
 export const emotes = {
@@ -104,7 +107,8 @@ export const emotes = {
     "gaz" : GazEm,
     "simon" : SimonEm,
     "matsuno": MatsunoEm,
-    "allison": AllisonEm
+    "allison": AllisonEm,
+    "wolfe": WolfeEm
 };
 
 export const apps = {
