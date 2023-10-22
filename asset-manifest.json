@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17a7b6b7.css",
-    "main.js": "/static/js/main.db70d6ec.js",
+    "main.css": "/static/css/main.1abcc84d.css",
+    "main.js": "/static/js/main.8bcd150a.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
@@ -59,18 +59,19 @@
     "static/media/WishfulThinkingLLC.png": "/static/media/WishfulThinkingLLC.f750a7acc440dce2a55b.png",
     "static/media/iconmaps.png": "/static/media/iconmaps.11d580cf1df55d144c98.png",
     "static/media/telegrama_raw.otf": "/static/media/telegrama_raw.8ef393e086cae9909258.otf",
+    "static/media/icondossiers.png": "/static/media/icondossiers.ce87ca99230ef0d92353.png",
     "static/media/matsuno_portrait.png": "/static/media/matsuno_portrait.1de23ebb56e900f6004a.png",
     "static/media/iconstats.png": "/static/media/iconstats.f7cf862e28a6a0762256.png",
     "static/media/3210.png": "/static/media/3210.e7f3182e7dbcf63f8a3f.png",
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.17a7b6b7.css.map": "/static/css/main.17a7b6b7.css.map",
-    "main.db70d6ec.js.map": "/static/js/main.db70d6ec.js.map",
+    "main.1abcc84d.css.map": "/static/css/main.1abcc84d.css.map",
+    "main.8bcd150a.js.map": "/static/js/main.8bcd150a.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17a7b6b7.css",
-    "static/js/main.db70d6ec.js"
+    "static/css/main.1abcc84d.css",
+    "static/js/main.8bcd150a.js"
   ]
 }
