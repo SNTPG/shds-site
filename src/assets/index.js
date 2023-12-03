@@ -9,7 +9,7 @@ import Owen from "./portraits/shds7.png";
 import Rei from "./portraits/reided.png";
 import August from "./portraits/shds9.png";
 import Avery from "./portraits/averydead.png";
-import Ami from "./portraits/shds11.png";
+import Ami from "./portraits/amidead.png";
 import Mai from "./portraits/byebyebyee.png";
 // import Camille from "./portraits/shds13.png";
 import Camille from "./portraits/camilleded.png";
@@ -38,7 +38,7 @@ import OwenEm from "./emotes/iseedeadppl.png";
 import YiSeulEm from "./emotes/Kaiju_Klasher.png";
 import IsaakEm from "./emotes/novel_theorist.png";
 //import JonesEm from "./emotes/testaccount.png";
-import JonesEm from "./emotes/Jones.png";
+import JonesEm from "./emotes/testaccount.png";
 //import HatmanEm from "./emotes/thehatman.png";
 import HatmanEm from "./emotes/Patrick.png";
 import VEm from "./emotes/v.png";
@@ -60,6 +60,7 @@ import Stats from "./apps/iconstats.png";
 import Camera from "./apps/iconcamera.png";
 import Mic from "./apps/iconmic.png";
 import Notes from "./apps/iconnotes.png";
+import Dossiers from "./apps/icondossiers.png"
 
 const images = {
     "rei" : Rei,
@@ -120,6 +121,7 @@ export const apps = {
     "Settings" : Settings,
     "Camera" : Camera,
     "Recorder" : Mic,
-    "Notepad" : Notes
+    "Notepad" : Notes,
+    "Dossiers" : Dossiers
 };
 export default images;

@@ -10,6 +10,7 @@ import Home from '../assets/decor/home.png';
 import Battery from '../assets/decor/battery.png';
 import Speaker from '../assets/decor/speaker.png';
 import WiFi from '../assets/decor/wifi.png';
+import Glass from "../assets/decor/noise_glass.png";
 
 class Tablet extends React.Component {
     constructor(props) {
@@ -85,10 +86,12 @@ class Tablet extends React.Component {
         "Notepad": this.openGeneric.bind(this), 
         "Camera": this.openGeneric.bind(this), 
         "Recorder": this.openGeneric.bind(this), 
+        "Dossiers": this.openGeneric.bind(this), 
     };
 
     render() {
 
+    /* DEFAULT VERSION 
         return(
             <div id ="tablet">
                 <div id="tabletWrapper">
@@ -106,6 +109,39 @@ class Tablet extends React.Component {
                     </div>
                     <div id="tabletHome">
                         <button id="homeButton" onClick={() => this.goHome()}></button>
+                    </div>
+                    <div id="notificationTray">
+                        <Clock/>
+                        <div id="icons">
+                            <img src={Battery} alt="A battery icon."/>
+                            <img src={WiFi} alt="A WiFi icon."/>
+                            <img src={Speaker} alt="A speaker icon."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ) */
+
+        return(
+            <div id ="tablet">
+                <div id="tabletWrapper">
+                    <div id="tabletCamera">
+                        <div id="tabletLens"/>
+                    </div>
+                    <div id="tabletScreen">
+                        <Landing functions={this.funcList}/>
+                        <div id="activeApp" className="inUse">
+                            <Cast/>
+                            <button id="goHome" onClick={null}>
+                                <img alt="Close." src={Home}/>
+                            </button>
+                        </div>
+                        <div id="crackedGlass">
+                            <img alt="A cracked screen." src={Glass}/>
+                        </div>
+                    </div>
+                    <div id="tabletHome">
+                        <button id="homeButton" onClick={null}></button>
                     </div>
                     <div id="notificationTray">
                         <Clock/>

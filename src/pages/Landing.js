@@ -4,6 +4,7 @@ import Locked from '../assets/decor/locked.png';
 
 class Landing extends React.Component {
     render(){
+        const dossierText = <p>A collection of Hope's Peak's private dossiers on the sixteen students in attendance. They can be accessed <a href="https://drive.google.com/drive/u/0/folders/1nXILqzTJesX3k-LjNSHNxsqPCDH7OWL5">here</a>.</p>;
         const buttonList = [
             {
               appName: "Contacts",
@@ -49,6 +50,11 @@ class Landing extends React.Component {
               appName: "Settings",
               locked: false,
               description: "A limited settings menu. You can customize the appearance of your tablet, as well as some accessibility options. There's also an 'account settings' subsection, but it's blocked by a pop up, showing your username and requiring a password. You don't remember setting a password..."
+            },
+            {
+              appName: "Dossiers",
+              locked: false,
+              description: "Dossier"
             }
           ]
         const apps = buttonList.map((button) =>

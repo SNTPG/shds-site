@@ -32,9 +32,7 @@ p {
   margin-block-end: 0;
 }
 
-.App {
-  /*text-align: center;*/
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -178,6 +176,27 @@ p {
   visibility:hidden;
 }
 
+/* Specifically for broken tablet mode */
+
+#activeApp{
+  
+}
+
+#crackedGlass{
+  z-index:101;
+  position:absolute;
+  height:100%;
+  width:100%;
+  object-fit: contain;
+}
+
+#crackedGlass > img{
+  z-index:101;
+  width:100%;
+  height:100%;
+}
+
+
 #activeApp.loading{
   animation: fadeInAnimation ease 0.2s;
   animation-iteration-count: 1;
@@ -266,7 +285,7 @@ p {
   display: grid;
   grid-template-areas:
   'rules contacts map stats settings'
-  'chatroom notepad camera recorder .'
+  'chatroom notepad camera recorder dossiers'
   '. . . . .';
   grid-auto-rows: minmax(0, 1fr);
   grid-auto-columns: minmax(0, 1fr);
@@ -356,6 +375,15 @@ p {
 }
 .Recorder{
   grid-area:recorder;
+}
+.Dossiers{
+  grid-area:dossiers;
+}
+a{
+  color:cyan;
+}
+a:visited{
+  color:cyan;
 }
 
 /* ID Card */
@@ -1268,10 +1296,10 @@ left: calc(-52.5vh - 10px);*/
   grid-area: allison;
 }
 
-.simon, .andrew, .yiseul, .mai, .avery, .rei, .v, .camille, .empty {
+.simon, .andrew, .yiseul, .mai, .avery, .rei, .v, .camille, .empty, .ami {
   filter: grayscale(0.9);
 }
-.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery, .cast-grid .studentMug.rei, .cast-grid .studentMug.v, .cast-grid .studentMug.camille, .cast-grid .studentMug.empty {
+.chapMug.simon, .cast-grid .studentMug.andrew, .cast-grid .studentMug.yiseul, .cast-grid .studentMug.mai, .cast-grid .studentMug.avery, .cast-grid .studentMug.rei, .cast-grid .studentMug.v, .cast-grid .studentMug.camille, .cast-grid .studentMug.empty, .cast-grid .studentMug.ami {
   filter: grayscale(0.9) blur(0.3vh);
 }
 
@@ -1455,7 +1483,7 @@ left: calc(-52.5vh - 10px);*/
 
 
 #rulefront{
-  border:#ff2272 solid 1vh;
+  border:#c2ff03 solid 1vh;
   background-size:cover;
 }
 
@@ -1465,7 +1493,7 @@ left: calc(-52.5vh - 10px);*/
 
 #ruleheader{
   font-family: russoOne;
-  color:#c2ff03;
+  color:#ff2272;
   justify-content:center;
   display:flex;
   align-items:center;
@@ -1482,7 +1510,7 @@ left: calc(-52.5vh - 10px);*/
 
 #ruleback{
   transform: rotateY(-180deg);
-  border:#ff2272 solid 1vh;
+  border:#c2ff03 solid 1vh;
   background-size:cover;
 }
 
@@ -1529,7 +1557,7 @@ left: calc(-52.5vh - 10px);*/
 }
 
 #ruleImportant{
-  color:lime;
+  color:maroon;
 }
 
 
@@ -1658,10 +1686,10 @@ left: calc(-52.5vh - 10px);*/
   max-width:100%;
 }
 
-.statStudentMug .studentMug.wolfe, .statStudentMug .studentMug.isaak{
+/*.statStudentMug .studentMug.wolfe, .statStudentMug .studentMug.isaak{
   height: 50%;
   width: 100%;
-}
+}*/
 
 button.statContainer {
   background:0;
@@ -2006,8 +2034,8 @@ button.statContainer:hover {
   background: #bee1de;
 }
 
-.collectableItem.found{
-}
+/*.collectableItem.found{
+}*/
 
 .collectableItem.possessed{
   background:#bee1de;
