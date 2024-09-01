@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b9db962.css",
-    "main.js": "/static/js/main.895f34de.js",
+    "main.css": "/static/css/main.c57af5b7.css",
+    "main.js": "/static/js/main.f6457930.js",
     "static/js/787.812793ae.chunk.js": "/static/js/787.812793ae.chunk.js",
+    "static/media/rigeldead.png": "/static/media/rigeldead.f2687ff68195cc4b246e.png",
+    "static/media/gazdead.png": "/static/media/gazdead.6609aa50a90e337475c9.png",
     "static/media/bgtest.jpg": "/static/media/bgtest.0191ed0b76a251717498.jpg",
     "static/media/noise_glass.png": "/static/media/noise_glass.ee2e440e4a083228bd13.png",
+    "static/media/owendead.png": "/static/media/owendead.0c6d70d3090bb32172ff.png",
     "static/media/landingbg.jpg": "/static/media/landingbg.cc4a0c20360c37733538.jpg",
     "static/media/averydead.png": "/static/media/averydead.c5e9f4b728937cd73004.png",
     "static/media/allison.png": "/static/media/allison.3bd9a41efe8bea9afaef.png",
-    "static/media/shds19.png": "/static/media/shds19.2d53eab0c71e4c21dbe1.png",
     "static/media/byebyebye.png": "/static/media/byebyebye.69e2a89bbbd6087f460d.png",
     "static/media/contradiction.png": "/static/media/contradiction.851ba34855b2bda2b2c3.png",
     "static/media/hewillnotbemissed.png": "/static/media/hewillnotbemissed.5938631174f616048cae.png",
@@ -36,14 +38,12 @@
     "static/media/Nezha.png": "/static/media/Nezha.1c1ab9aeb47366b708d5.png",
     "static/media/shds14.png": "/static/media/shds14.b23c34255ef941585b18.png",
     "static/media/amidead.png": "/static/media/amidead.eb3e2ee64584633b7da8.png",
-    "static/media/shds2.png": "/static/media/shds2.d45bb88c247c4ee06c5f.png",
     "static/media/shds9.png": "/static/media/shds9.e6429dc40fb060c306fa.png",
     "static/media/RussoOne-Regular.ttf": "/static/media/RussoOne-Regular.639afb5e42e0ff21147d.ttf",
     "static/media/SafetyMedium.otf": "/static/media/SafetyMedium.79324df7b64d816737b9.otf",
     "static/media/Emma_Thorne.png": "/static/media/Emma_Thorne.951c0cbb011eb32d07df.png",
     "static/media/iconsetting.png": "/static/media/iconsetting.4511eaba5fb2302ea528.png",
     "static/media/ma_pa.png": "/static/media/ma_pa.41e56e102c46359d6e2f.png",
-    "static/media/shds7.png": "/static/media/shds7.b4dcce836e8cf6e2bfe8.png",
     "static/media/XxCherry_Slide_Gamer64xX[MNC].png": "/static/media/XxCherry_Slide_Gamer64xX[MNC].4fb2d5346b53174ab8e7.png",
     "static/media/CRUSTLOVER.png": "/static/media/CRUSTLOVER.d0ffb25a0406cedc1cf1.png",
     "static/media/v.png": "/static/media/v.24481f94e1688d655a2f.png",
@@ -67,12 +67,12 @@
     "static/media/iconcontacts.png": "/static/media/iconcontacts.050430d93900cb44afd9.png",
     "static/media/home.png": "/static/media/home.eef8e96b6410128c7779.png",
     "index.html": "/index.html",
-    "main.6b9db962.css.map": "/static/css/main.6b9db962.css.map",
-    "main.895f34de.js.map": "/static/js/main.895f34de.js.map",
+    "main.c57af5b7.css.map": "/static/css/main.c57af5b7.css.map",
+    "main.f6457930.js.map": "/static/js/main.f6457930.js.map",
     "787.812793ae.chunk.js.map": "/static/js/787.812793ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b9db962.css",
-    "static/js/main.895f34de.js"
+    "static/css/main.c57af5b7.css",
+    "static/js/main.f6457930.js"
   ]
 }
